@@ -32,3 +32,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.system.hentai.version=$(PLATFORM_HENTAI_VERSION)
 
 $(call inherit-product-if-exists, vendor/hentai/build/target/product/security/hentai_security.mk)
+
+# Chimera signature flags
+CHIMERA_SIGNING_FLAGS := -e PrebuiltGmsCoreQt_CronetDynamite.apk= -e PrebuiltGmsCoreQt_DynamiteLoader.apk= -e PrebuiltGmsCoreQt_DynamiteModulesA.apk= -e PrebuiltGmsCoreQt_AdsDynamite.apk= -e PrebuiltGmsCoreQt_DynamiteModulesC.apk= -e PrebuiltGmsCoreQt_MapsDynamite.apk= -e PrebuiltGmsCoreQt_GoogleCertificates.apk= -e PrebuiltGmsCoreQt_MeasurementDynamite.apk= -e AndroidPlatformServices.apk=
