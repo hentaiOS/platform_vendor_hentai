@@ -60,6 +60,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/hentai/overlay
 
+# Inherit from audio config
+$(call inherit-product, vendor/hentai/config/audio.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/hentai/config/fonts.mk)
 
