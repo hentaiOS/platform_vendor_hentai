@@ -69,8 +69,5 @@ $(call inherit-product, vendor/hentai/config/fonts.mk)
 # Inherit from our versioning
 $(call inherit-product, vendor/hentai/config/versioning.mk)
 
-# Inherit from our kernel/header generator
-$(call inherit-product, vendor/hentai/config/BoardConfigHentai.mk)
-
 # Inherit from GMS product config
 $(call inherit-product, vendor/gms/gms_full.mk)
