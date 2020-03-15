@@ -15,7 +15,7 @@
 # limitations under the License.
 #
 
-BUILD_ID_LC := $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
+BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
 PLATFORM_HENTAI_RELEASE := Queenslave
 PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).REL.$(shell date +%m%d%H%M)
