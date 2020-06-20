@@ -16,14 +16,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# shellcheck source=/dev/null
 
 set -e
 
-DEVICE="*** FILL IN DEVICE ****"
-VENDOR="*** FILL IN VENDOR ****"
+DEVICE=*** FILL IN DEVICE ****
+VENDOR=*** FILL IN VENDOR ****
 
-export INITIAL_COPYRIGHT_YEAR="**** FILL IN COPYRIGHT YEAR ****"
+INITIAL_COPYRIGHT_YEAR=**** FILL IN COPYRIGHT YEAR ****
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

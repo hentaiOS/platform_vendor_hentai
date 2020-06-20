@@ -117,10 +117,8 @@ function setup_vendor() {
 #
 function src_file() {
     local SPEC="$1"
-    local SPLIT=("${SPEC//:/ }")
-
-    ARGS="$(target_args "${SPEC}")"
-    local ARGS
+    local SPLIT=(${SPEC//:/ })
+    local ARGS="$(target_args ${SPEC})"
     # Regardless of there being a ":" delimiter or not in the spec,
     # the source file is always either the first, or the only entry.
     local SRC="${SPLIT[0]}"
@@ -134,9 +132,8 @@ function src_file() {
 #
 function target_file() {
     local SPEC="${1%%;*}"
-    local SPLIT=("${SPEC//:/ }")
-    ARGS="$(target_args "${SPEC}")"
-    local ARGS
+    local SPLIT=(${SPEC//:/ })
+    local ARGS="$(target_args ${SPEC})"
     local DST=
     case ${#SPLIT[@]} in
     1)
@@ -158,7 +155,7 @@ function target_file() {
 #
 function target_args() {
     local SPEC="$1"
-    local SPLIT=("${SPEC//;/ }")
+    local SPLIT=(${SPEC//;/ })
     local ARGS=
     case ${#SPLIT[@]} in
     1)
@@ -185,11 +182,9 @@ function target_args() {
 function prefix_match() {
     local PREFIX="$1"
     for LINE in "${PRODUCT_PACKAGES_LIST[@]}"; do
-        FILE=$(target_file "$LINE")
-        local FILE
+        local FILE=$(target_file "$LINE")
         if [[ "$FILE" =~ ^"$PREFIX" ]]; then
-            ARGS=$(target_args "$LINE")
-            local ARGS
+            local ARGS=$(target_args "$LINE")
             if [ -z "${ARGS}" ]; then
                 echo "${FILE#$PREFIX}"
             else
@@ -282,48 +277,40 @@ function write_product_copy_files() {
         fi
 
         TARGET=$(target_file "$FILE")
-        if prefix_match_file "product/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n" \
+        if prefix_match_file "product/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "system/product/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n" \
+        elif prefix_match_file "system/product/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_PRODUCT)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "odm/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n" \
+        elif prefix_match_file "odm/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "vendor/odm/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n" \
+        elif prefix_match_file "vendor/odm/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "system/vendor/odm/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n" \
+        elif prefix_match_file "system/vendor/odm/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_ODM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "vendor/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n" \
+        elif prefix_match_file "vendor/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "system/vendor/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n" \
+        elif prefix_match_file "system/vendor/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_VENDOR)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
-        elif prefix_match_file "system/" "$TARGET" ; then
-            OUTTARGET=$(truncate_file "$TARGET")
-            local OUTTARGET
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_SYSTEM)/%s%s\n" \
+        elif prefix_match_file "system/" $TARGET ; then
+            local OUTTARGET=$(truncate_file $TARGET)
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_SYSTEM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$OUTTARGET" "$LINEEND" >> "$PRODUCTMK"
         else
-            printf "    %s/proprietary/%s:$(TARGET_COPY_OUT_SYSTEM)/%s%s\n" \
+            printf '    %s/proprietary/%s:$(TARGET_COPY_OUT_SYSTEM)/%s%s\n' \
                 "$OUTDIR" "$TARGET" "$TARGET" "$LINEEND" >> "$PRODUCTMK"
         fi
     done
@@ -372,162 +359,123 @@ function write_blueprint_packages() {
         PACKAGE_LIST+=("$PKGNAME")
 
         SRC="proprietary"
-        case $PARTITION in
-            system)
-                SRC+="/system"
-            ;;
-            vendor)
-                SRC+="/vendor"
-            ;;
-            product)
-                SRC+="/product"
-            ;;
-            odm)
-                SRC+="/odm"
-        esac
+        if [ "$PARTITION" = "system" ]; then
+            SRC+="/system"
+        elif [ "$PARTITION" = "vendor" ]; then
+            SRC+="/vendor"
+        elif [ "$PARTITION" = "product" ]; then
+            SRC+="/product"
+        elif [ "$PARTITION" = "odm" ]; then
+            SRC+="/odm"
+        fi
 
-        case $CLASS in
-            "SHARED_LIBARRIES")
-                printf 'cc_prebuilt_library_shared {\n'
-                printf '\tname: "%s",\n' "$PKGNAME"
-                printf '\towner: "%s",\n' "$VENDOR"
-                printf '\tstrip: {\n'
-                printf '\t\tnone: true,\n'
-                printf '\t},\n'
-                printf '\ttarget: {\n'
-
-                case $EXTRA in
-                    "both")
-                        printf '\t\tandroid_arm: {\n'
-                        printf '\t\t\tsrcs: ["%s/lib/%s"],\n' "$SRC" "$FILE"
-                        printf '\t\t},\n'
-                        printf '\t\tandroid_arm64: {\n'
-                        printf '\t\t\tsrcs: ["%s/lib64/%s"],\n' "$SRC" "$FILE"
-                        printf '\t\t},\n'
-                    ;;
-                    "64")
-                        printf '\t\tandroid_arm64: {\n'
-                        printf '\t\t\tsrcs: ["%s/lib64/%s"],\n' "$SRC" "$FILE"
-                        printf '\t\t},\n'
-                    ;;
-                    *)
-                        printf '\t\tandroid_arm: {\n'
-                        printf '\t\t\tsrcs: ["%s/lib/%s"],\n' "$SRC" "$FILE"
-                        printf '\t\t},\n'
-                esac
-
-                printf '\t},\n'
-                if [ "$EXTRA" != "none" ]; then
-                    printf '\tcompile_multilib: "%s",\n' "$EXTRA"
+        if [ "$CLASS" = "SHARED_LIBRARIES" ]; then
+            printf 'cc_prebuilt_library_shared {\n'
+            printf '\tname: "%s",\n' "$PKGNAME"
+            printf '\towner: "%s",\n' "$VENDOR"
+            printf '\tstrip: {\n'
+            printf '\t\tnone: true,\n'
+            printf '\t},\n'
+            printf '\ttarget: {\n'
+            if [ "$EXTRA" = "both" ]; then
+                printf '\t\tandroid_arm: {\n'
+                printf '\t\t\tsrcs: ["%s/lib/%s"],\n' "$SRC" "$FILE"
+                printf '\t\t},\n'
+                printf '\t\tandroid_arm64: {\n'
+                printf '\t\t\tsrcs: ["%s/lib64/%s"],\n' "$SRC" "$FILE"
+                printf '\t\t},\n'
+            elif [ "$EXTRA" = "64" ]; then
+                printf '\t\tandroid_arm64: {\n'
+                printf '\t\t\tsrcs: ["%s/lib64/%s"],\n' "$SRC" "$FILE"
+                printf '\t\t},\n'
+            else
+                printf '\t\tandroid_arm: {\n'
+                printf '\t\t\tsrcs: ["%s/lib/%s"],\n' "$SRC" "$FILE"
+                printf '\t\t},\n'
+            fi
+            printf '\t},\n'
+            if [ "$EXTRA" != "none" ]; then
+                printf '\tcompile_multilib: "%s",\n' "$EXTRA"
+            fi
+        elif [ "$CLASS" = "APPS" ]; then
+            printf 'android_app_import {\n'
+            printf '\tname: "%s",\n' "$PKGNAME"
+            printf '\towner: "%s",\n' "$VENDOR"
+            if [ "$EXTRA" = "priv-app" ]; then
+                SRC="$SRC/priv-app"
+            else
+                SRC="$SRC/app"
+            fi
+            printf '\tapk: "%s/%s",\n' "$SRC" "$FILE"
+            if [ "$ARGS" = "PRESIGNED" ]; then
+                printf '\tpresigned: true,\n'
+            elif [ ! -z "$ARGS" ]; then
+                printf '\tcertificate: "%s",\n' "$ARGS"
+            else
+                printf '\tcertificate: "platform",\n'
+            fi
+        elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
+            printf 'dex_import {\n'
+            printf '\tname: "%s",\n' "$PKGNAME"
+            printf '\towner: "%s",\n' "$VENDOR"
+            printf '\tjars: ["%s/framework/%s"],\n' "$SRC" "$FILE"
+        elif [ "$CLASS" = "ETC" ]; then
+            if [ "$EXTENSION" = "xml" ]; then
+                printf 'prebuilt_etc_xml {\n'
+            else
+                printf 'prebuilt_etc {\n'
+            fi
+            printf '\tname: "%s",\n' "$PKGNAME"
+            printf '\towner: "%s",\n' "$VENDOR"
+            printf '\tsrc: "%s/etc/%s",\n' "$SRC" "$FILE"
+        elif [ "$CLASS" = "EXECUTABLES" ]; then
+            if [ "$EXTENSION" = "sh" ]; then
+                printf 'sh_binary {\n'
+            else
+                printf 'cc_prebuilt_binary {\n'
+            fi
+            printf '\tname: "%s",\n' "$PKGNAME"
+            printf '\towner: "%s",\n' "$VENDOR"
+            if [ "$ARGS" = "rootfs" ]; then
+                SRC="$SRC/rootfs"
+                if [ "$EXTRA" = "sbin" ]; then
+                    SRC="$SRC/sbin"
+                    printf '\tdist {\n'
+                    printf '\t\tdest: "%s",\n' "root/sbin"
+                    printf '\t},'
                 fi
-            ;;
-            "APPS")
-                printf 'android_app_import {\n'
-                printf '\tname: "%s",\n' "$PKGNAME"
-                printf '\towner: "%s",\n' "$VENDOR"
-
-                case $EXTRA in
-                    "priv-app")
-                        SRC="$SRC/priv-app"
-                    ;;
-                    *)
-                        SRC="$SRC/app"
-                esac
-
-                printf '\tapk: "%s/%s",\n' "$SRC" "$FILE"
-                case $ARGS in
-                    "PRESIGNED")
-                        printf '\tpresigned: true,\n'
-                    ;;
-                    "$ARGS")
-                        printf '\tcertificate: "%s",\n' "$ARGS"
-                    ;;
-                    *)
-                        printf '\tcertificate: "platform",\n'
-                esac
-            ;;
-            "JAVA_LIBRARIES")
-                printf 'dex_import {\n'
-                printf '\tname: "%s",\n' "$PKGNAME"
-                printf '\towner: "%s",\n' "$VENDOR"
-                printf '\tjars: ["%s/framework/%s"],\n' "$SRC" "$FILE"
-            ;;
-            "ETC")
-                case $EXTENSION in
-                    "xml")
-                        printf 'prebuilt_etc_xml {\n'
-                    ;;
-                    *)
-                        printf 'prebuilt_etc {\n'
-                esac
-
-                printf '\tname: "%s",\n' "$PKGNAME"
-                printf '\towner: "%s",\n' "$VENDOR"
-                printf '\tsrc: "%s/etc/%s",\n' "$SRC" "$FILE"
-            ;;
-            "EXECUTABLES")
-                case $EXTENSION in
-                    "sh")
-                        printf 'sh_binary {\n'
-                    ;;
-                    *)
-                        printf 'cc_prebuilt_binary {\n'
-                esac
-                printf '\tname: "%s",\n' "$PKGNAME"
-                printf '\towner: "%s",\n' "$VENDOR"
-
-                case $ARGS in
-                    "rootfs")
-                        SRC="$SRC/rootfs"
-                        if [ "$EXTRA" = "sbin" ]; then
-                            SRC="$SRC/sbin"
-                            printf '\tdist {\n'
-                            printf '\t\tdest: "%s",\n' "root/sbin"
-                            printf '\t},'
-                        fi
-                    ;;
-                    *)
-                        SRC="$SRC/bin"
-                esac
-                printf '\tsrcs: ["%s/%s"],\n' "$SRC" "$FILE"
-                unset EXTENSION
-            ;;
-            *)
-                printf '\tsrcs: ["%s/%s"],\n' "$SRC" "$FILE"
-        esac
-
+            else
+                SRC="$SRC/bin"
+            fi
+            printf '\tsrcs: ["%s/%s"],\n' "$SRC" "$FILE"
+            unset EXTENSION
+        else
+            printf '\tsrcs: ["%s/%s"],\n' "$SRC" "$FILE"
+        fi
         if [ "$CLASS" = "APPS" ]; then
             printf '\tdex_preopt: {\n'
             printf '\t\tenabled: false,\n'
             printf '\t},\n'
         fi
-
         if [ "$CLASS" = "SHARED_LIBRARIES" ] || [ "$CLASS" = "EXECUTABLES" ] || [ "$CLASS" = "ETC" ] ; then
             if [ "$DIRNAME" != "." ]; then
                 printf '\tsub_dir: "%s",\n' "$DIRNAME"
             fi
         fi
-
         if [ "$CLASS" = "SHARED_LIBRARIES" ] || [ "$CLASS" = "EXECUTABLES" ] ; then
             printf '\tprefer: true,\n'
         fi
-
         if [ "$EXTRA" = "priv-app" ]; then
             printf '\tprivileged: true,\n'
         fi
-
-        case $PARTITION in
-            "vendor")
-                printf '\tsoc_specific: true,\n'
-            ;;
-            "product")
-                printf '\tproduct_specific: true,\n'
-            ;;
-            "odm")
-                printf '\tdevice_specific: true,\n'
-        esac
+        if [ "$PARTITION" = "vendor" ]; then
+            printf '\tsoc_specific: true,\n'
+        elif [ "$PARTITION" = "product" ]; then
+            printf '\tproduct_specific: true,\n'
+        elif [ "$PARTITION" = "odm" ]; then
+            printf '\tdevice_specific: true,\n'
+        fi
         printf '}\n\n'
-
     done
 }
 
@@ -579,90 +527,81 @@ function write_makefile_packages() {
         PACKAGE_LIST+=("$PKGNAME")
 
         SRC="proprietary"
-        case $PARTITION in
-            "system")
-                SRC+="/system"
-            ;;
-            "vendor")
-                SRC+="/vendor"
-            ;;
-            "product")
-                SRC+="/product"
-            ;;
-            "odm")
-                SRC+="/odm"
-        esac
+        if [ "$PARTITION" = "system" ]; then
+            SRC+="/system"
+        elif [ "$PARTITION" = "vendor" ]; then
+            SRC+="/vendor"
+        elif [ "$PARTITION" = "product" ]; then
+            SRC+="/product"
+        elif [ "$PARTITION" = "odm" ]; then
+            SRC+="/odm"
+        fi
 
-        printf 'include %s\n' "$CLEAR_VARS"
+        printf 'include $(CLEAR_VARS)\n'
         printf 'LOCAL_MODULE := %s\n' "$PKGNAME"
         printf 'LOCAL_MODULE_OWNER := %s\n' "$VENDOR"
-
-        case $CLASS in
-            "SHARED_LIBRARIES")
-                case $EXTRA in
-                    "both")
-                        printf 'LOCAL_SRC_FILES_64 := %s/lib64/%s\n' "$SRC" "$FILE"
-                        printf 'LOCAL_SRC_FILES_32 := %s/lib/%s\n' "$SRC" "$FILE"
-                    ;;
-                    "64")
-                        printf 'LOCAL_SRC_FILES := %s/lib64/%s\n' "$SRC" "$FILE"
-                    ;;
-                    *)
-                        printf 'LOCAL_SRC_FILES := %s/lib/%s\n' "$SRC" "$FILE"
-                esac
-                if [ "$EXTRA" != "none" ]; then
-                    printf 'LOCAL_MULTILIB := %s\n' "$EXTRA"
+        if [ "$CLASS" = "SHARED_LIBRARIES" ]; then
+            if [ "$EXTRA" = "both" ]; then
+                printf 'LOCAL_SRC_FILES_64 := %s/lib64/%s\n' "$SRC" "$FILE"
+                printf 'LOCAL_SRC_FILES_32 := %s/lib/%s\n' "$SRC" "$FILE"
+                #if [ "$VENDOR_PKG" = "true" ]; then
+                #    echo "LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_VENDOR_SHARED_LIBRARIES)"
+                #    echo "LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_VENDOR_SHARED_LIBRARIES)"
+                #else
+                #    echo "LOCAL_MODULE_PATH_64 := \$(TARGET_OUT_SHARED_LIBRARIES)"
+                #    echo "LOCAL_MODULE_PATH_32 := \$(2ND_TARGET_OUT_SHARED_LIBRARIES)"
+                #fi
+            elif [ "$EXTRA" = "64" ]; then
+                printf 'LOCAL_SRC_FILES := %s/lib64/%s\n' "$SRC" "$FILE"
+            else
+                printf 'LOCAL_SRC_FILES := %s/lib/%s\n' "$SRC" "$FILE"
+            fi
+            if [ "$EXTRA" != "none" ]; then
+                printf 'LOCAL_MULTILIB := %s\n' "$EXTRA"
+            fi
+        elif [ "$CLASS" = "APPS" ]; then
+            if [ "$EXTRA" = "priv-app" ]; then
+                SRC="$SRC/priv-app"
+            else
+                SRC="$SRC/app"
+            fi
+            printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
+            local CERT=platform
+            if [ ! -z "$ARGS" ]; then
+                CERT="$ARGS"
+            fi
+            printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
+        elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
+            printf 'LOCAL_SRC_FILES := %s/framework/%s\n' "$SRC" "$FILE"
+            local CERT=platform
+            if [ ! -z "$ARGS" ]; then
+                CERT="$ARGS"
+            fi
+            printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
+        elif [ "$CLASS" = "ETC" ]; then
+            printf 'LOCAL_SRC_FILES := %s/etc/%s\n' "$SRC" "$FILE"
+        elif [ "$CLASS" = "EXECUTABLES" ]; then
+            if [ "$ARGS" = "rootfs" ]; then
+                SRC="$SRC/rootfs"
+                if [ "$EXTRA" = "sbin" ]; then
+                    SRC="$SRC/sbin"
+                    printf '%s\n' "LOCAL_MODULE_PATH := \$(TARGET_ROOT_OUT_SBIN)"
+                    printf '%s\n' "LOCAL_UNSTRIPPED_PATH := \$(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)"
                 fi
-            ;;
-            "APPS")
-                if [ "$EXTRA" = "priv-app" ]; then
-                    SRC="$SRC/priv-app"
-                else
-                    SRC="$SRC/app"
-                fi
-                printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
-                local CERT=platform
-
-                if [ -n "$ARGS" ]; then
-                    CERT="$ARGS"
-                fi
-                printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
-            ;;
-            "JAVA_LIBRARIES")
-                printf 'LOCAL_SRC_FILES := %s/framework/%s\n' "$SRC" "$FILE"
-                local CERT=platform
-                if [ -n "$ARGS" ]; then
-                    CERT="$ARGS"
-                fi
-                printf 'LOCAL_CERTIFICATE := %s\n' "$CERT"
-            ;;
-            "ETC")
-                printf 'LOCAL_SRC_FILES := %s/etc/%s\n' "$SRC" "$FILE"
-            ;;
-            "EXECUTABLES")
-                if [ "$ARGS" = "rootfs" ]; then
-                    SRC="$SRC/rootfs"
-                    if [ "$EXTRA" = "sbin" ]; then
-                        SRC="$SRC/sbin"
-                        printf '%s\n' "LOCAL_MODULE_PATH := \$(TARGET_ROOT_OUT_SBIN)"
-                        printf '%s\n' "LOCAL_UNSTRIPPED_PATH := \$(TARGET_ROOT_OUT_SBIN_UNSTRIPPED)"
-                    fi
-                else
-                    SRC="$SRC/bin"
-                fi
-                printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
-                unset EXTENSION
-            ;;
-            *)
-                printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
-        esac
-
+            else
+                SRC="$SRC/bin"
+            fi
+            printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
+            unset EXTENSION
+        else
+            printf 'LOCAL_SRC_FILES := %s/%s\n' "$SRC" "$FILE"
+        fi
         printf 'LOCAL_MODULE_TAGS := optional\n'
         printf 'LOCAL_MODULE_CLASS := %s\n' "$CLASS"
         if [ "$CLASS" = "APPS" ]; then
             printf 'LOCAL_DEX_PREOPT := false\n'
         fi
-        if [ -n "$EXTENSION" ]; then
+        if [ ! -z "$EXTENSION" ]; then
             printf 'LOCAL_MODULE_SUFFIX := %s\n' "$EXTENSION"
         fi
         if [ "$CLASS" = "SHARED_LIBRARIES" ] || [ "$CLASS" = "EXECUTABLES" ]; then
@@ -673,18 +612,14 @@ function write_makefile_packages() {
         if [ "$EXTRA" = "priv-app" ]; then
             printf 'LOCAL_PRIVILEGED_MODULE := true\n'
         fi
-
-        case $PARTITION in
-            "vendor")
-                printf 'LOCAL_VENDOR_MODULE := true\n'
-            ;;
-            "product")
-                printf 'LOCAL_PRODUCT_MODULE := true\n'
-            ;;
-            "odm")
-                printf 'LOCAL_ODM_MODULE := true\n'
-        esac
-        printf "include %s\n\n" "$BUILD_PREBUILT"
+        if [ "$PARTITION" = "vendor" ]; then
+            printf 'LOCAL_VENDOR_MODULE := true\n'
+        elif [ "$PARTITION" = "product" ]; then
+            printf 'LOCAL_PRODUCT_MODULE := true\n'
+        elif [ "$PARTITION" = "odm" ]; then
+            printf 'LOCAL_ODM_MODULE := true\n'
+        fi
+        printf 'include $(BUILD_PREBUILT)\n\n'
     done
 }
 
@@ -707,11 +642,11 @@ function write_product_packages() {
 
     # Figure out what's 32-bit, what's 64-bit, and what's multilib
     # I really should not be doing this in bash due to shitty array passing :(
-    local T_LIB32=( "$(prefix_match "lib/")" )
-    local T_LIB64=( "$(prefix_match "lib64/")" )
-    local MULTILIBS=( "$(comm -12 <(printf '%s\n' "${T_LIB32[@]}") <(printf '%s\n' "${T_LIB64[@]}"))" )
-    local LIB32=( "$(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}"))" )
-    local LIB64=( "$(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}"))" )
+    local T_LIB32=( $(prefix_match "lib/") )
+    local T_LIB64=( $(prefix_match "lib64/") )
+    local MULTILIBS=( $(comm -12 <(printf '%s\n' "${T_LIB32[@]}") <(printf '%s\n' "${T_LIB64[@]}")) )
+    local LIB32=( $(comm -23 <(printf '%s\n'  "${T_LIB32[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
+    local LIB64=( $(comm -23 <(printf '%s\n' "${T_LIB64[@]}") <(printf '%s\n' "${MULTILIBS[@]}")) )
 
     if [ "${#MULTILIBS[@]}" -gt "0" ]; then
         write_blueprint_packages "SHARED_LIBRARIES" "" "both" "MULTILIBS" >> "$ANDROIDBP"
@@ -943,15 +878,15 @@ function write_blueprint_header() {
         BLUEPRINT_INITIAL_COPYRIGHT_YEAR=$INITIAL_COPYRIGHT_YEAR
     fi
 
-    if [ "$BLUEPRINT_INITIAL_COPYRIGHT_YEAR" -eq $YEAR ]; then
-        printf " * Copyright (C) %s The LineageOS Project\n" "$YEAR" >> $1
-        printf " * Copyright (C) %s Raphielscape LLC. and Haruka LLC.\n" "$YEAR" >> $1
-    elif [ "$BLUEPRINT_INITIAL_COPYRIGHT_YEAR" -le 2019 ]; then
-        printf " * Copyright (C) 2019-%s The LineageOS Project\n" "$YEAR" >> $1
-        printf " * Copyright (C) 2019-%s Raphielscape LLC. and Haruka LLC.\n" "$YEAR" >> $1
+    if [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -eq $YEAR ]; then
+        printf " * Copyright (C) $YEAR The LineageOS Project\n" >> $1
+        printf " * Copyright (C) $YEAR Raphielscape LLC. and Haruka LLC.\n" >> $1
+    elif [ $BLUEPRINT_INITIAL_COPYRIGHT_YEAR -le 2019 ]; then
+        printf " * Copyright (C) 2019-$YEAR The LineageOS Project\n" >> $1
+        printf " * Copyright (C) 2019-$YEAR Raphielscape LLC. and Haruka LLC.\n" >> $1
     else
-        printf " * Copyright (C) %s-%s The LineageOS Project\n" "$BLUEPRINT_INITIAL_COPYRIGHT_YEAR" "$YEAR" >> $1
-        printf " * Copyright (C) %s-%s Raphielscape LLC. and Haruka LLC.\n" "$BLUEPRINT_INITIAL_COPYRIGHT_YEAR" "$YEAR" >> $1
+        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR The LineageOS Project\n" >> $1
+        printf " * Copyright (C) $BLUEPRINT_INITIAL_COPYRIGHT_YEAR-$YEAR Raphielscape LLC. and Haruka LLC.\n" >> $1
     fi
 
     cat << EOF >> $1
@@ -1182,7 +1117,7 @@ function parse_file_list() {
             PRODUCT_COPY_FILES_FIXUP_HASHES+=("$FIXUP_HASH")
         fi
 
-    done < <(grep -E -v '(^#|^[[:space:]]*$)' "$LIST" | LC_ALL=C sort | uniq)
+    done < <(egrep -v '(^#|^[[:space:]]*$)' "$LIST" | LC_ALL=C sort | uniq)
 }
 
 #
@@ -1379,7 +1314,7 @@ function init_adb_connection() {
     fi
 
     # Retrieve IP and PORT info if we're using a TCP connection
-    TCPIPPORT=$(adb devices | grep -E '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+[^0-9]+' \
+    TCPIPPORT=$(adb devices | egrep '^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+:[0-9]+[^0-9]+' \
         | head -1 | awk '{print $1}')
     adb root &> /dev/null
     sleep 0.3
@@ -1399,8 +1334,7 @@ function init_adb_connection() {
 #
 function fix_xml() {
     local XML="$1"
-    TEMP_XML="$TMPDIR/$(basename "$XML").temp"
-    local TEMP_XML
+    local TEMP_XML="$TMPDIR/`basename "$XML"`.temp"
 
     grep -a '^<?xml version' "$XML" > "$TEMP_XML"
     grep -av '^<?xml version' "$XML" >> "$TEMP_XML"
@@ -1431,23 +1365,23 @@ function print_spec() {
         PRODUCT_PACKAGE="-"
     fi
     local SRC=""
-    if [ -n "${SPEC_SRC_FILE}" ] && [ "${SPEC_SRC_FILE}" != "${SPEC_DST_FILE}" ]; then
+    if [ ! -z "${SPEC_SRC_FILE}" ] && [ "${SPEC_SRC_FILE}" != "${SPEC_DST_FILE}" ]; then
         SRC="${SPEC_SRC_FILE}:"
     fi
     local DST=""
-    if [ -n "${SPEC_DST_FILE}" ]; then
+    if [ ! -z "${SPEC_DST_FILE}" ]; then
         DST="${SPEC_DST_FILE}"
     fi
     local ARGS=""
-    if [ -n "${SPEC_ARGS}" ]; then
+    if [ ! -z "${SPEC_ARGS}" ]; then
         ARGS=";${SPEC_ARGS}"
     fi
     local HASH=""
-    if [ -n "${SPEC_HASH}" ] && [ "${SPEC_HASH}" != "x" ]; then
+    if [ ! -z "${SPEC_HASH}" ] && [ "${SPEC_HASH}" != "x" ]; then
         HASH="|${SPEC_HASH}"
     fi
     local FIXUP_HASH=""
-    if [ -n "${SPEC_FIXUP_HASH}" ] && [ "${SPEC_FIXUP_HASH}" != "x" ] && [ "${SPEC_FIXUP_HASH}" != "${SPEC_HASH}" ]; then
+    if [ ! -z "${SPEC_FIXUP_HASH}" ] && [ "${SPEC_FIXUP_HASH}" != "x" ] && [ "${SPEC_FIXUP_HASH}" != "${SPEC_HASH}" ]; then
         FIXUP_HASH="|${SPEC_FIXUP_HASH}"
     fi
     printf '%s%s%s%s%s%s\n' "${PRODUCT_PACKAGE}" "${SRC}" "${DST}" "${ARGS}" "${HASH}" "${FIXUP_HASH}"
@@ -1536,8 +1470,8 @@ function extract() {
 
         # Check if we're working with the same zip that was passed last time.
         # If so, let's just use what's already extracted.
-        MD5=$(md5sum "$SRC"| awk '{print $1}')
-        OLDMD5=$(cat "$DUMPDIR"/zipmd5.txt)
+        MD5=`md5sum "$SRC"| awk '{print $1}'`
+        OLDMD5=`cat "$DUMPDIR"/zipmd5.txt`
 
         if [ "$MD5" != "$OLDMD5" ]; then
             rm -rf "$DUMPDIR"
