@@ -53,6 +53,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/hentai/overlay
 
+# Inherit from lewdboratory config
+$(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
+
 # Inherit from apex config
 $(call inherit-product, vendor/hentai/config/apex.mk)
 
