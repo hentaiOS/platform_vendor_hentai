@@ -18,11 +18,10 @@
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
 PLATFORM_HENTAI_RELEASE := Queenslave
-PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).REL.$(shell date +%m%d%H%M)
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).REL.$(shell date +%m%d%H%M)
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-REL.$(shell date +%m%d%H%M)
+    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).Furry.$(shell date +%m%d%H%M)
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-Furry.$(shell date +%m%d%H%M)
 else
     PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).INT.$(shell date +%m%d%H%M)
     PROD_VERSION += hentaiOS-$(PLATFORM_HENTAI_RELEASE)-$(TARGET_PRODUCT)-ota-$(BUILD_ID_LC)-INT.$(shell date +%m%d%H%M)
