@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
     vendor/hentai/audio/ui/WirelessChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/WirelessChargingStarted.ogg
 
 # Change default sounds
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.ringtone=The_big_adventure.ogg \
     ro.config.notification_sound=Popcorn.ogg \
     ro.config.alarm_alert=Bright_morning.ogg
