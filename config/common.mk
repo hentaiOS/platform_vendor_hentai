@@ -14,6 +14,10 @@
 # limitations under the License.
 #
 
+# Enable Google Play system updates support
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/hentai/apex
+
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.com.google.ime.bs_theme=true \
@@ -50,14 +54,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.error.receiver.system.apps=com.google.android.gms \
     ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent
 
+PRODUCT_PACKAGES += \
+    ModuleMetadataGooglePrebuilt
+
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/hentai/overlay
 
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
-
-# Inherit from apex config
-$(call inherit-product, vendor/hentai/config/apex.mk)
 
 # Inherit from audio config
 $(call inherit-product, vendor/hentai/config/audio.mk)
