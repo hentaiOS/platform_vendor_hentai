@@ -15,8 +15,8 @@
 #
 
 # Enable Google Play system updates support
-# PRODUCT_SOONG_NAMESPACES += \
-#     vendor/hentai/apex
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/hentai/apex
 
 # Gboard configuration
 PRODUCT_PRODUCT_PROPERTIES += \
