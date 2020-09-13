@@ -61,7 +61,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
 # Inherit from apex config
-# $(call inherit-product, vendor/hentai/config/apex.mk)
+$(call inherit-product, vendor/hentai/config/apex.mk)
 
 # Inherit from audio config
 $(call inherit-product, vendor/hentai/config/audio.mk)

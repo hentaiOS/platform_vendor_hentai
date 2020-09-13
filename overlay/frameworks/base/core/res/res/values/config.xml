@@ -197,7 +197,7 @@
          will be used.
          See android.view.textclassifier.TextClassificationManager.
     -->
-    <!--<string name="config_servicesExtensionPackage">com.google.android.ext.services</string>-->
+    <string name="config_servicesExtensionPackage">com.google.android.ext.services</string>
 
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery">com.google.android.apps.photos</string>
@@ -253,7 +253,7 @@
     <string name="config_defaultListenerAccessPackages">com.google.android.apps.nexuslauncher:com.google.android.setupwizard:com.google.android.apps.pixelmigrate:com.google.android.as:com.google.android.projection.gearhead</string>
 
     <!-- Component name for the default module metadata provider on this device -->
-    <!--<string name="config_defaultModuleMetadataProvider">com.google.android.modulemetadata</string>-->
+    <string name="config_defaultModuleMetadataProvider">com.google.android.modulemetadata</string>
 
     <!-- This is the default launcher package with an activity to use on secondary displays that
          support system decorations.
