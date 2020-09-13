@@ -17,7 +17,7 @@
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
-PLATFORM_HENTAI_RELEASE := Queenslave
+PLATFORM_HENTAI_RELEASE := Rika
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
     PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).Furry.$(shell date +%m%d%H%M)
@@ -33,4 +33,4 @@ PRODUCT_PRODUCT_PROPERTIES += \
 $(call inherit-product-if-exists, vendor/hentai/build/target/product/security/hentai_security.mk)
 
 # Chimera signature flags
-CHIMERA_SIGNING_FLAGS := -e PrebuiltGmsCoreRvc_AdsDynamite.apk= -e PrebuiltGmsCoreRvc_DynamiteLoader.apk= -e PrebuiltGmsCoreRvc_DynamiteModulesA.apk= -e PrebuiltGmsCoreRvc_DynamiteModulesC.apk= -e PrebuiltGmsCoreRvc_GoogleCertificates.apk= -e PrebuiltGmsCoreRvc_MapsDynamite.apk= -e PrebuiltGmsCoreRvc_MeasurementDynamite.apk= -e AndroidPlatformServices.apk=
+CHIMERA_SIGNING_FLAGS := -e PrebuiltGmsCoreRvc_AdsDynamite.apk= -e PrebuiltGmsCoreRvc_DynamiteLoader.apk= -e PrebuiltGmsCoreRvc_DynamiteModulesA.apk= -e PrebuiltGmsCoreRvc_DynamiteModulesC.apk= -e PrebuiltGmsCoreRvc_GoogleCertificates.apk= -e PrebuiltGmsCoreRvc_MapsDynamite.apk= -e PrebuiltGmsCoreRvc_MeasurementDynamite.apk= -e AndroidPlatformServices.apk= -e com.android.art.release.apex= -e com.android.art.debug.apex= -e com.android.i18n.apex= -e com.android.runtime.apex= -e com.android.tethering.apex= -e com.android.vndk.current.apex=
