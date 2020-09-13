@@ -72,8 +72,8 @@ $(call inherit-product, vendor/hentai/config/bootanimation.mk)
 # Inherit from fonts config
 $(call inherit-product, vendor/hentai/config/fonts.mk)
 
-# Inherit from packages config
-$(call inherit-product, vendor/hentai/config/packages.mk)
+# Inherit from rro_overlays config
+$(call inherit-product, vendor/hentai/config/rro_overlays.mk)
 
 # Inherit from our versioning
 $(call inherit-product, vendor/hentai/config/versioning.mk)
