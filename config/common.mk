@@ -57,6 +57,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/hentai/overlay
 
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Inherit from lewdboratory config
 $(call inherit-product-if-exists, vendor/lewdboratory/packages.mk)
 
