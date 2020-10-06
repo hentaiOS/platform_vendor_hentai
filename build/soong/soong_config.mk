@@ -1,6 +1,6 @@
 add_json_str_omitempty = $(if $(strip $(2)),$(call add_json_str, $(1), $(2)))
 
-_json_contents := $(_json_contents)    "Hentai":{$(newline)
+_json_contents := $(_json_contents)    "hentai":{$(newline)
 
 # See build/core/soong_config.mk for the add_json_* functions you can use here.
 $(call add_json_bool, Supports_extended_compress_format, $(filter true,$(AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT)))
