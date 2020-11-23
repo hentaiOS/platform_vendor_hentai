@@ -25,5 +25,19 @@ PRODUCT_PACKAGES += \
     IconPackFilledPixelLauncherOverlay \
     IconPackFilledPixelThemePickerOverlay \
     IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay \
+    IconPackRoundedPixelThemePickerOverlay
+
+# Hentai Overlays
+PRODUCT_PACKAGES += \
+    HentaiConfigOverlay \
     PixelSetupWizardOverlayHentai
+
+# Google Overlays
+PRODUCT_PACKAGES += \
+    GoogleConfigOverlay \
+    GooglePermissionControllerOverlay \
+    GoogleWebViewOverlay \
+    PixelConfigOverlay2018 \
+    PixelConfigOverlay2019 \
+    PixelConfigOverlay2019Midyear \
+    PixelConfigOverlayCommon
