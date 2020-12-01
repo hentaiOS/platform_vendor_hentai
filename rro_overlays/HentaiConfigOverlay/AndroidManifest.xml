@@ -19,7 +19,7 @@
     package="com.hentai.android.overlay.hentaiconfig"
     android:versionCode="1"
     android:versionName="1.0">
-    <overlay android:isStatic="true" android:priority="99" android:targetPackage="android"/>
+    <overlay android:isStatic="true" android:priority="10" android:targetPackage="android"/>
 
     <application android:hasCode="false"/>
 </manifest>
