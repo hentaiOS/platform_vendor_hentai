@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
 # Hentai Overlays
 PRODUCT_PACKAGES += \
     HentaiConfigOverlay \
-    PixelSetupWizardOverlayHentai
+    PixelSetupWizardOverlayHentai \
+    SettingsGoogleOverlayHentai
 
 # Google Overlays
 PRODUCT_PACKAGES += \
