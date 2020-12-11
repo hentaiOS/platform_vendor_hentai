@@ -24,8 +24,6 @@ $(SIGNED_TARGET_FILES_PACKAGE): $(BUILT_TARGET_FILES_PACKAGE) \
 	    -o \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -d $(PROD_CERTS) \
-	    $(SIGNING_FLAGS) \
-	    $(APEX_SIGNING_FLAGS) \
 	    $(BUILT_TARGET_FILES_PACKAGE) $@
 
 .PHONY: signed-target-files-package

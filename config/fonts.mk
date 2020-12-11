@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
     Inter-Medium.otf \
     Inter-SemiBoldItalic.otf
 
+# Lustria family
+PRODUCT_PACKAGES += \
+    Lustria-Regular.ttf
+
 # lato family
 PRODUCT_PACKAGES += \
     Lato-BoldItalic.ttf \
@@ -79,6 +83,7 @@ PRODUCT_PACKAGES += \
 
 # Fraunces family
 PRODUCT_PACKAGES += \
+    Fraunces-Regular.ttf \
     Fraunces-SemiBold.ttf
 
 # BigShouldersText family

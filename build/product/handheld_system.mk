@@ -32,6 +32,7 @@ $(call inherit-product-if-exists, frameworks/base/data/keyboards/keyboards.mk)
 $(call inherit-product-if-exists, frameworks/webview/chromium/chromium.mk)
 
 PRODUCT_PACKAGES += \
+    preinstalled-packages-platform-handheld-product.xml \
     BasicDreams \
     BlockedNumberProvider \
     Bluetooth \
