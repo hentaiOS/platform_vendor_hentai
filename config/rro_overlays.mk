@@ -17,6 +17,7 @@
 # Overlays
 PRODUCT_PACKAGES += \
     AccentColorBlueOverlay \
+    FilesOverlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
