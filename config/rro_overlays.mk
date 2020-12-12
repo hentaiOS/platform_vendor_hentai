@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Google Overlays
 PRODUCT_PACKAGES += \
+    CellBroadcastServiceOverlay \
     FilesOverlay \
     GoogleConfigOverlay \
     GooglePermissionControllerOverlay \
