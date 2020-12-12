@@ -17,7 +17,6 @@
 # Overlays
 PRODUCT_PACKAGES += \
     AccentColorBlueOverlay \
-    FilesOverlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
     FontRubikRubikOverlay \
@@ -36,6 +35,7 @@ PRODUCT_PACKAGES += \
 
 # Google Overlays
 PRODUCT_PACKAGES += \
+    FilesOverlay \
     GoogleConfigOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
