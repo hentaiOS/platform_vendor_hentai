@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Networkstack certificate
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES := vendor/hentai/apex/NetworkStack
+
 # Enable Google Play system updates support
 PRODUCT_SOONG_NAMESPACES += \
     vendor/hentai/apex
