@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The Pixel3ROM Project
+# Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -33,27 +34,9 @@ $(eval include $(BUILD_PREBUILT))
 endef
 
 font_src_files := \
-    Inter-Black.otf \
-    Inter-ExtraBold.otf \
-    Inter-Italic.otf \
-    Inter-MediumItalic.otf \
-    Inter-Thin.otf \
-    Inter-BlackItalic.otf \
-    Inter-ExtraBoldItalic.otf \
-    Inter-Light.otf \
-    Inter-Regular.otf \
-    Inter-ThinItalic.otf \
-    Inter-Bold.otf \
-    Inter-ExtraLight.otf \
-    Inter-LightItalic.otf \
-    Inter-SemiBold.otf \
-    Inter-BoldItalic.otf \
-    Inter-ExtraLightItalic.otf \
-    Inter-Medium.otf \
-    Inter-SemiBoldItalic.otf
+    $(patsubst $(LOCAL_PATH)/%,%,$(shell find $(LOCAL_PATH) -type f))
 
 $(foreach f, $(font_src_files), $(call build-one-font-module, $(f)))
 
 build-one-font-module :=
 font_src_files :=
-
