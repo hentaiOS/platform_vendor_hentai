@@ -19,13 +19,20 @@ PRODUCT_PACKAGES += \
     AccentColorBlueOverlay \
     FontArbutusSourceOverlay \
     FontArvoLatoOverlay \
+    FontKaiOverlay \
     FontRubikRubikOverlay \
+    FontSamOverlay \
+    FontVictorOverlay \
     IconPackCircularPixelLauncherOverlay \
     IconPackCircularPixelThemePickerOverlay \
     IconPackFilledPixelLauncherOverlay \
     IconPackFilledPixelThemePickerOverlay \
     IconPackRoundedPixelLauncherOverlay \
     IconPackRoundedPixelThemePickerOverlay
+
+# Hentai Fonts
+PRODUCT_PACKAGES += \
+    FontManropeOverlay
 
 # Hentai Overlays
 PRODUCT_PACKAGES += \

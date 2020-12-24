@@ -17,6 +17,17 @@
     </family>
     <alias name="inter-medium" to="inter" weight="500" />
 
+    <family customizationType="new-named-family" name="manrope">
+        <font weight="100" style="normal">Manrope-ExtraLight.otf</font>
+        <font weight="300" style="normal">Manrope-Light.otf</font>
+        <font weight="400" style="normal">Manrope-Regular.otf</font>
+        <font weight="500" style="normal">Manrope-Medium.otf</font>
+        <font weight="600" style="normal">Manrope-SemiBold.otf</font>
+        <font weight="700" style="normal">Manrope-Bold.otf</font>
+        <font weight="900" style="normal">Manrope-ExtraBold.otf</font>
+    </family>
+    <alias name="manrope-medium" to="manrope" weight="500" />
+
     <family customizationType="new-named-family" name="arbutus-slab">
       <font weight="400" style="normal">ArbutusSlab-Regular.ttf</font>
     </family>
@@ -47,7 +58,7 @@
     </family>
     <alias name="zilla-slab-semi-bold" to="zilla-slab-medium" weight="600" />
 
-    <family customizationType="new-named-family" name="lustria">-->
+    <family customizationType="new-named-family" name="lustria">
       <font weight="400" style="normal">Lustria-Regular.ttf</font>
     </family>
     <alias name="lustria" to="lustria" weight="400"/>
