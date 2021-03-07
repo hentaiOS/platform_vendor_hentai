@@ -48,6 +48,16 @@ PRODUCT_PACKAGES += \
     Inter-Medium.otf \
     Inter-SemiBoldItalic.otf
 
+# Manrope family
+PRODUCT_PACKAGES += \
+    Manrope-Bold.otf \
+    Manrope-ExtraBold.otf \
+    Manrope-ExtraLight.otf \
+    Manrope-Light.otf \
+    Manrope-Medium.otf \
+    Manrope-Regular.otf \
+    Manrope-SemiBold.otf
+
 # Lustria family
 PRODUCT_PACKAGES += \
     Lustria-Regular.ttf
