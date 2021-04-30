@@ -17,5 +17,5 @@
 */
 -->
 <resources>
-    <string name="help_app_permissions">https://support.google.com/googleplay/answer/6270602</string>
+    <string name="help_app_permissions" translatable="false">https://support.google.com/googleplay/answer/6270602</string>
 </resources>
