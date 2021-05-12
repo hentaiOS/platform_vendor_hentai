@@ -25,7 +25,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.esim_cid_ignore=00000001 \
     ro.setupwizard.rotation_locked=true \
-    setupwizard.enable_assist_gesture_training=true \
     setupwizard.feature.baseline_setupwizard_enabled=true \
     setupwizard.feature.device_default_dark_mode=true \
     setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
@@ -40,11 +39,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # OPA configuration
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.opa.eligible_device=true
-
-# Google legal
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html
 
 # Google Play services configuration
 PRODUCT_PRODUCT_PROPERTIES += \
