@@ -27,26 +27,14 @@ PRODUCT_PACKAGES += \
     GoogleSans-Medium.ttf \
     GoogleSans-Regular.ttf
 
-# Inter family
+# SourceSans family
 PRODUCT_PACKAGES += \
-    Inter-Black.otf \
-    Inter-ExtraBold.otf \
-    Inter-Italic.otf \
-    Inter-MediumItalic.otf \
-    Inter-Thin.otf \
-    Inter-BlackItalic.otf \
-    Inter-ExtraBoldItalic.otf \
-    Inter-Light.otf \
-    Inter-Regular.otf \
-    Inter-ThinItalic.otf \
-    Inter-Bold.otf \
-    Inter-ExtraLight.otf \
-    Inter-LightItalic.otf \
-    Inter-SemiBold.otf \
-    Inter-BoldItalic.otf \
-    Inter-ExtraLightItalic.otf \
-    Inter-Medium.otf \
-    Inter-SemiBoldItalic.otf
+    SourceSans3-Bold.otf \
+    SourceSans3-BoldItalic.otf \
+    SourceSans3-Italic.otf \
+    SourceSans3-Regular.otf \
+    SourceSans3VF-Italic.otf \
+    SourceSans3VF-Roman.otf
 
 # Manrope family
 PRODUCT_PACKAGES += \
