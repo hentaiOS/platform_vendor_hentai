@@ -1,11 +1,11 @@
 <fonts-modification version="1">
     <family customizationType="new-named-family" name="source">
-        <font weight="400" style="normal">SourceSans3-Regular.otf</font>
-        <font weight="400" style="normal">SourceSans3-Italic.otf</font>
+        <font weight="400" style="normal">SourceSans3VF-Roman.otf</font>
+        <font weight="400" style="normal">SourceSans3VF-Italic.otf</font>
         <font weight="500" style="normal">SourceSans3VF-Roman.otf</font>
         <font weight="500" style="normal">SourceSans3VF-Italic.otf</font>
-        <font weight="700" style="normal">SourceSans3-Bold.otf</font>
-        <font weight="700" style="normal">SourceSans3-BoldItalic.otf</font>
+        <font weight="700" style="normal">SourceSans3VF-Roman.otf</font>
+        <font weight="700" style="normal">SourceSans3VF-Italic.otf</font>
     </family>
     <alias name="source-medium" to="source" weight="500" />
 
