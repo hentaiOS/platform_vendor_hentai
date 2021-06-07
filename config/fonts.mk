@@ -30,10 +30,6 @@ PRODUCT_PACKAGES += \
 
 # SourceSans family
 PRODUCT_PACKAGES += \
-    SourceSans3-Bold.otf \
-    SourceSans3-BoldItalic.otf \
-    SourceSans3-Italic.otf \
-    SourceSans3-Regular.otf \
     SourceSans3VF-Italic.otf \
     SourceSans3VF-Roman.otf
 
