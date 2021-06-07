@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc68e47f_cd8cd84d",
+        "filename": "fonts/fonts_customization.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2021-06-07T17:15:40Z",
+      "side": 1,
+      "message": "Should be italic",
+      "range": {
+        "startLine": 4,
+        "startChar": 34,
+        "endLine": 4,
+        "endChar": 40
+      },
+      "revId": "983e453b92b35a587d6a3a3687d5d7ef5f072bbd",
+      "serverId": "a52bd38b-7152-4807-b78b-f7d9bfbe43aa"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37d3f866_e25e9fa1",
+        "filename": "fonts/fonts_customization.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2021-06-07T17:15:40Z",
+      "side": 1,
+      "message": "This one too",
+      "range": {
+        "startLine": 6,
+        "startChar": 34,
+        "endLine": 6,
+        "endChar": 40
+      },
+      "revId": "983e453b92b35a587d6a3a3687d5d7ef5f072bbd",
+      "serverId": "a52bd38b-7152-4807-b78b-f7d9bfbe43aa"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7276207e_8e952a6e",
+        "filename": "fonts/fonts_customization.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2021-06-07T17:15:40Z",
+      "side": 1,
+      "message": "Another one",
+      "range": {
+        "startLine": 8,
+        "startChar": 34,
+        "endLine": 8,
+        "endChar": 40
+      },
+      "revId": "983e453b92b35a587d6a3a3687d5d7ef5f072bbd",
+      "serverId": "a52bd38b-7152-4807-b78b-f7d9bfbe43aa"
+    }
+  ]
+}
