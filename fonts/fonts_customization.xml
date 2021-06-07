@@ -1,21 +1,13 @@
 <fonts-modification version="1">
-    <family customizationType="new-named-family" name="inter">
-        <font weight="100" style="normal">Inter-Thin.otf</font>
-        <font weight="100" style="italic">Inter-ThinItalic.otf</font>
-        <font weight="200" style="normal">Inter-ExtraLight.otf</font>
-        <font weight="200" style="italic">Inter-ExtraLightItalic.otf</font>
-        <font weight="300" style="normal">Inter-Light.otf</font>
-        <font weight="300" style="italic">Inter-LightItalic.otf</font>
-        <font weight="400" style="normal">Inter-Regular.otf</font>
-        <font weight="400" style="italic">Inter-Italic.otf</font>
-        <font weight="500" style="normal">Inter-Medium.otf</font>
-        <font weight="500" style="italic">Inter-MediumItalic.otf</font>
-        <font weight="700" style="normal">Inter-Bold.otf</font>
-        <font weight="700" style="italic">Inter-BoldItalic.otf</font>
-        <font weight="900" style="normal">Inter-Black.otf</font>
-        <font weight="900" style="italic">Inter-BlackItalic.otf</font>
+    <family customizationType="new-named-family" name="IBMPlexSans">
+        <font weight="400" style="normal">IBMPlexSans-Regular.otf</font>
+        <font weight="400" style="italic">IBMPlexSans-Italic.otf</font>
+        <font weight="500" style="normal">IBMPlexSans-Medium.otf</font>
+        <font weight="500" style="italic">IBMPlexSans-MediumItalic.otf</font>
+        <font weight="700" style="normal">IBMPlexSans-Bold.otf</font>
+        <font weight="700" style="italic">IBMPlexSans-BoldItalic.otf</font>
     </family>
-    <alias name="inter-medium" to="inter" weight="500" />
+    <alias name="IBMPlexSans-medium" to="IBMPlexSans" weight="500" />
 
     <family customizationType="new-named-family" name="manrope">
         <font weight="100" style="normal">Manrope-ExtraLight.otf</font>
