@@ -1,13 +1,21 @@
 <fonts-modification version="1">
-    <family customizationType="new-named-family" name="source">
-        <font weight="400" style="normal">SourceSans3-Regular.otf</font>
-        <font weight="400" style="normal">SourceSans3-Italic.otf</font>
-        <font weight="500" style="normal">SourceSans3VF-Roman.otf</font>
-        <font weight="500" style="normal">SourceSans3VF-Italic.otf</font>
-        <font weight="700" style="normal">SourceSans3-Bold.otf</font>
-        <font weight="700" style="normal">SourceSans3-BoldItalic.otf</font>
+    <family customizationType="new-named-family" name="inter">
+        <font weight="100" style="normal">Inter-Thin.otf</font>
+        <font weight="100" style="italic">Inter-ThinItalic.otf</font>
+        <font weight="200" style="normal">Inter-ExtraLight.otf</font>
+        <font weight="200" style="italic">Inter-ExtraLightItalic.otf</font>
+        <font weight="300" style="normal">Inter-Light.otf</font>
+        <font weight="300" style="italic">Inter-LightItalic.otf</font>
+        <font weight="400" style="normal">Inter-Regular.otf</font>
+        <font weight="400" style="italic">Inter-Italic.otf</font>
+        <font weight="500" style="normal">Inter-Medium.otf</font>
+        <font weight="500" style="italic">Inter-MediumItalic.otf</font>
+        <font weight="700" style="normal">Inter-Bold.otf</font>
+        <font weight="700" style="italic">Inter-BoldItalic.otf</font>
+        <font weight="900" style="normal">Inter-Black.otf</font>
+        <font weight="900" style="italic">Inter-BlackItalic.otf</font>
     </family>
-    <alias name="source-medium" to="source" weight="500" />
+    <alias name="inter-medium" to="inter" weight="500" />
 
     <family customizationType="new-named-family" name="manrope">
         <font weight="100" style="normal">Manrope-ExtraLight.otf</font>
