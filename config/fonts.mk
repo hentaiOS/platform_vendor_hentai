@@ -18,29 +18,28 @@
 PRODUCT_PACKAGES += \
     ArbutusSlab-Regular.ttf
 
-# google-sans family
+# google-jakarta-sans family
 PRODUCT_PACKAGES += \
-    GoogleSans-BoldItalic.ttf \
-    GoogleSans-Bold.ttf \
-    GoogleSans-Italic.ttf \
-    GoogleSans-MediumItalic.ttf \
-    GoogleSans-Medium.ttf \
-    GoogleSans-Regular.ttf
+    GJakartaSans-BoldItalic.ttf \
+    GJakartaSans-Bold.ttf \
+    GJakartaSans-Italic.ttf \
+    GJakartaSans-MediumItalic.ttf \
+    GJakartaSans-Medium.ttf \
+    GJakartaSans-Regular.ttf
 
-# OpenSans family
+# jakarta-sans family
 PRODUCT_PACKAGES += \
-    OpenSans-Bold.ttf \
-    OpenSans-BoldItalic.ttf \
-    OpenSans-Italic.ttf \
-    OpenSans-Regular.ttf \
-    OpenSans-SemiBold.ttf \
-    OpenSans-SemiBoldItalic.ttf
+    PlusJakartaSans-BoldItalic.ttf \
+    PlusJakartaSans-Bold.ttf \
+    PlusJakartaSans-Italic.ttf \
+    PlusJakartaSans-MediumItalic.ttf \
+    PlusJakartaSans-Medium.ttf \
+    PlusJakartaSans-Regular.ttf
 
 # Manrope family
 PRODUCT_PACKAGES += \
     Manrope-Bold.otf \
     Manrope-ExtraBold.otf \
-    Manrope-ExtraLight.otf \
     Manrope-Light.otf \
     Manrope-Medium.otf \
     Manrope-Regular.otf \

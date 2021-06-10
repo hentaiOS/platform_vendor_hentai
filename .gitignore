@@ -1,2 +1,4 @@
 build/target/product/security/*
 build/target/*
+.vscode-ctags
+client_id

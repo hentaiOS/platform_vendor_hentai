@@ -1,22 +1,31 @@
 <fonts-modification version="1">
-    <family customizationType="new-named-family" name="OpenSans">
-        <font weight="400" style="normal">OpenSans-Regular.ttf</font>
-        <font weight="400" style="italic">OpenSans-Italic.ttf</font>
-        <font weight="600" style="normal">OpenSans-SemiBold.ttf</font>
-        <font weight="600" style="italic">OpenSans-SemiBoldItalic.ttf</font>
-        <font weight="700" style="normal">OpenSans-Bold.ttf</font>
-        <font weight="700" style="italic">OpenSans-BoldItalic.ttf</font>
+    <family customizationType="new-named-family" name="jakarta-sans">
+      <font weight="400" style="normal">PlusJakartaSans-Regular.ttf</font>
+      <font weight="400" style="italic">PlusJakartaSans-Italic</font>
+      <font weight="500" style="normal">PlusJakartaSans-Medium.ttf</font>
+      <font weight="500" style="italic">PlusJakartaSans-MediumItalic.ttf</font>
+      <font weight="700" style="normal">PlusJakartaSans-Bold.ttf</font>
+      <font weight="700" style="italic">PlusJakartaSans-BoldItalic.ttf</font>
     </family>
-    <alias name="OpenSans-medium" to="OpenSans" weight="600" />
+    <alias name="jakarta-sans-medium" to="jakarta-sans" weight="500" />
+
+    <family customizationType="new-named-family" name="google-sans">
+      <font weight="400" style="normal">GJakartaSans-Regular.ttf</font>
+      <font weight="400" style="italic">GJakartaSans-Italic.ttf</font>
+      <font weight="500" style="normal">GJakartaSans-Medium.ttf</font>
+      <font weight="500" style="italic">GJakartaSans-MediumItalic.ttf</font>
+      <font weight="700" style="normal">GJakartaSans-Bold.ttf</font>
+      <font weight="700" style="italic">GJakartaSans-BoldItalic.ttf</font>
+    </family>
+    <alias name="google-sans-medium" to="google-sans" weight="500" />
 
     <family customizationType="new-named-family" name="manrope">
-        <font weight="100" style="normal">Manrope-ExtraLight.otf</font>
-        <font weight="300" style="normal">Manrope-Light.otf</font>
-        <font weight="400" style="normal">Manrope-Regular.otf</font>
-        <font weight="500" style="normal">Manrope-Medium.otf</font>
-        <font weight="600" style="normal">Manrope-SemiBold.otf</font>
-        <font weight="700" style="normal">Manrope-Bold.otf</font>
-        <font weight="900" style="normal">Manrope-ExtraBold.otf</font>
+      <font weight="300" style="normal">Manrope-Light.otf</font>
+      <font weight="400" style="normal">Manrope-Regular.otf</font>
+      <font weight="500" style="normal">Manrope-Medium.otf</font>
+      <font weight="600" style="normal">Manrope-SemiBold.otf</font>
+      <font weight="700" style="normal">Manrope-Bold.otf</font>
+      <font weight="900" style="normal">Manrope-ExtraBold.otf</font>
     </family>
     <alias name="manrope-medium" to="manrope" weight="500" />
 
