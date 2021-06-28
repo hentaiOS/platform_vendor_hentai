@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018-2019 The Pixel3ROM Project
+# Copyright (C) 2021 Raphielscape LLC.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,21 +30,16 @@ PRODUCT_PACKAGES += \
 
 # jakarta-sans family
 PRODUCT_PACKAGES += \
-    PlusJakartaSans-BoldItalic.ttf \
-    PlusJakartaSans-Bold.ttf \
-    PlusJakartaSans-Italic.ttf \
-    PlusJakartaSans-MediumItalic.ttf \
-    PlusJakartaSans-Medium.ttf \
-    PlusJakartaSans-Regular.ttf
+    PlusJakartaSans-VF.ttf \
+    PlusJakartaSans-Italic-VF.ttf
 
 # Manrope family
 PRODUCT_PACKAGES += \
-    Manrope-Bold.otf \
-    Manrope-ExtraBold.otf \
-    Manrope-Light.otf \
-    Manrope-Medium.otf \
-    Manrope-Regular.otf \
-    Manrope-SemiBold.otf
+    Manrope-VF.ttf
+
+# Lexend family
+PRODUCT_PACKAGES += \
+    Lexend-VF.ttf
 
 # Lustria family
 PRODUCT_PACKAGES += \
