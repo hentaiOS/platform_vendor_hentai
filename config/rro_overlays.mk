@@ -32,7 +32,10 @@ PRODUCT_PACKAGES += \
 
 # Hentai Fonts
 PRODUCT_PACKAGES += \
-    FontManropeOverlay
+    FontManropeOverlay \
+    FontLexendOverlay \
+    FontInterOverlay \
+    FontHarmonyOS-SansOverlay
 
 # Hentai Overlays
 PRODUCT_PACKAGES += \
