@@ -1,4 +1,7 @@
 build/target/product/security/*
 build/target/*
 .vscode-ctags
+.vscode
 client_id
+*/*.sh
+*/*.py

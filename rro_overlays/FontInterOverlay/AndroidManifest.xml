@@ -14,16 +14,16 @@
     limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.theme.font.lexend"
+    package="com.android.theme.font.inter"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="android"
         android:category="android.theme.customization.font"
         android:priority="1"/>
 
-    <application android:label="@string/font_lexend_overlay" android:hasCode="false">
+    <application android:label="@string/font_inter_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="lexend,lexend-medium" />
+            android:value="sans-serif,sans-serif-medium,jakarta-sans,jakarta-sans-medium" />
     </application>
 </manifest>
