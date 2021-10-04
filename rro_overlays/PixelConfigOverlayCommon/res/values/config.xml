@@ -74,26 +74,12 @@
         <item>com.google.android.setupwizard</item>
         <item>com.google.android.apps.pixelmigrate</item>
         <item>com.google.android.dialer</item>
+        <item>com.google.android.googlequicksearchbox:com.google.android.apps.gsa.plugins.podcastplayer.channel</item>
     </string-array>
 
     <!-- List of packages that can use the Conversation space for their category messages
     notifications until they target R -->
     <string-array name="config_notificationMsgPkgsAllowedAsConvos" translatable="false">
-        <item>com.facebook.orca</item>
-        <item>com.instagram.android</item>
-        <item>com.whatsapp</item>
-        <item>com.snapchat.android</item>
-        <item>jp.naver.line.android</item>
-        <item>com.kakao.talk</item>
-        <item>com.discord</item>
-        <item>org.thoughtcrime.securesms</item>
-        <item>com.groupme.android</item>
-        <item>org.telegram.messenger</item>
-        <item>com.twitter.android</item>
-        <item>com.viber.voip</item>
-        <item>com.linkedin.android</item>
-        <item>com.tencent.mm</item>
-        <item>com.Slack</item>
     </string-array>
 
     <!-- Names of packages that should not be suspended when personal use is blocked by policy. -->
@@ -267,4 +253,40 @@
          corresponding launch mode set in AndroidManifest.
          {@see android.view.Display#FLAG_SHOULD_SHOW_SYSTEM_DECORATIONS} -->
     <string name="config_secondaryHomePackage" translatable="false">com.google.android.apps.nexuslauncher</string>
+
+    <!-- Package name of the on-device intelligent processor for ambient audio.
+         Ambient audio is the sound surrounding the device captured by the DSP
+         or the microphone. In other words, the device is continuously
+         processing audio data in background. -->
+    <string name="config_systemAmbientAudioIntelligence">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for audio. The
+         difference of 'ambient audio' and 'audio' is that in 'audio', the
+         user intentionally and consciously aware that the device is recording
+         or using the microphone.
+         -->
+    <string name="config_systemAudioIntelligence">com.google.android.as</string>
+
+    <!-- Chooser image editing activity.  Must handle ACTION_EDIT image/png intents.
+         If omitted, image editing will not be offered via Chooser.
+         This name is in the ComponentName flattened format (package/class) [DO NOT TRANSLATE]  -->
+    <string name="config_systemImageEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
+
+    <!-- Package name of the on-device intelligent processor for notification.
+         -->
+    <string name="config_systemNotificationIntelligence">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for text. Examples
+        include providing autofill functionality based on incoming text
+        messages. -->
+    <string name="config_systemTextIntelligence">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for system UI
+         features. Examples include the search functionality or the app
+         predictor. -->
+    <string name="config_systemUiIntelligence">com.google.android.as</string>
+
+    <!-- Package name of the on-device intelligent processor for visual
+         features. Examples include the autorotate feature. -->
+    <string name="config_systemVisualIntelligence">com.google.android.as</string>
 </resources>

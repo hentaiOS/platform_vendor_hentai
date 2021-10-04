@@ -23,7 +23,6 @@
         <item>com.android.vending</item>
         <item>com.google.android.gms</item>
         <item>com.google.android.contacts</item>
-        <item>com.google.android.apps.safetyhub</item>
         <item>com.google.android.apps.wellbeing</item>
         <item>com.google.android.GoogleCamera</item>
         <item>com.google.android.googlequicksearchbox</item>
@@ -38,6 +37,10 @@
         <item>com.google.android.documentsui</item>
         <item>com.google.android.apps.nbu.files</item>
         <item>com.google.android.apps.tips</item>
+        <item>com.google.android.apps.assistant</item>
+        <item>com.google.android.apps.searchlite</item>
         <item>com.google.android.cellbroadcastreceiver</item>
+        <item>com.google.android.projection.gearhead</item>
+        <item>com.google.android.apps.accessibility.voiceaccess</item>
     </string-array>
 </resources>
