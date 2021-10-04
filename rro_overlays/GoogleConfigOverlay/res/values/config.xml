@@ -74,6 +74,9 @@
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
+     <!-- PLACEHOLDER -->
+     <string name="config_primaryLocationTimeZoneProviderPackageName" translatable="false">com.google.android.gms</string>
+
     <!-- The package name for the OEM custom system textclassifier service.
          This service must be trusted, as it can be activated without explicit consent of the user.
          Example: "com.android.textclassifier"
@@ -83,8 +86,26 @@
     -->
     <string name="config_servicesExtensionPackage" translatable="false">com.google.android.ext.services</string>
 
+     <!-- PLACEHOLDER -->
+     <string name="config_systemActivityRecognizer" translatable="false">com.google.android.gms</string>
+
+     <!-- PLACEHOLDER -->
+     <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
+
+     <!-- PLACEHOLDER -->
+     <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
+
+     <!-- PLACEHOLDER -->
+     <string name="config_systemContacts" translatable="false">com.google.android.contacts</string>
+
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
+
+    <!-- PLACEHOLDER -->
+    <string name="config_systemSpeechRecognizer" translatable="false">com.google.android.tts</string>
+
+    <!-- PLACEHOLDER -->
+    <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
 
     <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_class_name" translatable="false">com.android.alarmclock.DigitalAppWidgetProvider</string>
@@ -92,10 +113,27 @@
     <!-- Package name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_package_name" translatable="false">com.google.android.deskclock</string>
 
+     <!-- PLACEHOLDER -->
+    <string-array name="config_accessibility_allowed_install_source" translatable="false">
+        <item>com.android.vending</item>
+    </string-array>
+
     <!-- Additional non-platform defined system settings exposed to Instant Apps -->
     <string-array name="config_allowedSecureInstantAppSettings" translatable="false">
         <item>advertising_id</item>
         <item>limit_ad_tracking</item>
+    </string-array>
+
+     <!-- PLACEHOLDER -->
+    <string-array name="config_companionDeviceCerts" translatable="false">
+        <item>92:3F:B8:D6:48:71:01:14:8D:8D:C0:F7:90:11:5D:BA:34:CF:0E:A3:AA:5D:3B:B0:74:D2:D9:73:58:8C:39:3A</item>
+        <item>48:ED:00:58:D1:B6:63:8E:39:A6:E4:C2:DF:1C:4D:5F:DF:59:3F:69:6B:F3:1B:09:A8:8F:93:14:1E:AF:60:0F</item>
+    </string-array>
+
+     <!-- PLACEHOLDER -->
+    <string-array name="config_companionDevicePackages" translatable="false">
+        <item>com.google.android.apps.wear.companion</item>
+        <item>com.google.android.apps.wear.companion</item>
     </string-array>
 
     <!-- The list of IMEs which should be disabled until used.
@@ -158,4 +196,13 @@
          correctly use them when installed on your device.  Otherwise, keep this disabled
          so that applications can still use their own mechanisms. -->
     <bool name="config_enableAutoPowerModes">true</bool>
+
+     <!-- PLACEHOLDER -->
+     <bool name="config_enableGeolocationTimeZoneDetection">true</bool>
+
+     <!-- PLACEHOLDER -->
+    <bool name="config_enablePrimaryLocationTimeZoneProvider">true</bool>
+
+     <!-- PLACEHOLDER -->
+    <bool name="config_enableSecondaryLocationTimeZoneProvider">false</bool>
 </resources>
