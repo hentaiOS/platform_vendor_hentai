@@ -51,22 +51,6 @@
     </family>
     <alias name="jakarta-sans-medium" to="jakarta-sans" weight="500" />
 
-    <family customizationType="new-named-family" name="lexend">
-      <font weight="400" style="normal">Lexend-VF.ttf
-        <axis tag="wght" stylevalue="400"/>
-      </font>
-      <font weight="500" style="normal">Lexend-VF.ttf
-        <axis tag="wght" stylevalue="500"/>
-      </font>
-      <font weight="600" style="normal">Lexend-VF.ttf
-        <axis tag="wght" stylevalue="600"/>
-      </font>
-      <font weight="700" style="normal">Lexend-VF.ttf
-        <axis tag="wght" stylevalue="700"/>
-      </font>
-    </family>
-    <alias name="lexend-medium" to="lexend" weight="500" />
-
     <family customizationType="new-named-family" name="google-sans">
       <font weight="400" style="normal">GJakartaSans-VF.ttf
         <axis tag="GRAD" stylevalue="0"/>
@@ -209,22 +193,6 @@
       </font>
     </family>
 
-    <family customizationType="new-named-family" name="manrope">
-      <font weight="500" style="normal">Manrope-VF.ttf
-        <axis tag="wght" stylevalue="500"/>
-      </font>
-      <font weight="600" style="normal">Manrope-VF.ttf
-        <axis tag="wght" stylevalue="600"/>
-      </font>
-      <font weight="700" style="normal">Manrope-VF.ttf
-        <axis tag="wght" stylevalue="700"/>
-      </font>
-      <font weight="800" style="normal">Manrope-VF.ttf
-        <axis tag="wght" stylevalue="800"/>
-      </font>
-    </family>
-    <alias name="manrope-medium" to="manrope" weight="500" />
-
     <family customizationType="new-named-family" name="harmonyos-sans">
       <font weight="100" style="normal">HarmonyOS-Sans-Thin.ttf</font>
       <font weight="100" style="italic">HarmonyOS-Sans-ThinItalic.ttf</font>
@@ -282,8 +250,16 @@
     <alias name="karla" to="karla" weight="400"/>
 
     <family customizationType="new-named-family" name="fraunces">
-      <font weight="400" style="normal">Fraunces-Regular.ttf</font>
-      <font weight="600" style="normal">Fraunces-SemiBold.ttf</font>
+      <font
+        weight="400"
+        style="normal"
+        postScriptName="Fraunces144ptS100Black-OpticalSize9Weight347soften100wonk0"
+       >Fraunces-Regular.ttf</font>
+    <font
+        weight="600"
+        style="normal"
+        postScriptName="Fraunces144ptS100Black-OpticalSize9Weight640soften100wonk0"
+        >Fraunces-SemiBold.ttf</font>
     </family>
     <alias name="fraunces" to="fraunces" weight="400"/>
     <alias name="fraunces-semi-bold" to="fraunces" weight="600"/>
