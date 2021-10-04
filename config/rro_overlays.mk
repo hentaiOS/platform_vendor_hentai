@@ -14,29 +14,6 @@
 # limitations under the License.
 #
 
-# Overlays
-PRODUCT_PACKAGES += \
-    AccentColorBlueOverlay \
-    FontArbutusSourceOverlay \
-    FontArvoLatoOverlay \
-    FontKaiOverlay \
-    FontRubikRubikOverlay \
-    FontSamOverlay \
-    FontVictorOverlay \
-    IconPackCircularPixelLauncherOverlay \
-    IconPackCircularPixelThemePickerOverlay \
-    IconPackFilledPixelLauncherOverlay \
-    IconPackFilledPixelThemePickerOverlay \
-    IconPackRoundedPixelLauncherOverlay \
-    IconPackRoundedPixelThemePickerOverlay
-
-# Hentai Fonts
-PRODUCT_PACKAGES += \
-    FontManropeOverlay \
-    FontLexendOverlay \
-    FontInterOverlay \
-    FontHarmonyOS-SansOverlay
-
 # Hentai Overlays
 PRODUCT_PACKAGES += \
     HentaiConfigOverlay \
