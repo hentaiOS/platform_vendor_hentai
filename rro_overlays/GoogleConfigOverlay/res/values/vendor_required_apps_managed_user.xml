@@ -31,5 +31,6 @@
         <item>com.google.android.apps.messaging</item>
         <item>com.google.android.documentsui</item>
         <item>com.google.android.apps.nbu.files</item>
+        <item>com.google.android.apps.accessibility.voiceaccess</item>
     </string-array>
 </resources>
