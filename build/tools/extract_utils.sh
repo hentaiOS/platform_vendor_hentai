@@ -444,6 +444,9 @@ function write_blueprint_packages() {
             if [ "$USE_PLATFORM_CERTIFICATE" = "true" ]; then
                 printf '\tcertificate: "platform",\n'
             fi
+            printf '\t// Disable dexpreopt and verify_uses_libraries check as the app,\n'
+            printf '\t// contains no Java code to be dexpreopted.\n'
+            printf '\tenforce_uses_libs: false,\n'
         elif [ "$CLASS" = "JAVA_LIBRARIES" ]; then
             printf 'dex_import {\n'
             printf '\tname: "%s",\n' "$PKGNAME"
