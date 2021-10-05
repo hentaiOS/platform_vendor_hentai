@@ -15,37 +15,13 @@
  */
 
 prebuilt_font {
-    name: "GJakartaSans-BoldItalic.ttf",
-    src: "GJakartaSans-BoldItalic.ttf",
+    name: "GJakartaSans-Italic-VF.ttf",
+    src: "GJakartaSans-Italic-VF.ttf",
     product_specific: true,
 }
 
 prebuilt_font {
-    name: "GJakartaSans-Bold.ttf",
-    src: "GJakartaSans-Bold.ttf",
-    product_specific: true,
-}
-
-prebuilt_font {
-    name: "GJakartaSans-Italic.ttf",
-    src: "GJakartaSans-Italic.ttf",
-    product_specific: true,
-}
-
-prebuilt_font {
-    name: "GJakartaSans-MediumItalic.ttf",
-    src: "GJakartaSans-MediumItalic.ttf",
-    product_specific: true,
-}
-
-prebuilt_font {
-    name: "GJakartaSans-Medium.ttf",
-    src: "GJakartaSans-Medium.ttf",
-    product_specific: true,
-}
-
-prebuilt_font {
-    name: "GJakartaSans-Regular.ttf",
-    src: "GJakartaSans-Regular.ttf",
+    name: "GJakartaSans-VF.ttf",
+    src: "GJakartaSans-VF.ttf",
     product_specific: true,
 }
