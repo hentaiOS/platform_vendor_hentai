@@ -19,12 +19,8 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
-    GJakartaSans-BoldItalic.ttf \
-    GJakartaSans-Bold.ttf \
-    GJakartaSans-Italic.ttf \
-    GJakartaSans-MediumItalic.ttf \
-    GJakartaSans-Medium.ttf \
-    GJakartaSans-Regular.ttf \
+    GJakartaSans-Italic-VF.ttf \
+    GJakartaSans-VF.ttf \
     HarmonyOS-Sans-BlackItalic.ttf \
     HarmonyOS-Sans-Black.ttf \
     HarmonyOS-Sans-BoldItalic.ttf \
@@ -43,5 +39,4 @@ PRODUCT_PACKAGES += \
     PlusJakartaSans-VF.ttf \
 
 # Register vendor fonts
-PRODUCT_COPY_FILES += \
-    vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+PRODUCT_COPY_FILES += vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
