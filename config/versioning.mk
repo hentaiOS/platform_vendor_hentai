@@ -17,7 +17,7 @@
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 
-PLATFORM_HENTAI_RELEASE := Rika
+PLATFORM_HENTAI_RELEASE := SaltyIceCream
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
     PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).Furry.$(shell date +%m%d%H%M)
