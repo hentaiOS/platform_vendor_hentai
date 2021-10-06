@@ -26,6 +26,24 @@ prebuilt_apex {
     prefer: true,
 }
 
+// Google com.google.android.appsearch.apex
+prebuilt_apex {
+    name: "com.google.android.appsearch",
+    src: "com.google.android.appsearch.apex",
+    overrides: ["com.android.appsearch"],
+    owner: "google",
+    prefer: true,
+}
+
+// Google com.google.android.art
+prebuilt_apex {
+    name: "com.google.android.art",
+    src: "com.google.android.art.apex",
+    overrides: ["com.android.art"],
+    owner: "google",
+    prefer: true,
+}
+
 // Google com.google.android.cellbroadcast
 prebuilt_apex {
     name: "com.google.android.cellbroadcast",
@@ -125,6 +143,15 @@ prebuilt_apex {
     prefer: true,
 }
 
+// Google com.google.android.scheduling
+prebuilt_apex {
+    name: "com.google.android.scheduling",
+    src: "com.google.android.scheduling.apex",
+    overrides: ["com.android.scheduling"],
+    owner: "google",
+    prefer: true,
+}
+
 // Google com.google.android.sdkext
 prebuilt_apex {
     name: "com.google.android.sdkext",
@@ -154,8 +181,8 @@ prebuilt_apex {
 
 // Google com.google.android.tzdata2
 prebuilt_apex {
-    name: "com.google.android.tzdata2",
-    src: "com.google.android.tzdata2.apex",
+    name: "com.google.android.tzdata3",
+    src: "com.google.android.tzdata3.apex",
     overrides: ["com.android.tzdata"],
     owner: "google",
     prefer: true,
@@ -166,6 +193,15 @@ prebuilt_apex {
     name: "com.google.android.wifi",
     src: "com.google.android.wifi.apex",
     overrides: ["com.android.wifi"],
+    owner: "google",
+    prefer: true,
+}
+
+// Google com.google.mainline.primary.libs
+prebuilt_apex {
+    name: "com.google.mainline.primary.libs",
+    src: "com.google.mainline.primary.libs.apex",
+    overrides: ["com.mainline.primary.libs"],
     owner: "google",
     prefer: true,
 }
