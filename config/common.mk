@@ -52,7 +52,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Use gestures by default
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
 # Turn off storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
