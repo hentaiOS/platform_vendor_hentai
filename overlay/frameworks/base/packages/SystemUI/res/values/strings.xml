@@ -23,17 +23,11 @@
     <!-- Footer vpn present text [CHAR LIMIT=50] -->
     <string name="branded_vpn_footer">Connection secured by Google</string>
 
+    <!-- Dock default activity -->
+    <string name="config_dockComponent">com.google.android.systemui.dreamliner.WirelessChargerImpl</string>
+
     <!-- Screenshot editing default activity.  Must handle ACTION_EDIT image/png intents.
          Blank sends the user to the Chooser first.
          This name is in the ComponentName flattened format (package/class)  -->
     <string name="config_screenshotEditor">com.google.android.markup/com.google.android.markup.AnnotateActivity</string>
-
-    <!-- The default tiles to display in QuickSettings -->
-    <string name="quick_settings_tiles_default">wifi,bt,dnd,flashlight,rotation,battery,cell,airplane,night,screenrecord,custom(com.google.android.gms/.nearby.sharing.SharingTileService)</string>
-
-    <!-- Launcher package name for overlaying icons. -->
-    <string name="launcher_overlayable_package">com.google.android.apps.nexuslauncher</string>
-
-    <!-- ThemePicker package name for overlaying icons. -->
-    <string name="themepicker_overlayable_package">com.google.android.apps.wallpaper</string>
 </resources>
