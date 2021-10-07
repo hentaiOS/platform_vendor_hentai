@@ -16,7 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.captiveportallogin">
+    package="com.android.captiveportallogin.overlay">
     <overlay android:isStatic="true" android:priority="0" android:targetName="CaptivePortalLoginConfig" android:targetPackage="com.google.android.captiveportallogin"/>
 
     <application android:hasCode="false" android:label="CaptivePortalLoginOverlay"/>

@@ -16,7 +16,7 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.google.android.overlay.googlewebview">
+    package="com.android.managedprovisioning.overlay">
     <overlay android:isStatic="true" android:priority="210" android:targetName="ManagedProvisioning" android:targetPackage="com.android.managedprovisioning"/>
 
     <application android:hasCode="false" android:label="ManagedProvisioningPixelOverlay"/>
