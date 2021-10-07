@@ -16,11 +16,12 @@
 #
 
 SIGNED_TARGET_FILES_PACKAGE := $(PRODUCT_OUT)/$(TARGET_DEVICE)-target_files-$(BUILD_ID_LC).zip
+SIGN_FROM_TARGET_FILES := $(HOST_OUT_EXECUTABLES)/sign_target_files_apks$(HOST_EXECUTABLE_SUFFIX)
 
 $(SIGNED_TARGET_FILES_PACKAGE): $(BUILT_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/sign_target_files_apks
 	@echo "Signed target files package: $@"
-	    ./build/tools/releasetools/sign_target_files_apks --verbose \
+	    $(SIGN_FROM_TARGET_FILES) --verbose \
 	    -o \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -d $(PROD_CERTS) \
@@ -38,7 +39,7 @@ $(PROD_OTA_PACKAGE_TARGET): $(BRO)
 $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/ota_from_target_files
 	@echo "hentai production: $@"
-	    ./build/tools/releasetools/ota_from_target_files --verbose \
+	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
@@ -58,7 +59,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(BRO)
 $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		build/tools/releasetools/ota_from_target_files
 	@echo "hentai incremental production: $@"
-	    ./build/tools/releasetools/ota_from_target_files --verbose \
+	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
