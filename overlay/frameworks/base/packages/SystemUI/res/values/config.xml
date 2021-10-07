@@ -24,6 +24,16 @@
         <item>com.google.android.apps.chromecast.app</item>
     </string-array>
 
+    <!-- Audio product ID -->
+    <integer-array name="config_nfc_conflict_with_usb_audio_productid">
+        <item>0x00005034</item>
+    </integer-array>
+
+    <!-- Audio vendor ID -->
+    <integer-array name="config_nfc_conflict_with_usb_audio_vendorid">
+        <item>0x000018D1</item>
+    </integer-array>
+
     <!-- SystemUI Plugins that can be loaded on user builds. -->
     <string-array name="config_pluginWhitelist" translatable="false">
         <item>com.android.systemui</item>
@@ -33,4 +43,8 @@
     <!-- Control whether status bar should distinguish HSPA data icon form UMTS
     data icon on devices -->
     <bool name="config_hspa_data_distinguishable">true</bool>
+
+    <!-- Enable WLC/NFC conflicts -->
+    <bool name="config_nfc_conflict_with_usb_audio">true</bool>
+    <bool name="config_nfc_conflict_with_wlc">true</bool>
 </resources>

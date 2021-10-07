@@ -17,9 +17,6 @@
 */
 -->
 <resources>
-    <!-- Vibration duration for GlowPadView used in SearchPanelView -->
-    <integer name="config_search_panel_view_vibration_duration">10</integer>
-
     <!-- Whether to show a warning notification when device's skin temperature is high. -->
     <integer name="config_showTemperatureWarning">1</integer>
 

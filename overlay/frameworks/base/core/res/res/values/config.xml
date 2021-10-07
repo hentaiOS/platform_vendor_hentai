@@ -69,11 +69,7 @@
         <item>com.android.location.fused</item>
     </string-array>
 
-    <!-- User restrictions set when the first user is created.
-         Note: Also update appropriate overlay files. -->
-    <string-array name="config_defaultFirstUserRestrictions">
-        <item>no_oem_unlock</item>
+    <string-array name="config_locationExtraPackageNames">
+     <item>com.google.android.gms.location.history</item>
     </string-array>
-
-    <string-array name="config_locationExtraPackageNames">com.google.android.gms.location.history</string-array>
 </resources>
