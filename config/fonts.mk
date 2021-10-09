@@ -33,8 +33,6 @@ PRODUCT_PACKAGES += \
     HarmonyOS-Sans-Regular.ttf \
     HarmonyOS-Sans-ThinItalic.ttf \
     HarmonyOS-Sans-Thin.ttf \
-    InterVF-Italic.ttf \
-    InterVF-Roman.ttf \
     Lexend-VF.ttf \
     Manrope-VF.ttf \
 
