@@ -15,41 +15,41 @@
     limitations under the License.
 -->
 <fonts-modification version="1">
-    <family customizationType="new-named-family" name="jakarta-sans">
-      <font weight="400" style="normal">PlusJakartaSans-VF.ttf
+    <family customizationType="new-named-family" name="inter">
+      <font weight="400" style="normal">InterVF-Roman.ttf
         <axis tag="ital" stylevalue="0"/>
         <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="400" style="italic">PlusJakartaSans-Italic-VF.ttf
+      <font weight="400" style="italic">InterVF-Italic.ttf
           <axis tag="ital" stylevalue="1"/>
           <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="500" style="normal">PlusJakartaSans-VF.ttf
+      <font weight="500" style="normal">InterVF-Roman.ttf
           <axis tag="ital" stylevalue="0"/>
           <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="500" style="italic">PlusJakartaSans-Italic-VF.ttf
+      <font weight="500" style="italic">InterVF-Italic.ttf
           <axis tag="ital" stylevalue="1"/>
           <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="600" style="normal">PlusJakartaSans-VF.ttf
+      <font weight="600" style="normal">InterVF-Roman.ttf
           <axis tag="ital" stylevalue="0"/>
           <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="600" style="italic">PlusJakartaSans-Italic-VF.ttf
+      <font weight="600" style="italic">InterVF-Italic.ttf
           <axis tag="ital" stylevalue="1"/>
           <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="700" style="normal">PlusJakartaSans-VF.ttf
+      <font weight="700" style="normal">InterVF-Roman.ttf
           <axis tag="ital" stylevalue="0"/>
           <axis tag="wght" stylevalue="700"/>
       </font>
-      <font weight="700" style="italic">PlusJakartaSans-Italic-VF.ttf
+      <font weight="700" style="italic">InterVF-Italic.ttf
           <axis tag="ital" stylevalue="1"/>
           <axis tag="wght" stylevalue="700"/>
       </font>
     </family>
-    <alias name="jakarta-sans-medium" to="jakarta-sans" weight="500" />
+    <alias name="inter-medium" to="inter" weight="500" />
 
     <family customizationType="new-named-family" name="lexend">
       <font weight="400" style="normal">Lexend-VF.ttf
@@ -68,42 +68,42 @@
     <alias name="lexend-medium" to="lexend" weight="500" />
 
     <family customizationType="new-named-family" name="google-sans">
-      <font weight="400" style="normal">GJakartaSans-VF.ttf
+      <font weight="400" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="500" style="normal">GJakartaSans-VF.ttf
+      <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="600" style="normal">GJakartaSans-VF.ttf
+      <font weight="600" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="700" style="normal">GJakartaSans-VF.ttf
+      <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="700"/>
       </font>
-      <font weight="400" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="400" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="500" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="500" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="600" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="600" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="700" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="700" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="700"/>
@@ -111,7 +111,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-medium">
-      <font weight="500" style="normal">GJakartaSans-VF.ttf
+      <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="500"/>
@@ -119,7 +119,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-bold">
-      <font weight="700" style="normal">GJakartaSans-VF.ttf
+      <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="18.0"/>
         <axis tag="wght" stylevalue="700"/>
@@ -127,42 +127,42 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text">
-      <font weight="400" style="normal">GJakartaSans-VF.ttf
+      <font weight="400" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="500" style="normal">GJakartaSans-VF.ttf
+      <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="600" style="normal">GJakartaSans-VF.ttf
+      <font weight="600" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="700" style="normal">GJakartaSans-VF.ttf
+      <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="700"/>
       </font>
-      <font weight="400" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="400" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="400"/>
       </font>
-      <font weight="500" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="500" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="500"/>
       </font>
-      <font weight="600" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="600" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="600"/>
       </font>
-      <font weight="700" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="700" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="700"/>
@@ -170,7 +170,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text-medium">
-      <font weight="500" style="normal">GJakartaSans-VF.ttf
+      <font weight="500" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="500"/>
@@ -178,7 +178,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text-bold">
-      <font weight="700" style="normal">GJakartaSans-VF.ttf
+      <font weight="700" style="normal">GInterVF-Roman.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="700"/>
@@ -186,7 +186,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text-italic">
-      <font weight="400" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="400" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="400"/>
@@ -194,7 +194,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text-medium-italic">
-      <font weight="500" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="500" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="500"/>
@@ -202,7 +202,7 @@
     </family>
 
     <family customizationType="new-named-family" name="google-sans-text-bold-italic">
-      <font weight="700" style="italic">GJakartaSans-Italic-VF.ttf
+      <font weight="700" style="italic">GInterVF-Italic.ttf
         <axis tag="GRAD" stylevalue="0"/>
         <axis tag="opsz" stylevalue="17.0"/>
         <axis tag="wght" stylevalue="700"/>
