@@ -21,10 +21,10 @@
     <bool name="config_adaptive_sleep_available">false</bool>
 
     <!-- Name of a font family to use for headlines. If empty, falls back to platform default -->
-    <string name="config_headlineFontFamily" translatable="false">jakarta-sans</string>
+    <string name="config_headlineFontFamily" translatable="false">inter</string>
 
     <!-- Name of the font family used for system surfaces where the font should use medium weight -->
-    <string name="config_headlineFontFamilyMedium" translatable="false">jakarta-sans-medium</string>
+    <string name="config_headlineFontFamilyMedium" translatable="false">inter-medium</string>
 
     <!-- Name of a font family to use for body text. -->
     <string name="config_bodyFontFamily" translatable="false">harmonyos-sans</string>

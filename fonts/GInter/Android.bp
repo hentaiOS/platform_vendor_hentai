@@ -15,13 +15,13 @@
  */
 
 prebuilt_font {
-    name: "PlusJakartaSans-Italic-VF.ttf",
-    src: "PlusJakartaSans-Italic-VF.ttf",
+    name: "GInterVF-Italic.ttf",
+    src: "GInterVF-Italic.ttf",
     product_specific: true,
 }
 
 prebuilt_font {
-    name: "PlusJakartaSans-VF.ttf",
-    src: "PlusJakartaSans-VF.ttf",
+    name: "GInterVF-Roman.ttf",
+    src: "GInterVF-Roman.ttf",
     product_specific: true,
 }
