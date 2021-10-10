@@ -48,7 +48,7 @@
     <dimen name="config_buttonCornerRadius">4.0dip</dimen>
 
     <!-- Corner radius of system dialogs -->
-    <dimen name="config_dialogCornerRadius">8.0dip</dimen>
+    <dimen name="config_dialogCornerRadius">28.0dip</dimen>
 
     <!-- Corner radius of system progress bars -->
     <dimen name="config_progressBarCornerRadius">1000.0dip</dimen>
