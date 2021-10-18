@@ -19,6 +19,7 @@
 <resources>
     <!-- System-provided radius for the background view of app widgets. The resolved value of this resource may change at runtime. -->
     <dimen name="system_app_widget_background_radius">28.0dip</dimen>
+
     <!-- System-provided radius for inner views on app widgets. The resolved value of this resource may change at runtime. -->
     <dimen name="system_app_widget_inner_radius">20.0dip</dimen>
 </resources>

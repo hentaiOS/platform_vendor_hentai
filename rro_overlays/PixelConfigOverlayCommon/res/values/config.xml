@@ -41,6 +41,9 @@
     <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
     <bool name="config_useRoundIcon">true</bool>
 
+    <!-- Flag indicating whether the volume panel should show remote sessions. -->
+    <bool name="config_volumeShowRemoteSessions">true</bool>
+
     <!-- Corner radius for bottom sheet system dialogs -->
     <dimen name="config_bottomDialogCornerRadius">16.0dip</dimen>
 
@@ -122,6 +125,9 @@
 
     <!-- The package name for the default bug report handler app from power menu short press. This app must be whitelisted. -->
     <string name="config_defaultBugReportHandlerApp" translatable="false">com.google.android.apps.internal.betterbug</string>
+
+    <!-- When true, enables the allowlisted app to upload profcollect reports. -->
+    <bool name="config_profcollectReportUploaderEnabled">true</bool>
 
     <!-- The package name for the system's content capture service.
          This service must be trusted, as it can be activated without explicit consent of the user.
@@ -289,4 +295,10 @@
     <!-- Package name of the on-device intelligent processor for visual
          features. Examples include the autorotate feature. -->
     <string name="config_systemVisualIntelligence">com.google.android.as</string>
+
+    <!-- Whether this device is supporting the microphone toggle -->
+    <bool name="config_supportsMicToggle">true</bool>
+
+    <!-- Whether this device is supporting the camera toggle -->
+    <bool name="config_supportsCamToggle">true</bool>    
 </resources>
