@@ -17,5 +17,5 @@
 */
 -->
 <resources>
-    <string name="metadata_sync_pacakge">com.google.android.gms</string>
+    <string name="metadata_sync_pacakge" translatable="false">com.google.android.gms</string>
 </resources>
