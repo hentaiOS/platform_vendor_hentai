@@ -55,12 +55,12 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Package name for the device provisioning package. -->
-    <string name="config_deviceProvisioningPackage">com.google.android.apps.work.oobconfig</string>
+    <string name="config_deviceProvisioningPackage" translatable="false">com.google.android.apps.work.oobconfig</string>
 
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
     -->
-    <string name="config_wallpaperCropperPackage">com.google.android.apps.wallpaper</string>
+    <string name="config_wallpaperCropperPackage" translatable="false">com.google.android.apps.wallpaper</string>
 
     <!-- Package name(s) containing location provider support. These packages will be auto-granted
          several permissions by the system, and should be system packages. -->

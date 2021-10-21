@@ -18,5 +18,5 @@
 -->
 <resources>
     <!-- Class name for the default apn service -->
-    <string name="apn_source_service">com.google.android.carrier/.ApnSourceService</string>
+    <string name="apn_source_service" translatable="false">com.google.android.carrier/.ApnSourceService</string>
 </resources>
