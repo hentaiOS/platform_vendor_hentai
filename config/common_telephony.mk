@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 # Carriers Databases
 PRODUCT_PACKAGES += \
     a1_at.pb \
+    ahamo_jp.pb \
     airtel_in.pb \
     apt_tw.pb \
     assurance_us.pb \
