@@ -23,4 +23,7 @@
 
     <!-- Default screen brightness, from 0 to 255.  102 is 40%. -->
     <bool name="def_screen_brightness_automatic_mode">true</bool>
+
+    <!-- Default for Settings.System.VIBRATE_WHEN_RINGING -->
+    <bool name="def_vibrate_when_ringing">true</bool>
 </resources>

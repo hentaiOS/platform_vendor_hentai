@@ -21,7 +21,7 @@
     <bool name="hac_enabled">true</bool>
 
     <!-- Class name for the default main Dialer activity -->
-    <string name="dialer_default_class">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
+    <string name="dialer_default_class" translatable="false">com.google.android.dialer.extensions.GoogleDialtactsActivity</string>
 
     <!-- Whether the device supports dialing emergency RTT calls when there's no SIM card installed
     -->
@@ -31,10 +31,10 @@
     <bool name="vvm3_enabled">true</bool>
 
     <!-- The package name for the platform carrier config app, bundled with system image. -->
-    <string name="platform_carrier_config_package">com.google.android.carrier</string>
+    <string name="platform_carrier_config_package" translatable="false">com.google.android.carrier</string>
 
     <!-- The package name for the platform number verification supplier app. -->
-    <string name="platform_number_verification_package">com.google.android.gms</string>
+    <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
 
     <!-- The country list that shortcut view can be enabled. -->
     <string-array name="config_countries_to_enable_shortcut_view">

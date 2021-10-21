@@ -17,6 +17,6 @@
 */
 -->
 <resources>
-    <string name="android_start_title">Pixel is starting…</string>
-    <string name="android_upgrading_title">Pixel is updating…</string>
+    <string name="android_start_title" translatable="false">Pixel is starting…</string>
+    <string name="android_upgrading_title" translatable="false">Pixel is updating…</string>
 </resources>
