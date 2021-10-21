@@ -23,12 +23,13 @@ PRODUCT_PACKAGES += \
 # Google Overlays
 PRODUCT_PACKAGES += \
     CaptivePortalLoginOverlay \
+    CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
     GoogleConfigOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
-    ManagedProvisioningPixelOverlay \
+    NetworkStackOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
