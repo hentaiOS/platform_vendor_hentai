@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
     vendor/hentai/audio/ui/reverse_charging_start.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/reverse_charging_start.ogg
 
 # Change default sounds
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.ringtone=Fresh_start.ogg \
     ro.config.notification_sound=Eureka.ogg \
     ro.config.alarm_alert=Your_new_adventure.ogg
