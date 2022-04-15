@@ -82,6 +82,9 @@ $(call inherit-product, vendor/hentai/config/bootanimation.mk)
 # Inherit from gfonts config
 $(call inherit-product, vendor/hentai/config/gfonts.mk)
 
+# Inherit from packages config
+$(call inherit-product, vendor/hentai/config/packages.mk)
+
 # Inherit from fonts config
 $(call inherit-product, vendor/hentai/config/fonts.mk)
 
