@@ -90,6 +90,7 @@ PRODUCT_PACKAGES += \
     liberty_pr.pb \
     linemo_jp.pb \
     luckymobile_ca.pb \
+    m1_sg.pb \
     metropcs_us.pb \
     movistar_es.pb \
     o2_de.pb \
@@ -156,6 +157,7 @@ PRODUCT_PACKAGES += \
     virgin_gb.pb \
     virgin_us.pb \
     visible_us.pb \
+    visiblev_us.pb \
     vodafone_au.pb \
     vodafone_cz.pb \
     vodafone_de.pb \
