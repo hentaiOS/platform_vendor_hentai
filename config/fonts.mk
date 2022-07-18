@@ -19,22 +19,8 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
-    GInterVF-Italic.ttf \
-    GInterVF-Roman.ttf \
-    HarmonyOS-Sans-BlackItalic.ttf \
-    HarmonyOS-Sans-Black.ttf \
-    HarmonyOS-Sans-BoldItalic.ttf \
-    HarmonyOS-Sans-Bold.ttf \
     HarmonyOS-Sans-Italic.ttf \
-    HarmonyOS-Sans-LightItalic.ttf \
-    HarmonyOS-Sans-Light.ttf \
-    HarmonyOS-Sans-MediumItalic.ttf \
-    HarmonyOS-Sans-Medium.ttf \
-    HarmonyOS-Sans-Regular.ttf \
-    HarmonyOS-Sans-ThinItalic.ttf \
-    HarmonyOS-Sans-Thin.ttf \
-    Lexend-VF.ttf \
-    Manrope-VF.ttf \
+    HarmonyOS-Sans.ttf
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
