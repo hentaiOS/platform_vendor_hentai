@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74c12651_57cefe71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2022-07-18T16:17:46Z",
+      "side": 1,
+      "message": "Please add the corresponding BUG ticket for this, it\u0027s ab/2 and ab/3",
+      "revId": "ee0faa6f1bffebb5e7a3bf1f6ec9893ea67f0649",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
