@@ -25,13 +25,16 @@ PRODUCT_PACKAGES += \
     CaptivePortalLoginOverlay \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
+    DMServiceOverlay \
     GoogleConfigOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \
+    MediaProviderOverlay \
     NetworkStackOverlay \
     PixelConfigOverlay2018 \
     PixelConfigOverlay2019 \
     PixelConfigOverlay2019Midyear \
+    PixelConfigOverlay2021 \
     PixelConfigOverlayCommon \
     PixelTetheringOverlay
