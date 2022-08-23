@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4dd20b1d_cc451ca9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2022-08-23T21:10:09Z",
+      "side": 1,
+      "message": "Functionality confirmed, before you submit please fix this typo \"direcly\" in the description.",
+      "revId": "091be56f32e406e04d78935b8149fb67437c370f",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
