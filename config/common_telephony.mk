@@ -194,5 +194,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dataroaming=false
 
+# Include Carrier Runtime Configuration
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/hentai/CarrierSettings/overlay
+
 # Inherit from common config now.
 $(call inherit-product, vendor/hentai/config/common.mk)
