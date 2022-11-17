@@ -28,10 +28,10 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call addVar,$(v))))
 
 SOONG_CONFIG_NAMESPACES += hentaiGlobalVars
 SOONG_CONFIG_hentaiGlobalVars += \
-    target_surfaceflinger_fod_lib
+    target_surfaceflinger_udfps_lib
 
 # Set default values
-TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_fod_lib
+TARGET_SURFACEFLINGER_FOD_LIB ?= surfaceflinger_udfps_lib
 
 # Soong value variables
-SOONG_CONFIG_hentaiGlobalVars_target_surfaceflinger_fod_lib := $(TARGET_SURFACEFLINGER_FOD_LIB)
+SOONG_CONFIG_hentaiGlobalVars_target_surfaceflinger_udfps_lib := $(TARGET_SURFACEFLINGER_UDFPS_LIB)
