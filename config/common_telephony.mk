@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
     docomo_jp.pb \
     docomomvno_jp.pb \
     ee_gb.pb \
+    eir_ie.pb \
     eplus_de.pb \
     esn_gb.pb \
     fet_tw.pb \
@@ -77,10 +78,12 @@ PRODUCT_PACKAGES += \
     free_fr.pb \
     freedommobile_ca.pb \
     gamma_gb.pb \
+    giga_sg.pb \
     h3_at.pb \
     h3_gb.pb \
     h3_ie.pb \
     h3_se.pb \
+    h3g27202_ie.pb \
     halebop_se.pb \
     homobile_it.pb \
     ice_no.pb \
@@ -117,6 +120,7 @@ PRODUCT_PACKAGES += \
     rogers_ca.pb \
     sfr_fr.pb \
     shaw_ca.pb \
+    simba_sg.pb \
     redpockettmo_us.pb \
     simple_us.pb \
     tmomvno_nl.pb \
@@ -159,8 +163,10 @@ PRODUCT_PACKAGES += \
     tmobile_us.pb \
     tracfonetmo_us.pb \
     tracfoneverizon_us.pb \
+    truemove_th.pb \
     tstar_tw.pb \
     twm_tw.pb \
+    unifi_my.pb \
     uqmobile_jp.pb \
     uscc_us.pb \
     verizon_us.pb \
