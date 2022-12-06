@@ -66,6 +66,49 @@
         </font>
     </family>
 
+    <family customizationType="new-named-family" name="google-sans-clock">
+        <font weight="400" style="normal">HarmonyOS-Sans.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="400" />
+        </font>
+        <font weight="500" style="normal">HarmonyOS-Sans.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="500" />
+        </font>
+        <font weight="600" style="normal">HarmonyOS-Sans.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="606" />
+        </font>
+        <font weight="700" style="normal">HarmonyOS-Sans.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="706" />
+        </font>
+        <font weight="400" style="italic">HarmonyOS-Sans-Italic.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="400" />
+        </font>
+        <font weight="500" style="italic">HarmonyOS-Sans-Italic.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="500" />
+        </font>
+        <font weight="600" style="italic">HarmonyOS-Sans-Italic.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="606" />
+        </font>
+        <font weight="700" style="italic">HarmonyOS-Sans-Italic.ttf
+            <axis tag="GRAD" stylevalue="0" />
+            <axis tag="opsz" stylevalue="18.0" />
+            <axis tag="wght" stylevalue="706" />
+        </font>
+    </family>
+
     <family customizationType="new-named-family" name="google-sans-bold">
         <font weight="700" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
