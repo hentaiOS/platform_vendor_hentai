@@ -20,10 +20,15 @@ BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
 PLATFORM_HENTAI_RELEASE := TwistedScarlett
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-Furry.$(shell date +%m%d%H%M)
+    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).Furry
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-Furry
 else
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-INT.$(shell date +%m%d%H%M)
+    PLATFORM_HENTAI_VERSION := $(PLATFORM_HENTAI_RELEASE).INT
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-INT
 endif
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.system.hentai.version=$(PLATFORM_HENTAI_VERSION)
 
 $(call inherit-product-if-exists, vendor/hentai/build/target/product/security/hentai_security.mk)
 

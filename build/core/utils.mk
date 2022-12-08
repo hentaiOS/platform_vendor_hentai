@@ -201,3 +201,33 @@ $(strip \
   $(if $(strip $(acn)),true,) \
 )
 endef
+
+#
+# A mapping from shorthand names to include directories.
+#
+pathmap_INCL := \
+    camera:system/media/camera/include \
+    frameworks-base:frameworks/base/include \
+    frameworks-native:frameworks/native/include \
+    libhardware:hardware/libhardware/include \
+    libhardware_legacy:hardware/libhardware_legacy/include \
+    libril:hardware/ril/include \
+    system-core:system/core/include \
+    audio:system/media/audio/include \
+    audio-effects:system/media/audio_effects/include \
+    audio-utils:system/media/audio_utils/include \
+    audio-route:system/media/audio_route/include \
+    wilhelm:frameworks/wilhelm/include \
+    wilhelm-ut:frameworks/wilhelm/src/ut \
+    mediandk:frameworks/av/media/ndk/
+
+#
+# Returns the path to the requested module's include directory,
+# relative to the root of the source tree.  Does not handle external
+# modules.
+#
+# $(1): a list of modules (or other named entities) to find the includes for
+#
+define include-path-for
+$(foreach n,$(1),$(patsubst $(n):%,%,$(filter $(n):%,$(pathmap_INCL))))
+endef
