@@ -1,0 +1,34 @@
+type updater_app, domain, coredomain;
+
+app_domain(updater_app)
+
+# Access the network
+net_domain(updater_app)
+
+# find services that expose both @SystemAPI and normal APIs.
+allow updater_app app_api_service:service_manager find;
+allow updater_app recovery_service:service_manager find;
+allow updater_app system_api_service:service_manager find;
+
+# Allow interaction with gpuservice
+binder_call(updater_app, gpuservice)
+allow updater_app gpu_service:service_manager find;
+
+# Allow Updater App to communicate with update_engine for A/B update.
+binder_call(updater_app, update_engine)
+allow updater_app update_engine_service:service_manager find;
+
+# Allow Updater App to access system_update_service (e.g. to publish pending
+# system update info).
+allow updater_app system_update_service:service_manager find;
+
+# Write to /cache.
+allow updater_app { cache_file cache_recovery_file }:dir create_dir_perms;
+allow updater_app { cache_file cache_recovery_file }:file create_file_perms;
+
+# /cache is a symlink to /data/cache on some devices. Allow reading the link.
+allow updater_app cache_file:lnk_file r_file_perms;
+
+# Write to /data/ota_package for OTA packages.
+allow updater_app ota_package_file:dir rw_dir_perms;
+allow updater_app ota_package_file:file create_file_perms;
