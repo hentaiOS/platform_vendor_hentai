@@ -1,0 +1,2 @@
+# Allow update_engine to communicate with Updater App for A/B update.
+binder_call(update_engine, updater_app)
