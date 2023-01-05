@@ -57,3 +57,18 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
 	com.google.mainline.primary.libs
+
+# arm
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/arm/%.art \
+    system/framework/arm/%.oat \
+    system/framework/arm/%.vdex \
+    system/framework/arm64/%.art \
+    system/framework/arm64/%.oat \
+    system/framework/arm64/%.vdex \
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/oat/arm/%.odex \
+    system/framework/oat/arm/%.vdex \
+    system/framework/oat/arm64/%.odex \
+    system/framework/oat/arm64/%.vdex \
