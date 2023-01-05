@@ -57,3 +57,45 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
 	com.google.mainline.primary.libs
+
+# Apexes
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+	system/apex/com.google.android.adbd \
+	system/apex/com.google.android.adservices \
+	system/apex/com.google.android.appsearch \
+	system/apex/com.google.android.art \
+	system/apex/com.google.android.bluetooth \
+	system/apex/com.google.android.cellbroadcast \
+	system/apex/com.google.android.conscrypt \
+	system/apex/com.google.android.extservices \
+	system/apex/com.google.android.ipsec \
+	system/apex/com.google.android.media \
+	system/apex/com.google.android.media.swcodec \
+	system/apex/com.google.android.mediaprovider \
+	system/apex/com.google.android.neuralnetworks \
+	system/apex/com.google.android.ondevicepersonalization \
+	system/apex/com.google.android.os.statsd \
+	system/apex/com.google.android.permission \
+	system/apex/com.google.android.resolv \
+	system/apex/com.google.android.scheduling \
+	system/apex/com.google.android.sdkext \
+	system/apex/com.google.android.tethering \
+	system/apex/com.google.android.tzdata4 \
+	system/apex/com.google.android.uwb \
+	system/apex/com.google.android.wifi \
+	system/apex/com.google.mainline.primary.libs
+
+# Dex
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/arm/%.art \
+    system/framework/arm/%.oat \
+    system/framework/arm/%.vdex \
+    system/framework/arm64/%.art \
+    system/framework/arm64/%.oat \
+    system/framework/arm64/%.vdex \
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/framework/oat/arm/%.odex \
+    system/framework/oat/arm/%.vdex \
+    system/framework/oat/arm64/%.odex \
+    system/framework/oat/arm64/%.vdex \
