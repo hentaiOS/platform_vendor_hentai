@@ -15,4 +15,5 @@
 #
 
 PRODUCT_PACKAGES += \
+    Updater \
     RepainterServicePriv
