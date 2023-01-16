@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b4d171e_b8ae9144",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-01-16T15:13:33Z",
+      "side": 1,
+      "message": "Changes can be manually picked and the usage of repopick is heavily discouraged. even in the case of CI, as we primarily use GitLab CI and changes adoption for MRs can be done through the workflow, NAK.",
+      "revId": "87316a07e07cbe4d3fb99f2883fde3cc87cafd91",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
