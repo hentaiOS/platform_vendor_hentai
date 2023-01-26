@@ -33,6 +33,24 @@
       "message": "\u003e Changes can be manually picked and the usage of repopick is heavily discouraged. even in the case of CI, as we primarily use GitLab CI and changes adoption for MRs can be done through the workflow, NAK.\n\nHow does an open changeset then get picked up by the CI? We see that we will need certain changes for specific devices, which we cannot do away with, sadly due to poor stuff by the manufacturer, even for electimon, dealing this on CI, would surely need repopick to be easier on the script, instead of cherry-picking all these individually on a script.",
       "revId": "87316a07e07cbe4d3fb99f2883fde3cc87cafd91",
       "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f032cced_455567d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000003
+      },
+      "writtenOn": "2023-01-26T18:02:09Z",
+      "side": 1,
+      "message": "\u003e \u003e Changes can be manually picked and the usage of repopick is heavily discouraged. even in the case of CI, as we primarily use GitLab CI and changes adoption for MRs can be done through the workflow, NAK.\n\u003e \n\u003e How does an open changeset then get picked up by the CI? We see that we will need certain changes for specific devices, which we cannot do away with, sadly due to poor stuff by the manufacturer, even for electimon, dealing this on CI, would surely need repopick to be easier on the script, instead of cherry-picking all these individually on a script.\n\nCherry-picking will be the primary way for the workflow, if you don\u0027t know how to adopt internal and/or partner patches in your workflow, that is already outside of our responsibilities, this is a clear NAK from me.",
+      "parentUuid": "84626258_0883892b",
+      "revId": "87316a07e07cbe4d3fb99f2883fde3cc87cafd91",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
     }
   ]
 }
