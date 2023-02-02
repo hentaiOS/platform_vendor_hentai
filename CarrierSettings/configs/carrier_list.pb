@@ -6,8 +6,9 @@
 
 test001_zz
 00101
-
-20201
+
+
+telekom_gr
 20201
 
 20205
@@ -146,21 +147,22 @@ $
 
 20601
 20601
-
-20605
+
+
+telenet_be
 20605
 $
 lycamobile_be
 20606
 Lycamobile
-
-20610
+
+	orange_be
 20610
 
 	virgin_gb
 20620"28000000
-
-20620
+
+base_be
 20620
 
 bics_be
@@ -205,9 +207,6 @@ rakuten_jp
 
 20810GID1=44
 20810"44
-
-20810GID1=4C
-20810"4C
 
 20810GID1=4E
 20810"4E
@@ -394,9 +393,9 @@ telekom_hu
 *
 21670IMSI=21670XX1XXX
 2167021670xx1
-*
-21670IMSI=21670XX2XXX
-2167021670xx2
+
+vodafone_hu
+21670
 
 21671
 21671
@@ -409,18 +408,87 @@ telekom_hu
 
 21890
 21890
+
+
+telekom_hr
+21901"01
+
+
+telekom_hr
+21901"02
+
+
+telekom_hr
+21901"03
+
+
+telekom_hr
+21901"99
+
+
+telekom_hr
+21901"FF
 "
 21901SPN=BONBON
 21901BONBON
-
-21901
-21901
+
+
+telekom_hr
+21901HT HR
+ 
+
+telekom_hr
+21901	HT-Campus
+"
+
+telekom_hr
+21901R&D Network
+"
+
+telekom_hr
+21901T-Mobile HR
 
 21902
 21902
 
 21910
 21910
+
+
+telekom_hr
+21920"01
+
+
+telekom_hr
+21920"02
+
+
+telekom_hr
+21920"03
+
+
+telekom_hr
+21920"99
+
+
+telekom_hr
+21920"FF
+
+
+telekom_hr
+21920HT HR
+ 
+
+telekom_hr
+21920	HT-Campus
+"
+
+telekom_hr
+21920R&D Network
+"
+
+telekom_hr
+21920T-Mobile HR
 
 22001
 22001
@@ -505,8 +573,9 @@ $
 
 kena_it
 22207
-
-22208
+
+
+fastweb_it
 22208
 
 22210SPN=ERG
@@ -537,8 +606,9 @@ windtre_it
 "
 verymobile_it
 22299"00000099
-$
-22299SPN=FASTWEB
+
+
+fastweb_it
 22299FASTWEB
 
 
@@ -1032,11 +1102,11 @@ Lycamobile
 
 	elisa1_fi
 24421
-
-24491
+
+telia_fi
 24491
-
-24601
+
+telia_lt
 24601
 
 24602
@@ -1059,8 +1129,8 @@ Lycamobile
 
 send_ee
 24801248010x3
-
-24801
+
+telia_ee
 24801
 
 24802
@@ -1193,15 +1263,9 @@ telekom_de
  
 o2prepaid_de
 262072620749
-'
-26207IMSI=26207500
+
+	tchibo_de
 2620726207500
-'
-26207IMSI=26207515
-2620726207515
-'
-26207IMSI=26207520
-2620726207520
  
 26207SPN=ALICE
 26207ALICE
@@ -1627,8 +1691,8 @@ Fi Network
 
 sprintwholesale_us
 310120
-
-310130
+
+carolinawest_us
 310130
 
 cricket5g_us
@@ -1995,8 +2059,8 @@ att5gsa_us
 
 310430SPN=GCI
 310430GCI
-
-310450
+
+	viaero_us
 310450
 $
 310470SPN=NTELOS
@@ -2655,8 +2719,12 @@ $
 
 tmobile_us
 312250
-
-312420
+
+	strata_us
+312290
+
+
+nextech_us
 312420
 
 	sprint_us
@@ -3932,8 +4000,8 @@ cheers2_in
 
 41892
 41892
-
-41902
+
+zain_kw
 41902
 
 41903
@@ -3989,8 +4057,8 @@ partner_il
 
 42502
 42502
-
-42503
+
+pelephone_il
 42503
 
 42505
@@ -5127,8 +5195,8 @@ Lycamobile
 
 64602
 64602
-
-64700
+
+	orange_re
 64700
 
 64702
@@ -5563,4 +5631,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480ºﬂˇó†"øÿ…ú
+999480¡ﬂˇó†"Ã¸·ù
