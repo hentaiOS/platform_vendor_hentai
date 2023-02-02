@@ -35,6 +35,7 @@ PRODUCT_PACKAGES += \
     a1_at.pb \
     ahamo_jp.pb \
     airtel_in.pb \
+    ais_th.pb \
     apt_tw.pb \
     assurance_us.pb \
     astca_as.pb \
@@ -42,6 +43,7 @@ PRODUCT_PACKAGES += \
     att5g_us.pb \
     attmvnos_us.pb \
     att_us.pb \
+    base_be.pb \
     bell_ca.pb \
     bluegrass_us.pb \
     boosttmo_us.pb \
@@ -49,6 +51,7 @@ PRODUCT_PACKAGES += \
     bouygues_fr.pb \
     btb_gb.pb \
     btc_gb.pb \
+    carolinawest_us.pb \
     celcom_my.pb \
     cellcommno_us.pb \
     cellcom_us.pb \
@@ -108,6 +111,7 @@ PRODUCT_PACKAGES += \
     meo_pt.pb \
     metropcs_us.pb \
     movistar_es.pb \
+    nextech_us.pb \
     nos_pt.pb \
     o2_de.pb \
     o2postpaid_gb.pb \
@@ -115,10 +119,13 @@ PRODUCT_PACKAGES += \
     o2prepaid_gb.pb \
     onecall_no.pb \
     optus_au.pb \
+    orange_be.pb \
     orange_es.pb \
     orange_fr.pb \
+    orange_re.pb \
     partner_il.pb \
     pcmobilebell_ca.pb \
+    pelephone_il.pb \
     play_pl.pb \
     post_lu.pb \
     povo_jp.pb \
@@ -145,22 +152,30 @@ PRODUCT_PACKAGES += \
     sprintwholesale_us.pb \
     starhub_sg.pb \
     stc_sa.pb \
+    strata_us.pb \
     sunrise_ch.pb \
     swisscom_ch.pb \
     swisscom_li.pb \
     talkmobile_gb.pb \
     tango_us.pb \
     tbaytel_ca.pb \
+    tchibo_de.pb \
     tdc_dk.pb \
     tele2_se.pb \
     telekom_de.pb \
+    telekom_gr.pb \
+    telekom_hr.pb \
     telekom_hu.pb \
     telekom_pl.pb \
     telekom_sk.pb \
+    telenet_be.pb \
     telenor_dk.pb \
     telenor_no.pb \
     telenor_se.pb \
     telia_dk.pb \
+    telia_ee.pb \
+    telia_fi.pb \
+    telia_lt.pb \
     telia_no.pb \
     telia_se.pb \
     telstra_au.pb \
@@ -183,6 +198,7 @@ PRODUCT_PACKAGES += \
     uscc_us.pb \
     verizon_us.pb \
     verymobile_it.pb \
+    viaero_us.pb \
     videotron_ca.pb \
     vimla_se.pb \
     virgin_ca.pb \
@@ -195,6 +211,7 @@ PRODUCT_PACKAGES += \
     vodafone_de.pb \
     vodafone_es.pb \
     vodafone_gb.pb \
+    vodafone_hu.pb \
     vodafone_ie.pb \
     vodafone_in.pb \
     vodafone_it.pb \
@@ -206,7 +223,8 @@ PRODUCT_PACKAGES += \
     xfinity_us.pb \
     yes_my.pb \
     yettel_hu.pb \
-    yoigo_es.pb
+    yoigo_es.pb \
+    zain_kw.pb
 
 # Other countries
 PRODUCT_PACKAGES += \
