@@ -22,13 +22,19 @@ soong_config_bool_variable {
 }
 
 soong_config_module_type {
+    name: "art_prebuilt_apex_set",
+    module_type: "prebuilt_apex",
+    config_namespace: "art_module",
+    bool_variables: ["source_build"],
+    properties: ["prefer"],
+}
+
+soong_config_module_type {
     name: "module_apex_prebuilt",
     module_type: "prebuilt_apex",
     config_namespace: "ANDROID",
     bool_variables: ["module_build_from_source"],
-    properties: [
-        "prefer",
-    ],
+    properties: ["prefer"],
 }
 
 // Google com.google.android.adbd
@@ -99,7 +105,7 @@ module_apex_prebuilt {
 }
 
 // Google com.google.android.art
-module_apex_prebuilt {
+art_prebuilt_apex_set {
     name: "com.google.android.art",
     apex_name: "com.android.art",
     owner: "google",
@@ -110,9 +116,9 @@ module_apex_prebuilt {
     ],
     prefer: true,
     soong_config_variables: {
-        module_build_from_source: {
-            prefer: false,
-        },
+       source_build: {
+           prefer: false
+       }
     },
     exported_bootclasspath_fragments: ["art-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["art-systemserverclasspath-fragment"],
