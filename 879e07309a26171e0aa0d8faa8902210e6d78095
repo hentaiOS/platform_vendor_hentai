@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05073eb6_ef892111",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000006
+      },
+      "writtenOn": "2023-02-08T09:47:41Z",
+      "side": 1,
+      "message": "Initial build on amogus platform with ART and BT modules disabled has booted without certificate issues and working BT. Please await Feb round of releases to confirm before merging. Thanks.",
+      "revId": "879e07309a26171e0aa0d8faa8902210e6d78095",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
