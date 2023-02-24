@@ -92,7 +92,7 @@ function setup_vendor() {
         exit 1
     fi
 
-    export VENDOR="$2"
+    local VENDOR="$2"
     if [ -z "$VENDOR" ]; then
         echo "\$VENDOR must be set before including this script!"
         exit 1
@@ -398,6 +398,8 @@ function write_blueprint_packages() {
     local SRC=
     local STEM=
     local OVERRIDEPKG=
+
+    [ "$COMMON" -eq 1 ] && local VENDOR="${VENDOR_COMMON:-$VENDOR}"
 
     for P in "${FILELIST[@]}"; do
         FILE=$(target_file "$P")
@@ -873,6 +875,7 @@ function write_blueprint_header() {
     fi
 
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
+    [ "$COMMON" -eq 1 ] && local VENDOR="${VENDOR_COMMON:-$VENDOR}"
 
     cat << EOF >> $1
 // Automatically generated file. DO NOT MODIFY
@@ -897,6 +900,7 @@ function write_makefile_header() {
     fi
 
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
+    [ "$COMMON" -eq 1 ] && local VENDOR="${VENDOR_COMMON:-$VENDOR}"
 
     cat << EOF >> $1
 # Automatically generated file. DO NOT MODIFY
@@ -955,6 +959,7 @@ soong_namespace {
 EOF
 
     [ "$COMMON" -eq 1 ] && local DEVICE="$DEVICE_COMMON"
+    [ "$COMMON" -eq 1 ] && local VENDOR="${VENDOR_COMMON:-$VENDOR}"
     cat << EOF >> "$PRODUCTMK"
 PRODUCT_SOONG_NAMESPACES += \\
     vendor/$VENDOR/$DEVICE
