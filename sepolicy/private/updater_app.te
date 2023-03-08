@@ -7,6 +7,7 @@ net_domain(updater_app)
 
 # find services that expose both @SystemAPI and normal APIs.
 allow updater_app app_api_service:service_manager find;
+allow updater_app radio_service:service_manager find;
 allow updater_app recovery_service:service_manager find;
 allow updater_app system_api_service:service_manager find;
 
