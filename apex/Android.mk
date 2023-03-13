@@ -36,8 +36,9 @@ endif
 # Bluetooth Mainline Module
 ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
 LOCAL_REQUIRED_MODULES += \
-    com.google.android.bluetooth
+    com.google.android.btservices
 endif
+
 # UWB Mainline Module
 ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
 LOCAL_REQUIRED_MODULES += \
