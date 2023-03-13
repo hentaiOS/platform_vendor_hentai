@@ -86,24 +86,6 @@ module_apex_prebuilt {
     exported_systemserverclasspath_fragments: ["com.android.appsearch-systemserverclasspath-fragment"],
 }
 
-// Google com.google.android.bluetooth
-module_apex_prebuilt {
-    name: "com.google.android.bluetooth",
-    apex_name: "com.android.btservices",
-    owner: "google",
-    src: "com.google.android.bluetooth.apex",
-    overrides: ["com.android.btservices"],
-    required: ["android.hardware.bluetooth@1.1",
-               "android.hardware.bluetooth.audio@2.1",
-               "android.hardware.bluetooth.audio-V2-ndk"],
-    prefer: true,
-    soong_config_variables: {
-        module_build_from_source: {
-            prefer: false,
-        },
-    },
-}
-
 // Google com.google.android.art
 art_prebuilt_apex_set {
     name: "com.google.android.art",
@@ -122,6 +104,24 @@ art_prebuilt_apex_set {
     },
     exported_bootclasspath_fragments: ["art-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["art-systemserverclasspath-fragment"],
+}
+
+// Google com.google.android.btservices
+module_apex_prebuilt {
+    name: "com.google.android.btservices",
+    apex_name: "com.android.btservices",
+    owner: "google",
+    src: "com.google.android.btservices.apex",
+    overrides: ["com.android.btservices"],
+    required: ["android.hardware.bluetooth@1.1",
+               "android.hardware.bluetooth.audio@2.1",
+               "android.hardware.bluetooth.audio-V2-ndk"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
 }
 
 // Google com.google.android.cellbroadcast
