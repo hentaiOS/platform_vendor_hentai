@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
 # Carriers Databases
 PRODUCT_PACKAGES += \
     1and1_de.pb \
+    2degrees_nz.pb \
     a1_at.pb \
     ahamo_jp.pb \
     airtel_in.pb \
@@ -55,12 +56,14 @@ PRODUCT_PACKAGES += \
     celcom_my.pb \
     cellcommno_us.pb \
     cellcom_us.pb \
+    celluarone_us.pb \
     chatr_ca.pb \
     cht_tw.pb \
     cityfone_ca.pb \
     claro_pr.pb \
     congstar_de.pb \
     consumercellulartmo_us.pb \
+    coppervalley_us.pb \
     coriolis_fr.pb \
     cricket5g_us.pb \
     cricket_us.pb \
@@ -68,13 +71,19 @@ PRODUCT_PACKAGES += \
     cspire_us.pb \
     digi_my.pb \
     dishatt_us.pb \
+    dito_ph.pb \
+    dna_fi.pb \
     docomo_jp.pb \
     docomomvno_jp.pb \
+    eastlink_ca.pb \
     ee_gb.pb \
     eir_ie.pb \
     eplus_de.pb \
     esn_gb.pb \
+    euskaltel_es.pb \
+    fastweb_it.pb \
     fet_tw.pb \
+    fi_at.pb \
     fido_ca.pb \
     firstnetpacific2_us.pb \
     firstnetpacific_us.pb \
@@ -87,6 +96,7 @@ PRODUCT_PACKAGES += \
     gci_us.pb \
     gibtel_gi.pb \
     giga_sg.pb \
+    globe_ph.pb \
     h3_at.pb \
     h3g27202_ie.pb \
     h3_gb.pb \
@@ -107,28 +117,41 @@ PRODUCT_PACKAGES += \
     linemo_jp.pb \
     luckymobile_ca.pb \
     m1_sg.pb \
+    manxcontract_im.pb \
+    manxprepaid_im.pb \
     maxis_my.pb \
     meo_pt.pb \
     metropcs_us.pb \
     movistar_es.pb \
     nextech_us.pb \
     nos_pt.pb \
+    o2_cz.pb \
     o2_de.pb \
     o2postpaid_gb.pb \
     o2prepaid_de.pb \
     o2prepaid_gb.pb \
+    o2_sk.pb \
     onecall_no.pb \
+    ooredoo_qa.pb \
     optus_au.pb \
     orange_be.pb \
     orange_es.pb \
     orange_fr.pb \
+    orange_gp.pb \
+    orange_lu.pb \
+    orange_pl.pb \
     orange_re.pb \
+    orange_ro.pb \
+    orange_sk.pb \
     partner_il.pb \
     pcmobilebell_ca.pb \
     pelephone_il.pb \
+    pepephone_es.pb \
     play_pl.pb \
+    plus_pl.pb \
     post_lu.pb \
     povo_jp.pb \
+    proximus_be.pb \
     publicmobile_ca.pb \
     rakuten_jp.pb \
     redpocketatt_us.pb \
@@ -136,12 +159,15 @@ PRODUCT_PACKAGES += \
     rjio_in.pb \
     rogers5g_ca.pb \
     rogers_ca.pb \
+    salt_ch.pb \
+    sasktel_ca.pb \
     sfr_fr.pb \
     shaw_ca.pb \
     simba_sg.pb \
     simple_us.pb \
     singtel_sg.pb \
     skinny_nz.pb \
+    sky_gb.pb \
     smarty_gb.pb \
     softbank_jp.pb \
     solomobile_ca.pb \
@@ -180,6 +206,7 @@ PRODUCT_PACKAGES += \
     telia_se.pb \
     telstra_au.pb \
     telus_ca.pb \
+    tesco_gb.pb \
     three_dk.pb \
     tim_it.pb \
     tmobile_at.pb \
@@ -193,6 +220,7 @@ PRODUCT_PACKAGES += \
     truemove_th.pb \
     tstar_tw.pb \
     twm_tw.pb \
+    umobile_my.pb \
     unifi_my.pb \
     uqmobile_jp.pb \
     uscc_us.pb \
@@ -218,13 +246,15 @@ PRODUCT_PACKAGES += \
     vodafone_nl.pb \
     vodafone_nz.pb \
     vodafone_pt.pb \
+    vodafone_ro.pb \
     vodafone_tr.pb \
     windtre_it.pb \
     xfinity_us.pb \
     yes_my.pb \
     yettel_hu.pb \
     yoigo_es.pb \
-    zain_kw.pb
+    zain_kw.pb \
+    zeop_re.pb \
 
 # Other countries
 PRODUCT_PACKAGES += \
