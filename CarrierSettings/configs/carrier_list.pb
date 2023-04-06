@@ -128,6 +128,9 @@ tmobile_nl
 
 20601GID1=B6
 20601"B6
+
+	virgin_ie
+20601	206018016
 %
 20601IMSI=2060188
 206012060188
@@ -144,8 +147,8 @@ NRJ MOBILE
 $
 20601SPN=IUSACELL
 20601UNEFON
-
-20601
+
+proximus_be
 20601
 
 
@@ -312,6 +315,12 @@ jazztel_es
 
 	orange_es
 21403
+"
+euskaltel_es
+21404	EUSKALTEL
+"
+pepephone_es
+21404	Pepephone
 
 yoigo_es
 21404
@@ -614,8 +623,8 @@ fastweb_it
 
 windtre_it
 22299
-
-22601
+
+vodafone_ro
 22601
 
 22603
@@ -626,8 +635,8 @@ windtre_it
 
 22606
 22606
-
-22610
+
+	orange_ro
 22610
 $
 lycamobile_ro
@@ -640,8 +649,8 @@ Lycamobile
 
 sunrise_ch
 22802
-
-22803
+
+salt_ch
 22803
 
 lycamobile_ch
@@ -651,20 +660,20 @@ sunrise_ch
 tmobile_cz
 23001
 
-23002
+o2_cz
 23002
 
 vodafone_cz
 23003
-
-23101
+
+	orange_sk
 23101
 
 
 telekom_sk
 23102
 
-23106
+o2_sk
 23106
 
 a1_at
@@ -695,7 +704,7 @@ $
 23208
 Lycamobile
 
-fi_us
+fi_at
 23210"0306
 
 h3_at
@@ -922,9 +931,15 @@ LYCAMOBILE
 
 sky_gb
 23457
-
-23458
-23458
+"
+manxcontract_im
+23458234583
+$
+manxcontract_im
+2345823458850
+#
+manxprepaid_im
+2345823458851
 
 esn_gb
 23471
@@ -1199,8 +1214,8 @@ tinkoff_ru
 
 25905
 25905
-
-26001
+
+plus_pl
 26001
 
 
@@ -1210,8 +1225,8 @@ telekom_pl
 dent_zz
 26003"
 3597BFD533
-
-26003
+
+	orange_pl
 26003
 
 dent_zz
@@ -1313,6 +1328,15 @@ Lycamobile
 
 meo_pt
 26806
+
+nos_pt
+26897
+
+nos_pt
+26898
+
+nos_pt
+26899
 
 post_lu
 27001
@@ -1322,8 +1346,8 @@ Lycamobile
 
 27077
 27077
-
-27099
+
+	orange_lu
 27099
 
 vodafone_ie
@@ -1346,9 +1370,12 @@ Lycamobile
 
 lycamobile_ie
 27213
-
-	virgin_ie
-27215
+
+	virgin_ie
+27215"75696531
+
+	virgin_ie
+27215"75696532
 
 	siminn_is
 27401
@@ -1477,8 +1504,8 @@ Lycamobile
 
 302221
 302221
-
-302270
+
+eastlink_ca
 302270
 
 302290
@@ -1943,8 +1970,8 @@ tmobile_us
 
 tmobile_us
 310310
-
-310320
+
+celluarone_us
 310320
 &
 310330SPN=ALLTEL2
@@ -2101,10 +2128,6 @@ tmobile_us
 
 xfinity_us
 310590"BA01450000000000
-(
-
-xfinity_us
-310590"BA01640000000000
 
 
 verizon_us
@@ -2116,15 +2139,7 @@ xfinity_us
 (
 
 xfinity_us
-310591"BA01640000000000
-(
-
-xfinity_us
 310599"BA01450000000000
-(
-
-xfinity_us
-310599"BA01640000000000
 
 
 verizon_us
@@ -2463,10 +2478,6 @@ xfinity_us
 311480"BA01490000000000
 (
 
-xfinity_us
-311480"BA01640000000000
-(
-
 visible_us
 311480"BAE1000000000000
 )
@@ -2483,15 +2494,7 @@ xfinity_us
 (
 
 xfinity_us
-311481"BA01640000000000
-(
-
-xfinity_us
 311482"BA01450000000000
-(
-
-xfinity_us
-311482"BA01640000000000
 (
 
 xfinity_us
@@ -2499,15 +2502,7 @@ xfinity_us
 (
 
 xfinity_us
-311483"BA01640000000000
-(
-
-xfinity_us
 311484"BA01450000000000
-(
-
-xfinity_us
-311484"BA01640000000000
 (
 
 xfinity_us
@@ -2515,15 +2510,7 @@ xfinity_us
 (
 
 xfinity_us
-311485"BA01640000000000
-(
-
-xfinity_us
 311486"BA01450000000000
-(
-
-xfinity_us
-311486"BA01640000000000
 (
 
 xfinity_us
@@ -2531,23 +2518,11 @@ xfinity_us
 (
 
 xfinity_us
-311487"BA01640000000000
-(
-
-xfinity_us
 311488"BA01450000000000
 (
 
 xfinity_us
-311488"BA01640000000000
-(
-
-xfinity_us
 311489"BA01450000000000
-(
-
-xfinity_us
-311489"BA01640000000000
 
 metropcs_us
 311490"6D38
@@ -2722,6 +2697,9 @@ tmobile_us
 
 	strata_us
 312290
+
+coppervalley_us
+312380
 
 
 nextech_us
@@ -2790,10 +2768,6 @@ liberty_pr
 
 xfinitymso_us
 314200
-
-
-xfinity_us
-314240
 
 	google_us
 315010
@@ -2929,8 +2903,8 @@ retemex_mx
 
 338180
 338180
-
-34001
+
+	orange_gp
 34001
 
 
@@ -4098,8 +4072,9 @@ annatel_il
 
 42604
 42604
-
-42701
+
+
+ooredoo_qa
 42701
 
 42702
@@ -4506,8 +4481,9 @@ lguplus_kr
 
 maxis_my
 50217
-
-50218
+
+
+umobile_my
 50218
 
 	celcom_my
@@ -4598,8 +4574,8 @@ telstra_au
 
 51403
 51403
-
-51502
+
+globe_ph
 51502
 
 dent_zz
@@ -4614,6 +4590,9 @@ telstra_au
 
 51518
 51518
+
+dito_ph
+51566
 
 truemove_th
 52000"01
@@ -4687,8 +4666,8 @@ starhub_sg
 
 spark_nz
 53005
-
-53024
+
+2degrees_nz
 53024
 
 53602
@@ -5201,6 +5180,9 @@ Lycamobile
 
 64702
 64702
+
+zeop_re
+64704
 
 64710GID1=12
 64710"12
@@ -5631,4 +5613,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480¡ﬂˇó†"Ã¸·ù
+999480»ÛÍÙ£"ç∆ı†
