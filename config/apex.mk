@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Build all modules from source if set to true , com.android.xxx
+ifneq (true,$(MODULE_BUILD_FROM_SOURCE))
+
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
 MAINLINE_INCLUDE_BT_MODULE ?= true
@@ -85,3 +88,5 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata4 \
 	com.google.mainline.primary.libs
+
+endif
