@@ -34,6 +34,24 @@
       "parentUuid": "b2bb1069_b8b06751",
       "revId": "1f3d22eb47adc4717fe472aedd7dc86aa3fa10cd",
       "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "79bcf038_837719eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2023-05-18T21:15:06Z",
+      "side": 1,
+      "message": "Did you try without the ART module, that would cause a no-boot scenario",
+      "parentUuid": "0cecab57_dab7105e",
+      "revId": "1f3d22eb47adc4717fe472aedd7dc86aa3fa10cd",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
     }
   ]
 }
