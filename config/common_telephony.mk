@@ -34,34 +34,38 @@ PRODUCT_PACKAGES += \
     1and1_de.pb \
     2degrees_nz.pb \
     a1_at.pb \
+    a1_si.pb \
     ahamo_jp.pb \
     airtel_in.pb \
     ais_th.pb \
+    altice_us.pb \
     apt_tw.pb \
     assurance_us.pb \
     astca_as.pb \
-    att5gsa_us.pb \
     att5g_us.pb \
-    attmvnos_us.pb \
+    att5gsa_us.pb \
     att_us.pb \
+    attmvnos_us.pb \
     base_be.pb \
     bell_ca.pb \
     bluegrass_us.pb \
-    boosttmo_us.pb \
     boost_us.pb \
+    boosttmo_us.pb \
     bouygues_fr.pb \
     btb_gb.pb \
     btc_gb.pb \
     carolinawest_us.pb \
     celcom_my.pb \
-    cellcommno_us.pb \
     cellcom_us.pb \
+    cellcommno_us.pb \
     celluarone_us.pb \
     chatr_ca.pb \
+    chinamobile_hk.pb \
     cht_tw.pb \
     cityfone_ca.pb \
     claro_pr.pb \
     congstar_de.pb \
+    consumercellularatt_us.pb \
     consumercellulartmo_us.pb \
     coppervalley_us.pb \
     coriolis_fr.pb \
@@ -69,45 +73,51 @@ PRODUCT_PACKAGES += \
     cricket_us.pb \
     cspire_nl.pb \
     cspire_us.pb \
+    digi_hu.pb \
     digi_my.pb \
+    digi_ro.pb \
     dishatt_us.pb \
     dito_ph.pb \
     dna_fi.pb \
     docomo_jp.pb \
     docomomvno_jp.pb \
+    du_ae.pb \
     eastlink_ca.pb \
     ee_gb.pb \
     eir_ie.pb \
+    enreach_nl.pb \
     eplus_de.pb \
     esn_gb.pb \
     euskaltel_es.pb \
+    evolve_us.pb \
     fastweb_it.pb \
     fet_tw.pb \
     fi_at.pb \
+    fi_us.pb \
     fido_ca.pb \
+    firstnet_us.pb \
     firstnetpacific2_us.pb \
     firstnetpacific_us.pb \
-    firstnet_us.pb \
-    fi_us.pb \
     fizz_ca.pb \
-    freedommobile_ca.pb \
     free_fr.pb \
+    freedommobile_ca.pb \
     gamma_gb.pb \
     gci_us.pb \
     gibtel_gi.pb \
     giga_sg.pb \
     globe_ph.pb \
     h3_at.pb \
-    h3g27202_ie.pb \
     h3_gb.pb \
     h3_ie.pb \
     h3_se.pb \
+    h3g27202_ie.pb \
     halebop_se.pb \
     homobile_it.pb \
     ice_no.pb \
     idea_in.pb \
     idmobile_gb.pb \
     iliad_it.pb \
+    jazztel_es.pb \
     kddi_jp.pb \
     kddimvno_jp.pb \
     kena_it.pb \
@@ -127,10 +137,10 @@ PRODUCT_PACKAGES += \
     nos_pt.pb \
     o2_cz.pb \
     o2_de.pb \
+    o2_sk.pb \
     o2postpaid_gb.pb \
     o2prepaid_de.pb \
     o2prepaid_gb.pb \
-    o2_sk.pb \
     onecall_no.pb \
     ooredoo_qa.pb \
     optus_au.pb \
@@ -168,13 +178,14 @@ PRODUCT_PACKAGES += \
     singtel_sg.pb \
     skinny_nz.pb \
     sky_gb.pb \
+    smartone_hk.pb \
     smarty_gb.pb \
     softbank_jp.pb \
     solomobile_ca.pb \
     spark_nz.pb \
     spectrum_us.pb \
-    sprintprepaid_us.pb \
     sprint_us.pb \
+    sprintprepaid_us.pb \
     sprintwholesale_us.pb \
     starhub_sg.pb \
     stc_sa.pb \
@@ -193,7 +204,10 @@ PRODUCT_PACKAGES += \
     telekom_hr.pb \
     telekom_hu.pb \
     telekom_pl.pb \
+    telekom_ro.pb \
+    telekom_si.pb \
     telekom_sk.pb \
+    telemach_si.pb \
     telenet_be.pb \
     telenor_dk.pb \
     telenor_no.pb \
@@ -215,13 +229,20 @@ PRODUCT_PACKAGES += \
     tmobile_us.pb \
     tmomvno_nl.pb \
     tmomvno_us.pb \
+    tracfoneatt_us.pb \
     tracfonetmo_us.pb \
     tracfoneverizon_us.pb \
     truemove_th.pb \
     tstar_tw.pb \
     twm_tw.pb \
+    u264a_ca.pb \
+    u264a_us.pb \
+    u264ao_at.pb \
+    u264ap_at.pb \
+    ultra_us.pb \
     umobile_my.pb \
     unifi_my.pb \
+    uqmobile5gsa_jp.pb \
     uqmobile_jp.pb \
     uscc_us.pb \
     verizon_us.pb \
