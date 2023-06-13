@@ -122,6 +122,8 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
+    exported_bootclasspath_fragments: ["com.android.btservices-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.btservices-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.cellbroadcast
