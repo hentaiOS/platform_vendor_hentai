@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2022 Raphielscape LLC.
+ * Copyright (C) 2023 Raphielscape LLC.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,13 +15,25 @@
  */
 
 prebuilt_font {
-    name: "HarmonyOS-Sans-Italic.ttf",
-    src: "HarmonyOS-Sans-Italic.ttf",
+    name: "GoogleSans-Italic.ttf",
+    src: "GoogleSans-Italic.ttf",
     product_specific: true,
 }
 
 prebuilt_font {
-    name: "HarmonyOS-Sans.ttf",
-    src: "HarmonyOS-Sans.ttf",
+    name: "GoogleSans-Regular.ttf",
+    src: "GoogleSans-Regular.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "GoogleSansClock-Regular.ttf",
+    src: "GoogleSansClock-Regular.ttf",
+    product_specific: true,
+}
+
+prebuilt_font {
+    name: "GoogleSansFlex-Regular.ttf",
+    src: "GoogleSansFlex-Regular.ttf",
     product_specific: true,
 }
