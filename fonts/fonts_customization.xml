@@ -29,12 +29,12 @@
         <font weight="600" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="18.0" />
-            <axis tag="wght" stylevalue="606" />
+            <axis tag="wght" stylevalue="600" />
         </font>
         <font weight="700" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="18.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
         <font weight="400" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
@@ -49,12 +49,12 @@
         <font weight="600" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="18.0" />
-            <axis tag="wght" stylevalue="606" />
+            <axis tag="wght" stylevalue="600" />
         </font>
         <font weight="700" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="18.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
     </family>
 
@@ -74,7 +74,7 @@
         <font weight="700" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="18.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
     </family>
 
@@ -92,12 +92,12 @@
         <font weight="600" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="606" />
+            <axis tag="wght" stylevalue="600" />
         </font>
         <font weight="700" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
         <font weight="400" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
@@ -112,12 +112,33 @@
         <font weight="600" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="606" />
+            <axis tag="wght" stylevalue="600" />
         </font>
         <font weight="700" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
+        </font>
+    </family>
+
+    <family customizationType="new-named-family" name="google-sans-flex">
+        <font weight="100" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="200" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="300" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="400" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="500" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="600" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="700" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="800" style="normal">HarmonyOS-Sans.ttf
+        </font>
+        <font weight="900" style="normal">HarmonyOS-Sans.ttf
         </font>
     </family>
 
@@ -133,7 +154,7 @@
         <font weight="700" style="normal">HarmonyOS-Sans.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
     </family>
 
@@ -157,7 +178,7 @@
         <font weight="700" style="italic">HarmonyOS-Sans-Italic.ttf
             <axis tag="GRAD" stylevalue="0" />
             <axis tag="opsz" stylevalue="17.0" />
-            <axis tag="wght" stylevalue="706" />
+            <axis tag="wght" stylevalue="700" />
         </font>
     </family>
 
