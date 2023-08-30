@@ -27,6 +27,8 @@ PRODUCT_PACKAGES += \
     CellBroadcastServiceOverlay \
     DMServiceOverlay \
     GoogleConfigOverlay \
+    GoogleDeviceLockControllerOverlay \
+    GoogleHealthConnectOverlay \
     GooglePermissionControllerOverlay \
     GoogleWebViewOverlay \
     ManagedProvisioningPixelOverlay \

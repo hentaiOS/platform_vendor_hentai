@@ -20,6 +20,9 @@
     <!-- Apps that are authorized to access shared accounts, overridden by product overlays -->
     <string name="config_appsAuthorizedForSharedAccounts" translatable="false">;com.android.vending;com.android.settings;</string>
 
+    <!-- TODO -->
+    <string name="config_defaultAccessibilityNotificationSound" translatable="false">Effect_Tick.ogg</string>
+
     <!-- The component name, flattened to a string, for the default accessibility service to be
          enabled by the accessibility shortcut. This service must be trusted, as it can be activated
          without explicit consent of the user. If no accessibility service with the specified name
@@ -43,6 +46,9 @@
          POST_NOTIFICATIONS permission.
     -->
     <string name="config_defaultCaptivePortalLoginPackageName" translatable="false">com.google.android.captiveportallogin</string>
+
+    <!-- TODO -->
+    <string name="config_defaultCredentialManagerHybridService" translatable="false">com.google.android.gms/.auth.api.credentials.credman.service.RemoteService</string>
 
     <!-- The name of the package that will hold the dialer role by default. -->
     <string name="config_defaultDialer" translatable="false">com.google.android.dialer</string>
@@ -101,6 +107,9 @@
     <!-- ComponentName of the default dream (Settings.Secure.DEFAULT_SCREENSAVER_COMPONENT) -->
     <string name="config_dreamsDefaultComponent" translatable="false">com.google.android.deskclock/com.android.deskclock.Screensaver</string>
 
+    <!-- TODO -->
+    <string name="config_healthConnectMigratorPackageName" translatable="false">com.google.android.apps.healthdata</string>
+
     <!-- Flag indicating which package name can access the persistent data partition -->
     <string name="config_persistentDataPackageName" translatable="false">com.google.android.gms</string>
 
@@ -130,11 +139,16 @@
         com.google.android.bluetooth
     </string>
 
+    <!-- TODO -->
+    <string name="config_systemCallStreaming" translatable="false">com.google.android.gms</string>
+
     <!-- On-device package for providing companion device associations. -->
      <string name="config_systemCompanionDeviceProvider" translatable="false">com.google.android.gms</string>
 
     <!-- The name of the package that will hold the system contacts role. -->
      <string name="config_systemContacts" translatable="false">com.google.android.contacts</string>
+    <!-- TODO -->
+    <string name="config_systemFinancedDeviceController" translatable="false">com.google.android.devicelockcontroller</string>
 
     <!-- The name of the package that will hold the system gallery role. -->
     <string name="config_systemGallery" translatable="false">com.google.android.apps.photos</string>
@@ -150,6 +164,9 @@
 
     <!-- The name of the package that will hold the wellbeing role. -->
     <string name="config_systemWellbeing" translatable="false">com.google.android.apps.wellbeing</string>
+
+    <!-- TODO -->
+    <string name="vendor_required_attestation_revocation_list_url" translatable="false">https://android.googleapis.com/attestation/status</string>
 
     <!-- Class name for default keyguard appwidget [DO NOT TRANSLATE] -->
     <string name="widget_default_class_name" translatable="false">com.android.alarmclock.DigitalAppWidgetProvider</string>
@@ -200,12 +217,11 @@
          when the IME is selected as an enabled IME. -->
     <string-array name="config_disabledUntilUsedPreinstalledImes" translatable="false">
         <item>com.google.android.inputmethod.latin</item>
-        <item>com.google.android.apps.inputmethod.hindi</item>
-        <item>com.google.android.inputmethod.japanese</item>
-        <item>com.google.android.inputmethod.korean</item>
-        <item>com.google.android.inputmethod.pinyin</item>
-        <item>jp.co.omronsoft.iwnnime.ml</item>
-        <item>com.nuance.xt9.input</item>
+    </string-array>
+
+    <!-- TODO -->
+    <string-array name="config_enabledCredentialProviderService" translatable="false">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
     </string-array>
 
     <!-- A list of potential packages, in priority order, that may contain an
@@ -245,6 +261,11 @@
         <item>13</item>
     </integer-array>
 
+    <!-- TODO -->
+    <string-array name="config_primaryCredentialProviderService" translatable="false">
+        <item>com.google.android.gms/.auth.api.credentials.credman.service.PasswordAndPasskeyService</item>
+    </string-array>
+
     <string-array name="face_error_vendor">
         <item>Certificate expired</item>
         <item>Sensor temporarily disabled</item>
@@ -253,12 +274,27 @@
         <item>Face unlock needs to be set up again</item>
     </string-array>
 
+    <!-- TODO -->
+    <string-array name="config_fontManagerServiceCerts" translatable="false">
+        <item>/product/etc/security/fsverity/gms_fsverity_cert.der</item>
+    </string-array>
+
     <!-- The set of system packages on device that are queryable by any app regardless of the
          contents of its manifest. -->
     <string-array name="config_forceQueryablePackages" translatable="false">
         <item>com.android.settings</item>
         <item>com.google.android.gms</item>
         <item>com.android.vending</item>
+    </string-array>
+
+    <!-- TODO -->
+    <string-array name="config_healthConnectMigrationKnownSigners" translatable="false">
+        <item>B2C0A80E485934BFB08F902CA27505813DF3159E4E6DD4A4DF078D66CB1C2003</item>
+    </string-array>
+
+    <!-- TODO -->
+    <string-array name="config_healthConnectRestoreKnownSigners" translatable="false">
+        <item>56BE132B780656FE2444CD34326EB5D7AAC91D2096ABF0FE673A99270622EC87</item>
     </string-array>
 
     <!-- A list of potential packages, in priority order, that can supply rules to
@@ -309,6 +345,12 @@
 
          AOSP does not configure a secondary location time zone provider. -->
     <bool name="config_enableSecondaryLocationTimeZoneProvider">false</bool>
+
+    <!-- TODO -->
+    <bool name="config_hotspotNetworksEnabledForService">false</bool>
+
+    <!-- TODO -->
+    <bool name="config_knownNetworksEnabledForService">false</bool>
 
     <!-- Flag indicating if help links for Settings app should be enabled. -->
     <bool name="config_settingsHelpLinksEnabled">true</bool>

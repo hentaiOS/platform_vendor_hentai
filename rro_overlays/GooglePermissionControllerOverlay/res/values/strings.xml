@@ -17,6 +17,7 @@
 */
 -->
 <resources>
-    <string name="config_headlineFontFamily">google-sans</string>
+    <string name="config_headlineFontFamily" translatable="false">google-sans</string>
+    <string name="data_sharing_help_center_link" translatable="false">https://support.google.com/android?p=data_sharing</string>
     <string name="help_app_permissions" translatable="false">https://support.google.com/googleplay/answer/6270602</string>
 </resources>
