@@ -152,9 +152,6 @@ tmobile_nl
 %
 20601IMSI=2060188
 206012060188
-
-	iijmio_jp
-20601IIJ
 &
 20601SPN=IUSACELL
 20601IUSACELL
@@ -667,6 +664,10 @@ $
 lycamobile_ro
 22616
 Lycamobile
+
+
+fastweb_it
+22801FASTWEB
 
 swisscom_ch
 22801
@@ -801,8 +802,8 @@ $
 
 23415GID1=70
 23415"70
-
-23415GID1=A0
+
+asda_gb
 23415"A0
 
 23415GID1=B3
@@ -1346,8 +1347,8 @@ $
 lycamobile_de
 26243
 Lycamobile
-
-google5gsalab_us
+
+google5glab_us
 262830
 
 google5glab_us
@@ -4079,14 +4080,14 @@ cheers2_in
 
 41903
 41903
-
-41904
+
+stc_kw
 41904
 
 stc_sa
 42001
-
-42003
+
+	mobily_sa
 42003
 
 42004
@@ -5715,4 +5716,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480Ïëí¡º"¶üö¢
+999480Óëí¡º"Þ”ï¤

@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2020 Raphielscape LLC. and Haruka LLC.
+// Copyright (C) 2023 Raphielscape LLC.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -141,6 +141,23 @@ module_apex_prebuilt {
     },
 }
 
+// Google com.google.android.configinfrastructure
+module_apex_prebuilt {
+    name: "com.google.android.configinfrastructure",
+    apex_name: "com.android.configinfrastructure",
+    owner: "google",
+    src: "com.google.android.configinfrastructure.apex",
+    overrides: ["com.android.configinfrastructure"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.configinfrastructure-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.configinfrastructure-systemserverclasspath-fragment"],
+}
+
 // Google com.google.android.conscrypt
 module_apex_prebuilt {
     name: "com.google.android.conscrypt",
@@ -160,6 +177,23 @@ module_apex_prebuilt {
     exported_bootclasspath_fragments: ["com.android.conscrypt-bootclasspath-fragment"],
 }
 
+// Google com.google.android.devicelock
+module_apex_prebuilt {
+    name: "com.google.android.devicelock",
+    apex_name: "com.android.devicelock",
+    owner: "google",
+    src: "com.google.android.devicelock.apex",
+    overrides: ["com.android.devicelock"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    //exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
+    //exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
+}
+
 // Google com.google.android.extservices
 module_apex_prebuilt {
     name: "com.google.android.extservices",
@@ -173,6 +207,23 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
+}
+
+// Google com.google.android.healthfitness
+module_apex_prebuilt {
+    name: "com.google.android.healthfitness",
+    apex_name: "com.android.healthfitness",
+    owner: "google",
+    src: "com.google.android.healthfitness.apex",
+    overrides: ["com.android.healthfitness"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.healthfitness-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.healthfitness-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.ipsec
@@ -277,6 +328,7 @@ module_apex_prebuilt {
         },
     },
     exported_bootclasspath_fragments: ["com.android.ondevicepersonalization-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.ondevicepersonalization-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.os.statsd
@@ -330,6 +382,22 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
+}
+
+// Google com.google.android.rkpd
+module_apex_prebuilt {
+    name: "com.google.android.rkpd",
+    apex_name: "com.android.rkpd",
+    owner: "google",
+    src: "com.google.android.rkpd.apex",
+    overrides: ["com.android.rkpd"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_systemserverclasspath_fragments: ["com.android.rkpd-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.scheduling
@@ -388,12 +456,12 @@ module_apex_prebuilt {
     exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
 }
 
-// Google com.google.android.tzdata4
+// Google com.google.android.tzdata5
 module_apex_prebuilt {
-    name: "com.google.android.tzdata4",
+    name: "com.google.android.tzdata5",
     apex_name: "com.android.tzdata",
     owner: "google",
-    src: "com.google.android.tzdata4.apex",
+    src: "com.google.android.tzdata5.apex",
     overrides: ["com.android.tzdata"],
     prefer: true,
     soong_config_variables: {
@@ -401,6 +469,23 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
+}
+
+// Google com.google.android.uwb
+module_apex_prebuilt {
+    name: "com.google.android.uwb",
+    apex_name: "com.android.uwb",
+    owner: "google",
+    src: "com.google.android.uwb.apex",
+    overrides: ["com.android.uwb"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+    exported_bootclasspath_fragments: ["com.android.uwb-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.uwb-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.wifi
@@ -422,23 +507,6 @@ module_apex_prebuilt {
     },
     exported_bootclasspath_fragments: ["com.android.wifi-bootclasspath-fragment"],
     exported_systemserverclasspath_fragments: ["com.android.wifi-systemserverclasspath-fragment"],
-}
-
-// Google com.google.android.uwb
-module_apex_prebuilt {
-    name: "com.google.android.uwb",
-    apex_name: "com.android.uwb",
-    owner: "google",
-    src: "com.google.android.uwb.apex",
-    overrides: ["com.android.uwb"],
-    prefer: true,
-    soong_config_variables: {
-        module_build_from_source: {
-            prefer: false,
-        },
-    },
-    exported_bootclasspath_fragments: ["com.android.uwb-bootclasspath-fragment"],
-    exported_systemserverclasspath_fragments: ["com.android.uwb-systemserverclasspath-fragment"],
 }
 
 // Google com.google.mainline.primary.libs

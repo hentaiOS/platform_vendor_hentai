@@ -19,7 +19,7 @@ SIGNED_TARGET_FILES_PACKAGE := $(PRODUCT_OUT)/$(TARGET_DEVICE)-target_files-$(BU
 SIGN_FROM_TARGET_FILES := $(HOST_OUT_EXECUTABLES)/sign_target_files_apks$(HOST_EXECUTABLE_SUFFIX)
 
 $(SIGNED_TARGET_FILES_PACKAGE): $(BUILT_TARGET_FILES_PACKAGE) \
-		build/tools/releasetools/sign_target_files_apks
+		$(SIGN_FROM_TARGET_FILES)
 	@echo "Signed target files package: $@"
 	    $(SIGN_FROM_TARGET_FILES) --verbose \
 	    -o \
@@ -37,7 +37,7 @@ $(PROD_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(PROD_CERTS)/releasekey
 $(PROD_OTA_PACKAGE_TARGET): $(BRO)
 
 $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
-		build/tools/releasetools/ota_from_target_files
+		$(OTA_FROM_TARGET_FILES)
 	@echo "hentai production: $@"
 	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \
@@ -57,7 +57,7 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): KEY_CERT_PAIR := $(PROD_CERTS)/releasekey
 $(INCREMENTAL_OTA_PACKAGE_TARGET): $(BRO)
 
 $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
-		build/tools/releasetools/ota_from_target_files
+		$(OTA_FROM_TARGET_FILES)
 	@echo "hentai incremental production: $@"
 	    $(OTA_FROM_TARGET_FILES) --verbose \
 	    --block \

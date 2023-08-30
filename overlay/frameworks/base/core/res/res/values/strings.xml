@@ -36,6 +36,12 @@
         <item>Smudge detected, clean screen. Try again.</item>
         <item>Failure to read image. Try again.</item>
         <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item>Re-enroll required.</item>
     </string-array>
 
     <string-array name="fingerprint_error_vendor">

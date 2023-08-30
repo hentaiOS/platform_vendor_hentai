@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# FIXME -- DeviceLock ModulePrebuilt is only planned to be released for QPR2
+DISABLE_DEXPREOPT_CHECK := true
+
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
 MAINLINE_INCLUDE_BT_MODULE ?= true
@@ -69,8 +72,11 @@ PRODUCT_PACKAGES += \
 	com.google.android.adservices \
 	com.google.android.appsearch \
 	com.google.android.cellbroadcast \
+	com.google.android.configinfrastructure \
 	com.google.android.conscrypt \
+	com.google.android.devicelock \
 	com.google.android.extservices \
+	com.google.android.healthfitness \
 	com.google.android.ipsec \
 	com.google.android.media \
 	com.google.android.media.swcodec \
@@ -80,8 +86,9 @@ PRODUCT_PACKAGES += \
 	com.google.android.os.statsd \
 	com.google.android.permission \
 	com.google.android.resolv \
+	com.google.android.rkpd \
 	com.google.android.scheduling \
 	com.google.android.sdkext \
 	com.google.android.tethering \
-	com.google.android.tzdata4 \
+	com.google.android.tzdata5 \
 	com.google.mainline.primary.libs

@@ -40,6 +40,7 @@ PRODUCT_PACKAGES += \
     ais_th.pb \
     altice_us.pb \
     apt_tw.pb \
+    asda_gb.pb \
     assurance_us.pb \
     astca_as.pb \
     att5g_us.pb \
@@ -85,6 +86,8 @@ PRODUCT_PACKAGES += \
     eastlink_ca.pb \
     ee_gb.pb \
     eir_ie.pb \
+    elisa1_fi.pb \
+    elisa2_fi.pb \
     enreach_nl.pb \
     eplus_de.pb \
     esn_gb.pb \
@@ -113,6 +116,7 @@ PRODUCT_PACKAGES += \
     h3g27202_ie.pb \
     halebop_se.pb \
     homobile_it.pb \
+    hotmobile_il.pb \
     ice_no.pb \
     idea_in.pb \
     idmobile_gb.pb \
@@ -132,6 +136,7 @@ PRODUCT_PACKAGES += \
     maxis_my.pb \
     meo_pt.pb \
     metropcs_us.pb \
+    mobily_sa.pb \
     movistar_es.pb \
     nextech_us.pb \
     nos_pt.pb \
@@ -188,6 +193,7 @@ PRODUCT_PACKAGES += \
     sprintprepaid_us.pb \
     sprintwholesale_us.pb \
     starhub_sg.pb \
+    stc_kw.pb \
     stc_sa.pb \
     strata_us.pb \
     sunrise_ch.pb \
