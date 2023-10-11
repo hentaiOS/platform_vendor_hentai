@@ -40,7 +40,6 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		$(INTERNAL_OTATOOLS_FILES) $(OTA_FROM_TARGET_FILES)
 	@echo "hentai production: $@"
 	    $(OTA_FROM_TARGET_FILES) --verbose \
-	    --block \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
 	    $(SIGNED_TARGET_FILES_PACKAGE) $@
@@ -60,7 +59,6 @@ $(INCREMENTAL_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 		$(INTERNAL_OTATOOLS_FILES) $(OTA_FROM_TARGET_FILES)
 	@echo "hentai incremental production: $@"
 	    $(OTA_FROM_TARGET_FILES) --verbose \
-	    --block \
 	    -p $(OUT_DIR)/host/linux-x86 \
 	    -k $(KEY_CERT_PAIR) \
 	    -i $(PREVIOUS_TARGET_FILES_PACKAGE) \
