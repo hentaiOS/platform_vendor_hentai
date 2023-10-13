@@ -32,10 +32,6 @@ enreach_nl
 *
 truphone_zz
 20404"547275554B3030656E
-
-
-sasktel_ca
-20404"5A
 '
 
 verizon_us
@@ -1616,6 +1612,10 @@ Lycamobile
 
 302660
 302660
+
+
+sasktel_ca
+302681
 
 rogers5g_ca
 302720"A4
@@ -1647,10 +1647,14 @@ tbaytel_ca
 
 u264a_ca
 302760"F1
+
+
+sasktel_ca
+302780"5A
 
 
 sasktel_ca
-302780
+302781
 (
 310000SPN=BLUEWIRE
 310000BLUEWIRE
@@ -2567,6 +2571,9 @@ xfinity_us
 )
 spectrum_us
 311480"BA01490000000000
+$
+cox_us
+311480"BA01570000000000
 (
 
 visible_us
@@ -5716,4 +5723,4 @@ Lycamobile
 90158
 
 verizononsitelte_us
-999480Óëí¡º"Þ”ï¤
+999480ÕÿØþ½"ÌøÑ¦

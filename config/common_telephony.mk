@@ -70,6 +70,7 @@ PRODUCT_PACKAGES += \
     consumercellulartmo_us.pb \
     coppervalley_us.pb \
     coriolis_fr.pb \
+    cox_us.pb \
     cricket5g_us.pb \
     cricket_us.pb \
     cspire_nl.pb \
