@@ -47,6 +47,18 @@ $(PROD_OTA_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
 .PHONY: hentai-prod
 hentai-prod: $(PROD_OTA_PACKAGE_TARGET)
 
+PROD_UPDATE_PACKAGE_TARGET := $(PRODUCT_OUT)/$(PROD_VERSION)-img.zip
+
+$(PROD_UPDATE_PACKAGE_TARGET): $(SIGNED_TARGET_FILES_PACKAGE) \
+            $(INTERNAL_OTATOOLS_FILES) $(IMG_FROM_TARGET_FILES)
+	@echo "hentai updatepackage: $@"
+	    $(IMG_FROM_TARGET_FILES) \
+	        --additional IMAGES/VerifiedBootParams.textproto:VerifiedBootParams.textproto \
+	        $(SIGNED_TARGET_FILES_PACKAGE) $@
+
+.PHONY: hentai-updatepackage
+hentai-updatepackage: $(PROD_UPDATE_PACKAGE_TARGET)
+
 ifneq ($(PREVIOUS_TARGET_FILES_PACKAGE),)
 
 INCREMENTAL_OTA_PACKAGE_TARGET := $(PRODUCT_OUT)/incremental-$(PROD_VERSION).zip
