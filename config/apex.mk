@@ -24,7 +24,11 @@ MAINLINE_INCLUDE_UWB_MODULE ?= true
 MAINLINE_INCLUDE_WIFI_MODULE ?= true
 
 # Networkstack certificate
+# only needed if we are building NetworkStackGoogle
+ifeq ($(MAINLINE_INCLUDE_NETWORK_STACK_MODULE), true)
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/hentai/apex/certificates
+endif
+
 
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.
@@ -71,7 +75,6 @@ PRODUCT_PACKAGES += \
 	com.google.android.adbd \
 	com.google.android.adservices \
 	com.google.android.appsearch \
-	com.google.android.cellbroadcast \
 	com.google.android.configinfrastructure \
 	com.google.android.conscrypt \
 	com.google.android.devicelock \
@@ -92,3 +95,8 @@ PRODUCT_PACKAGES += \
 	com.google.android.tethering \
 	com.google.android.tzdata5 \
 	com.google.mainline.primary.libs
+
+# cellbroadcast needs same certificate as network stack
+ifeq ($(MAINLINE_INCLUDE_NETWORK_STACK_MODULE),true)
+PRODUCT_PACKAGES += com.google.android.cellbroadcast
+endif
