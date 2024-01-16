@@ -446,7 +446,6 @@ module_apex_prebuilt {
     owner: "google",
     src: "com.google.android.tethering.apex",
     overrides: ["com.android.tethering"],
-    prefer: true,
     soong_config_variables: {
         module_build_from_source: {
             prefer: false,

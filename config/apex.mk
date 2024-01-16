@@ -20,6 +20,7 @@ DISABLE_DEXPREOPT_CHECK := true
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
 MAINLINE_INCLUDE_BT_MODULE ?= true
+MAINLINE_INCLUDE_TETHERING_MODULE ?= true
 MAINLINE_INCLUDE_UWB_MODULE ?= true
 MAINLINE_INCLUDE_WIFI_MODULE ?= true
 
@@ -52,6 +53,10 @@ endif
 
 ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
 SOONG_CONFIG_bluetooth_module_source_build := false
+endif
+
+ifeq ($(MAINLINE_INCLUDE_TETHERING_MODULE),true)
+SOONG_CONFIG_tethering_module_source_build := false
 endif
 
 ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
@@ -92,7 +97,6 @@ PRODUCT_PACKAGES += \
 	com.google.android.rkpd \
 	com.google.android.scheduling \
 	com.google.android.sdkext \
-	com.google.android.tethering \
 	com.google.android.tzdata5 \
 	com.google.mainline.primary.libs
 

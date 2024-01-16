@@ -39,6 +39,12 @@ LOCAL_REQUIRED_MODULES += \
     com.google.android.btservices
 endif
 
+# TETHERING Mainline Module
+ifeq ($(MAINLINE_INCLUDE_TETHERING_MODULE),true)
+LOCAL_REQUIRED_MODULES += \
+    com.google.android.tethering
+endif
+
 # UWB Mainline Module
 ifeq ($(MAINLINE_INCLUDE_UWB_MODULE),true)
 LOCAL_REQUIRED_MODULES += \
