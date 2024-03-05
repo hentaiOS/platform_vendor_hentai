@@ -190,8 +190,8 @@ module_apex_prebuilt {
             prefer: false,
         },
     },
-    //exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
-    //exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
+    exported_bootclasspath_fragments: ["com.android.devicelock-bootclasspath-fragment"],
+    exported_systemserverclasspath_fragments: ["com.android.devicelock-systemserverclasspath-fragment"],
 }
 
 // Google com.google.android.extservices
