@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config>
+  <compat-change description="For apps targeting Android V and above, several methods are now user-handle-aware, which means they use the user contained within the context. For apps targeting an SDK version &lt;em&gt;below&lt;/em&gt; this, the user of the calling process will be used." enableSinceTargetSdk="10000" id="303742236" name="ROLE_MANAGER_USER_HANDLE_AWARE">
+    <meta-data definedIn="android.app.role.RoleManager" sourcePosition="packages/modules/Permission/framework-s/java/android/app/role/RoleManager.java:228" />
+  </compat-change>
+</config>
