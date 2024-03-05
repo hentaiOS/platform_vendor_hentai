@@ -1,0 +1,10 @@
+android/provider/DeviceConfig
+android/provider/DeviceConfigDataStore
+android/provider/DeviceConfigManager
+android/provider/DeviceConfigServiceDataStore
+android/provider/DeviceConfigShellCommandHandler
+android/provider/SettingsConfigDataStore
+android/provider/UpdatableDeviceConfigServiceReadiness
+android/provider/WritableFlags
+android/provider/aidl/**
+android/provider/internal/modules/utils/build/**

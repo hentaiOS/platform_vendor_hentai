@@ -15,7 +15,7 @@
 #
 
 # Setup build characteristics
-PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
+PRODUCT_INCLUDE_TAGS := mainline_module_prebuilt_monthly_release
 
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
@@ -24,7 +24,7 @@ MAINLINE_INCLUDE_UWB_MODULE ?= true
 MAINLINE_INCLUDE_WIFI_MODULE ?= true
 
 # Networkstack certificate
-PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/hentai/apex/certificates
+PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/hentai/apex/modules/certificates
 
 # Prebuilt module SDKs require prebuilt modules to work, and currently
 # prebuilt modules are only provided for com.google.android.xxx.

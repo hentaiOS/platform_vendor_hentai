@@ -1,0 +1,13 @@
+// Signature format: 2.0
+package android.adservices.ondevicepersonalization {
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class OnDevicePersonalizationConfigManager {
+    method @FlaggedApi("enable_ondevicepersonalization_apis") @RequiresPermission(android.adservices.ondevicepersonalization.OnDevicePersonalizationPermissions.MODIFY_ONDEVICEPERSONALIZATION_STATE) public void setPersonalizationEnabled(boolean, @NonNull java.util.concurrent.Executor, @NonNull android.os.OutcomeReceiver<java.lang.Void,java.lang.Exception>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class OnDevicePersonalizationPermissions {
+    field @FlaggedApi("enable_ondevicepersonalization_apis") public static final String MODIFY_ONDEVICEPERSONALIZATION_STATE = "android.permission.ondevicepersonalization.MODIFY_ONDEVICEPERSONALIZATION_STATE";
+  }
+
+}
+
