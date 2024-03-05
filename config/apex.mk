@@ -14,8 +14,8 @@
 # limitations under the License.
 #
 
-# FIXME -- DeviceLock ModulePrebuilt is only planned to be released for QPR2
-DISABLE_DEXPREOPT_CHECK := true
+# Setup build characteristics
+PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
 
 # Optional ART/BT/UWB/WIFI module
 MAINLINE_INCLUDE_ART_MODULE ?= true
