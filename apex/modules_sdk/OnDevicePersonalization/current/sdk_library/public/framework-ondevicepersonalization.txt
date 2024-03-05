@@ -1,0 +1,251 @@
+// Signature format: 2.0
+package android.adservices.ondevicepersonalization {
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class AppInfo implements android.os.Parcelable {
+    method public int describeContents();
+    method @NonNull public boolean isInstalled();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.adservices.ondevicepersonalization.AppInfo> CREATOR;
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class DownloadCompletedInput {
+    method @NonNull public java.util.Map<java.lang.String,byte[]> getData();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class DownloadCompletedOutput {
+    method @NonNull public java.util.List<java.lang.String> getRetainedKeys();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class DownloadCompletedOutput.Builder {
+    ctor public DownloadCompletedOutput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.DownloadCompletedOutput.Builder addRetainedKey(@NonNull String);
+    method @NonNull public android.adservices.ondevicepersonalization.DownloadCompletedOutput build();
+    method @NonNull public android.adservices.ondevicepersonalization.DownloadCompletedOutput.Builder setRetainedKeys(@NonNull java.util.List<java.lang.String>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class EventInput {
+    method @NonNull public android.os.PersistableBundle getParameters();
+    method @Nullable public android.adservices.ondevicepersonalization.RequestLogRecord getRequestLogRecord();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class EventLogRecord implements android.os.Parcelable {
+    method public int describeContents();
+    method @Nullable public android.content.ContentValues getData();
+    method @Nullable public android.adservices.ondevicepersonalization.RequestLogRecord getRequestLogRecord();
+    method @IntRange(from=0) public int getRowIndex();
+    method @NonNull public java.time.Instant getTime();
+    method @IntRange(from=1, to=127) public int getType();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.adservices.ondevicepersonalization.EventLogRecord> CREATOR;
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class EventLogRecord.Builder {
+    ctor public EventLogRecord.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.EventLogRecord build();
+    method @NonNull public android.adservices.ondevicepersonalization.EventLogRecord.Builder setData(@NonNull android.content.ContentValues);
+    method @NonNull public android.adservices.ondevicepersonalization.EventLogRecord.Builder setRequestLogRecord(@NonNull android.adservices.ondevicepersonalization.RequestLogRecord);
+    method @NonNull public android.adservices.ondevicepersonalization.EventLogRecord.Builder setRowIndex(@IntRange(from=0) int);
+    method @NonNull public android.adservices.ondevicepersonalization.EventLogRecord.Builder setType(@IntRange(from=1, to=127) int);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class EventOutput {
+    method @Nullable public android.adservices.ondevicepersonalization.EventLogRecord getEventLogRecord();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class EventOutput.Builder {
+    ctor public EventOutput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.EventOutput build();
+    method @NonNull public android.adservices.ondevicepersonalization.EventOutput.Builder setEventLogRecord(@NonNull android.adservices.ondevicepersonalization.EventLogRecord);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class EventUrlProvider {
+    method @NonNull @WorkerThread public android.net.Uri createEventTrackingUrlWithRedirect(@NonNull android.os.PersistableBundle, @Nullable android.net.Uri);
+    method @NonNull @WorkerThread public android.net.Uri createEventTrackingUrlWithResponse(@NonNull android.os.PersistableBundle, @Nullable byte[], @Nullable String);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class ExecuteInput {
+    method @NonNull public String getAppPackageName();
+    method @NonNull public android.os.PersistableBundle getAppParams();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class ExecuteOutput {
+    method @NonNull public java.util.List<android.adservices.ondevicepersonalization.RenderingConfig> getRenderingConfigs();
+    method @Nullable public android.adservices.ondevicepersonalization.RequestLogRecord getRequestLogRecord();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class ExecuteOutput.Builder {
+    ctor public ExecuteOutput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.ExecuteOutput.Builder addRenderingConfig(@NonNull android.adservices.ondevicepersonalization.RenderingConfig);
+    method @NonNull public android.adservices.ondevicepersonalization.ExecuteOutput build();
+    method @NonNull public android.adservices.ondevicepersonalization.ExecuteOutput.Builder setRenderingConfigs(@NonNull java.util.List<android.adservices.ondevicepersonalization.RenderingConfig>);
+    method @NonNull public android.adservices.ondevicepersonalization.ExecuteOutput.Builder setRequestLogRecord(@NonNull android.adservices.ondevicepersonalization.RequestLogRecord);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class FederatedComputeInput {
+    method @NonNull public String getPopulationName();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class FederatedComputeInput.Builder {
+    ctor public FederatedComputeInput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.FederatedComputeInput build();
+    method @NonNull public android.adservices.ondevicepersonalization.FederatedComputeInput.Builder setPopulationName(@NonNull String);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class FederatedComputeScheduler {
+    method @WorkerThread public void cancel(@NonNull String);
+    method @WorkerThread public void schedule(@NonNull android.adservices.ondevicepersonalization.FederatedComputeScheduler.Params, @NonNull android.adservices.ondevicepersonalization.FederatedComputeInput);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static class FederatedComputeScheduler.Params {
+    ctor public FederatedComputeScheduler.Params(@NonNull android.adservices.ondevicepersonalization.TrainingInterval);
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingInterval getTrainingInterval();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public abstract class IsolatedService extends android.app.Service {
+    ctor public IsolatedService();
+    method @NonNull public final android.adservices.ondevicepersonalization.EventUrlProvider getEventUrlProvider(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @NonNull public final android.adservices.ondevicepersonalization.FederatedComputeScheduler getFederatedComputeScheduler(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @NonNull public final android.adservices.ondevicepersonalization.MutableKeyValueStore getLocalData(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @NonNull public final android.adservices.ondevicepersonalization.LogReader getLogReader(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @NonNull public final android.adservices.ondevicepersonalization.KeyValueStore getRemoteData(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @Nullable public final android.adservices.ondevicepersonalization.UserData getUserData(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+    method @Nullable public android.os.IBinder onBind(@NonNull android.content.Intent);
+    method @NonNull public abstract android.adservices.ondevicepersonalization.IsolatedWorker onRequest(@NonNull android.adservices.ondevicepersonalization.RequestToken);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public interface IsolatedWorker {
+    method public default void onDownloadCompleted(@NonNull android.adservices.ondevicepersonalization.DownloadCompletedInput, @NonNull java.util.function.Consumer<android.adservices.ondevicepersonalization.DownloadCompletedOutput>);
+    method public default void onEvent(@NonNull android.adservices.ondevicepersonalization.EventInput, @NonNull java.util.function.Consumer<android.adservices.ondevicepersonalization.EventOutput>);
+    method public default void onExecute(@NonNull android.adservices.ondevicepersonalization.ExecuteInput, @NonNull java.util.function.Consumer<android.adservices.ondevicepersonalization.ExecuteOutput>);
+    method public default void onRender(@NonNull android.adservices.ondevicepersonalization.RenderInput, @NonNull java.util.function.Consumer<android.adservices.ondevicepersonalization.RenderOutput>);
+    method public default void onTrainingExamples(@NonNull android.adservices.ondevicepersonalization.TrainingExamplesInput, @NonNull java.util.function.Consumer<android.adservices.ondevicepersonalization.TrainingExamplesOutput>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public interface KeyValueStore {
+    method @Nullable @WorkerThread public byte[] get(@NonNull String);
+    method @NonNull @WorkerThread public java.util.Set<java.lang.String> keySet();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class LogReader {
+    method @NonNull @WorkerThread public java.util.List<android.adservices.ondevicepersonalization.EventLogRecord> getJoinedEvents(@NonNull java.time.Instant, @NonNull java.time.Instant);
+    method @NonNull @WorkerThread public java.util.List<android.adservices.ondevicepersonalization.RequestLogRecord> getRequests(@NonNull java.time.Instant, @NonNull java.time.Instant);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public interface MutableKeyValueStore extends android.adservices.ondevicepersonalization.KeyValueStore {
+    method @Nullable @WorkerThread public byte[] put(@NonNull String, @NonNull byte[]);
+    method @Nullable @WorkerThread public byte[] remove(@NonNull String);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class OnDevicePersonalizationException extends java.lang.Exception {
+    method public int getErrorCode();
+    field public static final int ERROR_ISOLATED_SERVICE_FAILED = 1; // 0x1
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class OnDevicePersonalizationManager {
+    method public void execute(@NonNull android.content.ComponentName, @NonNull android.os.PersistableBundle, @NonNull java.util.concurrent.Executor, @NonNull android.os.OutcomeReceiver<java.util.List<android.adservices.ondevicepersonalization.SurfacePackageToken>,java.lang.Exception>);
+    method public void requestSurfacePackage(@NonNull android.adservices.ondevicepersonalization.SurfacePackageToken, @NonNull android.os.IBinder, int, int, int, @NonNull java.util.concurrent.Executor, @NonNull android.os.OutcomeReceiver<android.view.SurfaceControlViewHost.SurfacePackage,java.lang.Exception>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class RenderInput {
+    method public int getHeight();
+    method @Nullable public android.adservices.ondevicepersonalization.RenderingConfig getRenderingConfig();
+    method public int getRenderingConfigIndex();
+    method public int getWidth();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class RenderOutput {
+    method @Nullable public String getContent();
+    method @Nullable public String getTemplateId();
+    method @NonNull public android.os.PersistableBundle getTemplateParams();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class RenderOutput.Builder {
+    ctor public RenderOutput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.RenderOutput build();
+    method @NonNull public android.adservices.ondevicepersonalization.RenderOutput.Builder setContent(@NonNull String);
+    method @NonNull public android.adservices.ondevicepersonalization.RenderOutput.Builder setTemplateId(@NonNull String);
+    method @NonNull public android.adservices.ondevicepersonalization.RenderOutput.Builder setTemplateParams(@NonNull android.os.PersistableBundle);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class RenderingConfig implements android.os.Parcelable {
+    method public int describeContents();
+    method @NonNull public java.util.List<java.lang.String> getKeys();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.adservices.ondevicepersonalization.RenderingConfig> CREATOR;
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class RenderingConfig.Builder {
+    ctor public RenderingConfig.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.RenderingConfig.Builder addKey(@NonNull String);
+    method @NonNull public android.adservices.ondevicepersonalization.RenderingConfig build();
+    method @NonNull public android.adservices.ondevicepersonalization.RenderingConfig.Builder setKeys(@NonNull java.util.List<java.lang.String>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class RequestLogRecord implements android.os.Parcelable {
+    method public int describeContents();
+    method @NonNull public java.util.List<android.content.ContentValues> getRows();
+    method @NonNull public java.time.Instant getTime();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.adservices.ondevicepersonalization.RequestLogRecord> CREATOR;
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class RequestLogRecord.Builder {
+    ctor public RequestLogRecord.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.RequestLogRecord.Builder addRow(@NonNull android.content.ContentValues);
+    method @NonNull public android.adservices.ondevicepersonalization.RequestLogRecord build();
+    method @NonNull public android.adservices.ondevicepersonalization.RequestLogRecord.Builder setRows(@NonNull java.util.List<android.content.ContentValues>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class RequestToken {
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public class SurfacePackageToken {
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class TrainingExamplesInput {
+    method @NonNull public String getPopulationName();
+    method @Nullable public byte[] getResumptionToken();
+    method @NonNull public String getTaskName();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class TrainingExamplesOutput {
+    method @NonNull public java.util.List<byte[]> getResumptionTokens();
+    method @NonNull public java.util.List<byte[]> getTrainingExamples();
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class TrainingExamplesOutput.Builder {
+    ctor public TrainingExamplesOutput.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingExamplesOutput.Builder addResumptionToken(@NonNull byte[]);
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingExamplesOutput.Builder addTrainingExample(@NonNull byte[]);
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingExamplesOutput build();
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingExamplesOutput.Builder setResumptionTokens(@NonNull java.util.List<byte[]>);
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingExamplesOutput.Builder setTrainingExamples(@NonNull java.util.List<byte[]>);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class TrainingInterval {
+    method @NonNull public java.time.Duration getMinimumInterval();
+    method public int getSchedulingMode();
+    field public static final int SCHEDULING_MODE_ONE_TIME = 1; // 0x1
+    field public static final int SCHEDULING_MODE_RECURRENT = 2; // 0x2
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public static final class TrainingInterval.Builder {
+    ctor public TrainingInterval.Builder();
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingInterval build();
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingInterval.Builder setMinimumInterval(@NonNull java.time.Duration);
+    method @NonNull public android.adservices.ondevicepersonalization.TrainingInterval.Builder setSchedulingMode(int);
+  }
+
+  @FlaggedApi("enable_ondevicepersonalization_apis") public final class UserData implements android.os.Parcelable {
+    method public int describeContents();
+    method @NonNull public java.util.Map<java.lang.String,android.adservices.ondevicepersonalization.AppInfo> getAppInfos();
+    method @IntRange(from=0) public long getAvailableStorageBytes();
+    method @IntRange(from=0, to=100) public int getBatteryPercentage();
+    method @NonNull public String getCarrier();
+    method public int getOrientation();
+    method public void writeToParcel(@NonNull android.os.Parcel, int);
+    field @NonNull public static final android.os.Parcelable.Creator<android.adservices.ondevicepersonalization.UserData> CREATOR;
+  }
+
+}
+
