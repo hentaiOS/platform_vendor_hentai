@@ -465,6 +465,7 @@ function write_blueprint_packages() {
                 if [ "$ARG" = "PRESIGNED" ]; then
                     USE_PLATFORM_CERTIFICATE="false"
                     printf '\tpresigned: true,\n'
+                    printf '\tpreprocessed: true,\n'
                 elif [[ "$ARG" =~ "OVERRIDES" ]]; then
                     OVERRIDEPKG=${ARG#*=}
                     OVERRIDEPKG=${OVERRIDEPKG//,/\", \"}
