@@ -93,6 +93,9 @@ art_prebuilt_apex_set {
     owner: "google",
     src: "com.google.android.art.apex",
     overrides: [
+        "libsigchain",
+        "libnativeloader",
+        "libnativehelper",
         "com.android.art",
         "com.android.art.debug",
     ],
