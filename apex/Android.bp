@@ -116,9 +116,6 @@ module_apex_prebuilt {
     owner: "google",
     src: "com.google.android.btservices.apex",
     overrides: ["com.android.btservices"],
-    required: ["android.hardware.bluetooth@1.1",
-               "android.hardware.bluetooth.audio@2.1",
-               "android.hardware.bluetooth.audio-V2-ndk"],
     prefer: true,
     soong_config_variables: {
         module_build_from_source: {
