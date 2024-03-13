@@ -15,4 +15,4 @@
 #
 
 PRODUCT_PACKAGES += \
-    Updater
+    helluvaUpdater
