@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+** Copyright (C) 2024 The hentaiOS Project and its Proprietors.
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<resources>
+    <!-- Build properties to spoof to certain google apps -->
+    <string-array name="buildProperties" translatable="false">
+        <item>Pixel 8 Pro</item>                                                           <!-- Build.MODEL -->
+        <item>husky</item>                                                                 <!-- Build.DEVICE -->
+        <item>husky</item>                                                                 <!-- Build.PRODUCT -->
+        <item>google</item>                                                                <!-- Build.BRAND -->
+        <item>Google</item>                                                                <!-- Build.MANUFACTURER -->
+        <item>google/husky/husky:14/AP1A.240305.019.A1/11445699:user/release-keys</item>   <!-- Build.FINGERPRINT -->
+        <item>user</item>                                                                  <!-- Build.TYPE -->
+        <item>release-keys</item>                                                          <!-- Build.TAGS -->
+    </string-array>
+
+    <!-- Device config to override -->
+    <string-array name="deviceConfig" translatable="false">
+        <item>launcher/ENABLE_LONG_PRESS_NAV_HANDLE=true</item>
+        <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
+        <item>launcher/INVOKE_OMNI_LPH=true</item>
+        <item>launcher/enable_quick_launch_v3_aa=true</item>
+        <item>launcher/gboard_update_enter_key=true</item>
+        <item>launcher/long_press_home_button_to_search=true</item>
+        <item>launcher/press_hold_nav_handle_to_search=true</item>
+    </string-array>
+</resources>
