@@ -17,6 +17,7 @@
 # Hentai Overlays
 PRODUCT_PACKAGES += \
     HentaiConfigOverlay \
+    HentaiProductSpt \
     PixelSetupWizardOverlayHentai \
     SettingsGoogleOverlayHentai
 
