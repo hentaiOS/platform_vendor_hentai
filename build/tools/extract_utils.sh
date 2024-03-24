@@ -1291,9 +1291,10 @@ function parse_file_list() {
             PRODUCT_PACKAGES_LIST+=("${SPEC#-}")
             PRODUCT_PACKAGES_HASHES+=("$HASH")
             PRODUCT_PACKAGES_FIXUP_HASHES+=("$FIXUP_HASH")
-        # if line contains apex, apk or vintf fragment, it needs to be packaged
+        # if line contains apex, apk, jar or vintf fragment, it needs to be packaged
         elif suffix_match_file ".apex" "$(src_file "$SPEC")" || \
              suffix_match_file ".apk" "$(src_file "$SPEC")" || \
+             suffix_match_file ".jar" "$(src_file "$SPEC")" || \
              [[ "$TARGET_ENABLE_CHECKELF" == "true" && \
                 ( "${SPEC%%;*}" == *".so" || \
                   "$SPEC" == *"bin/"* || \
