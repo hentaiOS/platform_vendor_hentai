@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34951a05_1f66f415",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000018
+      },
+      "writtenOn": "2024-04-12T21:02:42Z",
+      "side": 1,
+      "message": "Commands used:\n - `find . -type f -exec sed -i \u0027/Pixel Imprint/d\u0027 {} \\;`, for deleting all \"Pixel Imprint\" references;\n - `find . -type f -exec sed -i \u0027/fingerprint_*/,+2d\u0027 {} \\;`for deleting further fingerprint strings.\nStill requires to be tested before merging.",
+      "revId": "5e21f8abe49c99df49251c1616da1dc77c15a26a",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
