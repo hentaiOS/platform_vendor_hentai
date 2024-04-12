@@ -19,24 +19,4 @@
 <resources>
     <string name="display_white_balance_summary">Säätää näyttöä dynaamisesti ympäristön valoisuuden perusteella</string>
     <string name="display_white_balance_title">Valon kirkkauden säätö</string>
-    <string name="fingerprint_unlock_set_unlock_password">Pixel Imprint ja salasana</string>
-    <string name="fingerprint_unlock_set_unlock_pattern">Pixel Imprint ja kuvio</string>
-    <string name="fingerprint_unlock_set_unlock_pin">Pixel Imprint ja PIN-koodi</string>
-    <string name="fingerprint_unlock_skip_fingerprint">Jatka ilman Pixel Imprintiä</string>
-    <string name="fingerprint_unlock_title">Pixel Imprintin avulla voit käyttää sormenjälkeäsi puhelimen lukituksen avaamiseen. Turvallisuussyistä tämä edellyttää, että määrität näytön varalukitustavan.</string>
-    <string name="lock_settings_picker_fingerprint_message">Valitse Pixel Imprintin kanssa käytettävä toissijainen näytönlukitusmenetelmä</string>
-    <string name="security_settings_fingerprint_enroll_disclaimer">Puhelimen lukituksen avaamisen lisäksi voit käyttää Pixel Imprintiä ostosten hyväksymiseen ja sovellusten käyttöoikeuksien vahvistamiseen. <annotation id="url">Lue lisää</annotation></string>
-    <string name="security_settings_fingerprint_enroll_introduction_message">"Avaa puhelin tai hyväksy ostoksia sormenjäljellä.
-
-Huom. Sormenjälki ei välttämättä ole yhtä turvallinen kuin vahva kuvio tai PIN-koodi."</string>
-    <string name="security_settings_fingerprint_enroll_introduction_message_unlock_disabled">"Voit hyväksyä ostoksia tai kirjautua sovelluksiin Pixel Imprintillä.
-
-Ole varovainen lisätessäsi sormenjälkiä – edellä mainitut toiminnot onnistuvat kaikilla laitteeseen lisätyillä sormenjäljillä.
-
-Huom. Tämän laitteen lukitusta ei voi avata sormenjäljellä. Saat lisätietoja organisaatiosi järjestelmänvalvojalta."</string>
-    <string name="security_settings_fingerprint_enroll_introduction_title">Avaa lukitus Pixel Imprintillä</string>
-    <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled">Pixel Imprint</string>
-    <string name="security_settings_fingerprint_preference_title">Pixel Imprint</string>
-    <string name="setup_fingerprint_enroll_finish_message">Käynnistä puhelimen näyttö ja avaa sen lukitus koskettamalla Pixel Imprint ‑anturia.</string>
-    <string name="suggested_fingerprint_lock_settings_summary">Avaa puhelimen lukitus Pixel Imprintillä</string>
 </resources>
