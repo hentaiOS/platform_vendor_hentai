@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0e754de_8af07008",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000010
+      },
+      "writtenOn": "2024-04-20T07:00:42Z",
+      "side": 1,
+      "message": "In this case, udfps devices have to include UdfpsOverlay, correct?",
+      "revId": "bd029685c3fa870e16ad7ede4150cdf1dcae920b",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
