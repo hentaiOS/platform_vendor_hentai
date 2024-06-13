@@ -16,7 +16,7 @@
 
 # CarrierSettings, replace CarrierConfig
 PRODUCT_PACKAGES += \
-    CarrierSettings
+    CarrierSettings_signed_45.0.591154042
 
 #
 # Carrier configs by Google, parsed by CarrierSettings
@@ -33,8 +33,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     1and1_de.pb \
     2degrees_nz.pb \
+    4ka_sk.pb \
     a1_at.pb \
+    a1_bg.pb \
     a1_hr.pb \
+    a1_mk.pb \
     a1_si.pb \
     ahamo_jp.pb \
     airtel_in.pb \
@@ -42,13 +45,16 @@ PRODUCT_PACKAGES += \
     altice_us.pb \
     andorratelecom_ad.pb \
     antel_uy.pb \
+    appalachian_us.pb \
     apt_tw.pb \
     asda_gb.pb \
     assurance_us.pb \
     astca_as.pb \
     att5gsa_us.pb \
     att5g_us.pb \
+    attbootstrap_us.pb \
     attmvnos_us.pb \
+    att_mx.pb \
     att_us.pb \
     base_be.pb \
     batelco_bh.pb \
@@ -56,12 +62,14 @@ PRODUCT_PACKAGES += \
     bite_lt.pb \
     bite_lv.pb \
     bluegrass_us.pb \
+    bob_at.pb \
     boosttmo_us.pb \
     boost_us.pb \
     bouygues_fr.pb \
     bsnl_in.pb \
     btb_gb.pb \
     btc_gb.pb \
+    cablemovil_es.pb \
     carolinawest_us.pb \
     celcom_my.pb \
     cellcom_il.pb \
@@ -88,6 +96,7 @@ PRODUCT_PACKAGES += \
     digimobil_es.pb \
     digi_my.pb \
     digi_ro.pb \
+    dish5gsa_us.pb \
     dishatt_us.pb \
     dito_ph.pb \
     dna_fi.pb \
@@ -112,6 +121,7 @@ PRODUCT_PACKAGES += \
     fet_tw.pb \
     fi_at.pb \
     fido_ca.pb \
+    finetwork_es.pb \
     firstnetpacific2_us.pb \
     firstnetpacific_us.pb \
     firstnet_us.pb \
@@ -120,37 +130,46 @@ PRODUCT_PACKAGES += \
     fl1_li.pb \
     freedommobile_ca.pb \
     free_fr.pb \
+    free_re.pb \
     gamma_gb.pb \
     gci_us.pb \
     gibtel_gi.pb \
     giffgaff_gb.pb \
     giga_sg.pb \
     globe_ph.pb \
+    guuk_es.pb \
     h3_at.pb \
     h3g27202_ie.pb \
     h3_gb.pb \
     h3_ie.pb \
     h3_se.pb \
     halebop_se.pb \
+    help_at.pb \
     homobile_it.pb \
     hotmobile_il.pb \
     ice_no.pb \
     idea_in.pb \
     idmobile_gb.pb \
     iliad_it.pb \
+    inland_us.pb \
     jazztel_es.pb \
     kddi_jp.pb \
     kddimvno_jp.pb \
     kena_it.pb \
     koodo_ca.pb \
     kpn_nl.pb \
+    lebara_es.pb \
+    lebara_fr.pb \
     lebara_gb.pb \
     liberty_pr.pb \
+    lifecell_ua.pb \
     linemo_jp.pb \
+    llamaya_es.pb \
     lmt_lv.pb \
     lowi_es.pb \
     luckymobile_ca.pb \
     lum_ca.pb \
+    lyca_es.pb \
     m1_sg.pb \
     manxcontract_im.pb \
     manxprepaid_im.pb \
@@ -159,10 +178,13 @@ PRODUCT_PACKAGES += \
     meo_pt.pb \
     metropcs_us.pb \
     mobily_sa.pb \
+    monacotelecom_mc.pb \
     movistar_es.pb \
+    movistar_mx.pb \
     nextech_us.pb \
     nos_pt.pb \
     nova_gr.pb \
+    nova_is.pb \
     o2_cz.pb \
     o2_de.pb \
     o2postpaid_gb.pb \
@@ -194,15 +216,18 @@ PRODUCT_PACKAGES += \
     povo_jp.pb \
     proximus_be.pb \
     publicmobile_ca.pb \
+    racc_es.pb \
     rakuten_jp.pb \
     reachmobileatt_us.pb \
     redpocketatt_us.pb \
     redpockettmo_us.pb \
+    r_es.pb \
     rjio_in.pb \
     rogers5g_ca.pb \
     rogers_ca.pb \
     rogerswpn_ca.pb \
     salt_ch.pb \
+    salt_li.pb \
     sasktel_ca.pb \
     sfr_fr.pb \
     shaw_ca.pb \
@@ -216,6 +241,7 @@ PRODUCT_PACKAGES += \
     sky_gb.pb \
     skylo_zz.pb \
     smartone_hk.pb \
+    smart_ph.pb \
     smarty_gb.pb \
     softbank_jp.pb \
     solomobile_ca.pb \
@@ -225,12 +251,14 @@ PRODUCT_PACKAGES += \
     sprintprepaid_us.pb \
     sprint_us.pb \
     sprintwholesale_us.pb \
+    spusu_at.pb \
     starhub_sg.pb \
     stc_bh.pb \
     stc_kw.pb \
     stc_sa.pb \
     strata_us.pb \
     sunrise_ch.pb \
+    sweno_es.pb \
     swisscom_ch.pb \
     swisscom_li.pb \
     talkmobile_gb.pb \
@@ -240,14 +268,17 @@ PRODUCT_PACKAGES += \
     tchibo_de.pb \
     tdc_dk.pb \
     telcel_mx.pb \
+    telco_re.pb \
     tele2_ee.pb \
     tele2_lt.pb \
     tele2_lv.pb \
     tele2_se.pb \
+    telecable2_es.pb \
     telekom_de.pb \
     telekom_gr.pb \
     telekom_hr.pb \
     telekom_hu.pb \
+    telekom_mk.pb \
     telekom_pl.pb \
     telekom_ro.pb \
     telekom_si.pb \
@@ -278,7 +309,11 @@ PRODUCT_PACKAGES += \
     tracfonetmo_us.pb \
     tracfoneverizon_us.pb \
     truemove_th.pb \
+    truphone_us.pb \
+    truphone_zz.pb \
     tstar_tw.pb \
+    turkcell_tr.pb \
+    turktelekom_tr.pb \
     twm_tw.pb \
     u264ab_ca.pb \
     u264a_ca.pb \
@@ -288,6 +323,7 @@ PRODUCT_PACKAGES += \
     ultra_us.pb \
     umobile_my.pb \
     unifi_my.pb \
+    unionwireless_us.pb \
     uqmobile5gsa_jp.pb \
     uqmobile_jp.pb \
     uscc_us.pb \
@@ -296,8 +332,10 @@ PRODUCT_PACKAGES += \
     viaero_us.pb \
     videotron_ca.pb \
     vimla_se.pb \
+    vinaphone_vn.pb \
     virgin_ca.pb \
     virgin_gb.pb \
+    virgintelco_es.pb \
     virgin_us.pb \
     visible_us.pb \
     visiblev_us.pb \
@@ -324,6 +362,8 @@ PRODUCT_PACKAGES += \
     xfinity2_us.pb \
     xfinity_us.pb \
     yes_my.pb \
+    yesss_at.pb \
+    yettel_bg.pb \
     yettel_hu.pb \
     yoigo_es.pb \
     zain_bh.pb \
