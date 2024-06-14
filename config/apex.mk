@@ -26,10 +26,6 @@ MAINLINE_INCLUDE_WIFI_MODULE ?= true
 # Networkstack certificate
 PRODUCT_MAINLINE_SEPOLICY_DEV_CERTIFICATES=vendor/hentai/apex/certificates
 
-# Prebuilt module SDKs require prebuilt modules to work, and currently
-# prebuilt modules are only provided for com.google.android.xxx.
-MODULE_BUILD_FROM_SOURCE ?= false
-
 SOONG_CONFIG_NAMESPACES += wifi_module
 SOONG_CONFIG_wifi_module += source_build
 SOONG_CONFIG_wifi_module_source_build := true

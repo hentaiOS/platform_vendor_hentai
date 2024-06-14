@@ -375,9 +375,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     others.pb
 
-# Disable mobile data in roaming by default.
+# Include common SIM configuration proprieties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.android.dataroaming=false
+    keyguard.no_require_sim=true \
+    ro.com.android.prov_mobiledata=false
 
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGE_OVERLAYS += \
