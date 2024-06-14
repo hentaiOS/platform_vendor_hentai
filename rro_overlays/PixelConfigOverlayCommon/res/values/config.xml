@@ -193,6 +193,18 @@
     -->
     <string name="config_defaultContentSuggestionsService" translatable="false">com.google.android.as/com.google.android.apps.miphone.aiai.app.AiAiContentSuggestionsService</string>
 
+    <!-- The key containing the branching boolean for Contextual Search. -->
+    <string name="config_defaultContextualSearchEnabled" translatable="false">omni.enable_cs_helper</string>
+
+    <!-- The key containing the entrypoint for Contextual Search. -->
+    <string name="config_defaultContextualSearchKey" translatable="false">omni.entry_point</string>
+
+    <!-- The key containing the branching boolean for legacy Search. -->
+    <string name="config_defaultContextualSearchLegacyEnabled" translatable="false">omni.enable_vis</string>
+
+    <!-- Name of the package responsible to handle Contextual Search. -->
+    <string name="config_defaultContextualSearchPackageName" translatable="false">com.google.android.googlequicksearchbox</string>
+
     <!-- Colon separated list of package names that should be granted DND access -->
     <string name="config_defaultDndAccessPackages" translatable="false">com.google.android.GoogleCamera:com.google.android.gms:com.google.intelligence.sense:com.google.android.settings.intelligence:com.google.android.apps.wellbeing:com.google.android.apps.safetyhub:com.google.android.dialer:com.google.android.apps.diagnosticstool</string>
 

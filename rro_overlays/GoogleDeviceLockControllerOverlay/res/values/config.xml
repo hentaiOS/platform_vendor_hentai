@@ -20,6 +20,9 @@
     <string-array name="lock_task_allowlist" translatable="false">
         <item>com.google.android.gms</item>
     </string-array>
+    <integer name="device_id_type_bitmap">3</integer>
+    <integer name="finalize_server_port_number">443</integer>
     <integer name="check_in_server_port_number">443</integer>
     <string name="check_in_server_host_name" translatable="false">devicelockcheckin-pa.googleapis.com</string>
+    <string name="finalize_server_host_name" translatable="false">devicelockfinalize-pa.googleapis.com</string>
 </resources>
