@@ -24,7 +24,7 @@
         <item>husky</item>                                                                 <!-- Build.PRODUCT -->
         <item>google</item>                                                                <!-- Build.BRAND -->
         <item>Google</item>                                                                <!-- Build.MANUFACTURER -->
-        <item>google/husky/husky:14/AP1A.240305.019.A1/11445699:user/release-keys</item>   <!-- Build.FINGERPRINT -->
+        <item>google/husky/husky:14/AP2A.240605.024/11860263:user/release-keys</item>      <!-- Build.FINGERPRINT -->
         <item>user</item>                                                                  <!-- Build.TYPE -->
         <item>release-keys</item>                                                          <!-- Build.TAGS -->
     </string-array>
@@ -35,9 +35,6 @@
         <item>launcher/ENABLE_SEARCH_HAPTIC_HINT=true</item>
         <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
         <item>launcher/INVOKE_OMNI_LPH=true</item>
-        <item>launcher/enable_quick_launch_v3_aa=true</item>
-        <item>launcher/enable_quick_launch_v3_qsb=true</item>
-        <item>launcher/gboard_update_enter_key=true</item>
         <item>launcher/long_press_home_button_to_search=true</item>
         <item>launcher/press_hold_nav_handle_to_search=true</item>
     </string-array>
