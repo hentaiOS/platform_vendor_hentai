@@ -19,8 +19,7 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
-    HarmonyOS-Sans-Italic.ttf \
-    HarmonyOS-Sans.ttf
+    twainsixeven-ng-VF.ttf
 
 # Register vendor fonts
 PRODUCT_COPY_FILES += vendor/hentai/fonts/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
