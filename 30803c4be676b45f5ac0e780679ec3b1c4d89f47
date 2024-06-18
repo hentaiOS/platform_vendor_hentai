@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "001e3ae0_887e396e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2024-06-18T21:20:00Z",
+      "side": 1,
+      "message": "@raphielscape https://gitlab.hentaios.com/hentaios/issue-trackers/distribution/-/issues/43#note_3714",
+      "revId": "30803c4be676b45f5ac0e780679ec3b1c4d89f47",
+      "serverId": "90ec3431-229f-4ad1-9645-e5b063dc3de3"
+    }
+  ]
+}
