@@ -19,6 +19,7 @@
 # get installed too.
 
 PRODUCT_PACKAGES += \
+    GoogleSansClock-Regular.ttf \
     twainsixeven-ng-VF.ttf
 
 # Register vendor fonts
