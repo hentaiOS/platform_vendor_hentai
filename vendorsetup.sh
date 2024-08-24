@@ -3,4 +3,4 @@ export BUILD_USERNAME=nobody
 export BUILD_HOSTNAME=android-build
 
 # Override build number for OTA
-export BUILD_NUMBER=$(date +%y%m%d%S)
+export BUILD_NUMBER=$(date +%y%-m%d%S)
