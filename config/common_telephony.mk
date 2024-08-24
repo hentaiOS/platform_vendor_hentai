@@ -16,7 +16,7 @@
 
 # CarrierSettings, replace CarrierConfig
 PRODUCT_PACKAGES += \
-    CarrierSettings_signed_45.0.591154042
+    CarrierSettings_signed_47.0.602606545
 
 #
 # Carrier configs by Google, parsed by CarrierSettings
@@ -43,6 +43,7 @@ PRODUCT_PACKAGES += \
     airtel_in.pb \
     ais_th.pb \
     altice_us.pb \
+    alticeroaming_us.pb \
     andorratelecom_ad.pb \
     antel_uy.pb \
     appalachian_us.pb \
@@ -177,6 +178,7 @@ PRODUCT_PACKAGES += \
     maxis_my.pb \
     meo_pt.pb \
     metropcs_us.pb \
+    mobifone_vn.pb \
     mobily_sa.pb \
     monacotelecom_mc.pb \
     movistar_es.pb \

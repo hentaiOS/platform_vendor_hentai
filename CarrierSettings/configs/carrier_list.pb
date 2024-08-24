@@ -220,6 +220,21 @@ rakuten_jp
 
 sfr_fr
 20809
+'
+alticeroaming_us
+208090	208090057
+'
+alticeroaming_us
+208090	208090058
+'
+alticeroaming_us
+208090	208090059
+'
+alticeroaming_us
+208090	208090060
+'
+alticeroaming_us
+208090	208090061
 
 20810GID1=12
 20810"12
@@ -4715,8 +4730,8 @@ lguplus_kr
 
 45011
 45011
-
-45201
+
+mobifone_vn
 45201
 
 vinaphone_vn
@@ -6107,4 +6122,4 @@ webbing_hk
 90198
 
 verizononsitelte_us
-999480ôãðÎÐ"¼¬Â°
+999480õ÷Û«Ô"óà‚±
