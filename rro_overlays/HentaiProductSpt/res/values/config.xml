@@ -19,12 +19,12 @@
 <resources>
     <!-- Build properties to spoof to certain google apps -->
     <string-array name="buildProperties" translatable="false">
-        <item>Pixel 8 Pro</item>                                                           <!-- Build.MODEL -->
-        <item>husky</item>                                                                 <!-- Build.DEVICE -->
-        <item>husky</item>                                                                 <!-- Build.PRODUCT -->
+        <item>Pixel 9 Pro</item>                                                           <!-- Build.MODEL -->
+        <item>caiman</item>                                                                <!-- Build.DEVICE -->
+        <item>caiman</item>                                                                <!-- Build.PRODUCT -->
         <item>google</item>                                                                <!-- Build.BRAND -->
         <item>Google</item>                                                                <!-- Build.MANUFACTURER -->
-        <item>google/husky/husky:14/AP2A.240605.024/11860263:user/release-keys</item>      <!-- Build.FINGERPRINT -->
+        <item>google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys</item> <!-- Build.FINGERPRINT -->
         <item>user</item>                                                                  <!-- Build.TYPE -->
         <item>release-keys</item>                                                          <!-- Build.TAGS -->
     </string-array>
