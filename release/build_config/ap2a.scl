@@ -17,11 +17,6 @@
 load("//build/make/core/release_config.scl", "value")
 
 values = [
-    # Build Information
-    value("RELEASE_PLATFORM_SECURITY_PATCH", "2024-08-05"),
-    value("RELEASE_PLATFORM_VERSION", "AP2A"),
-
-    # APEX
     value("RELEASE_DEFAULT_MODULE_BUILD_FROM_SOURCE", ""),
     value("RELEASE_APEX_BOOT_JARS_PREBUILT_EXCLUDED_LIST", "com.android.mediaprovider:framework-pdf com.android.mediaprovider:framework-pdf-v"),
 ]
