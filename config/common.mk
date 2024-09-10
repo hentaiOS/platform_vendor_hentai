@@ -23,15 +23,30 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.setupwizard.enterprise_mode=1 \
     ro.setupwizard.esim_cid_ignore=00000001 \
-    ro.setupwizard.rotation_locked=true \
     setupwizard.feature.baseline_setupwizard_enabled=true \
     setupwizard.feature.day_night_mode_enabled=true \
+    setupwizard.feature.enable_gil= \
+    setupwizard.feature.enable_restore_anytime=true \
+    setupwizard.feature.enable_wifi_tracker=true \
+    setupwizard.feature.lifecycle_refactoring=true \
+    setupwizard.feature.notification_refactoring=true \
     setupwizard.feature.portal_notification=true \
+    setupwizard.feature.provisioning_profile_mode=true \
+    setupwizard.feature.show_digital_warranty=false \
     setupwizard.feature.show_pai_screen_in_main_flow.carrier1839=false \
     setupwizard.feature.show_pixel_tos=true \
     setupwizard.feature.show_support_link_in_deferred_setup=false \
     setupwizard.feature.skip_button_use_mobile_data.carrier1839=true \
-    setupwizard.theme=glif_v3_light
+    setupwizard.theme=glif_v4_light
+
+# New charging information
+PRODUCT_PRODUCT_PROPERTIES += \
+    charging_string.apply_lotx=true \
+    charging_string.apply_v2=true
+
+# WFC Activation
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.gwfcactivation.disabled_carriers=1492
 
 # StorageManager configuration
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -56,7 +71,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural;com.google.android.systemui.gxoverlay
 
 # Turn off storage manager
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.storage_manager.enabled=false
 
 # DRM Service

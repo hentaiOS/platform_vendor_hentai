@@ -23,6 +23,7 @@ PRODUCT_PACKAGES += \
 
 # Google Overlays
 PRODUCT_PACKAGES += \
+    AvatarPickerPixelOverlay \
     CaptivePortalLoginOverlay \
     CellBroadcastReceiverOverlay \
     CellBroadcastServiceOverlay \
@@ -40,4 +41,5 @@ PRODUCT_PACKAGES += \
     PixelConfigOverlay2019Midyear \
     PixelConfigOverlay2021 \
     PixelConfigOverlayCommon \
+    PixelConnectivityOverlay2024 \
     PixelTetheringOverlay

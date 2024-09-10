@@ -58,6 +58,10 @@
      <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
      <bool name="config_useRoundIcon">true</bool>
 
+    <!-- Enable synchronization of the displays refresh rates by applying the default low refresh
+         rate. -->
+    <bool name="config_refreshRateSynchronizationEnabled">true</bool>
+
      <!-- Package name for the device provisioning package. -->
      <string name="config_deviceProvisioningPackage" translatable="false">
           com.google.android.apps.work.oobconfig</string>
@@ -106,4 +110,33 @@
      <string-array name="config_locationExtraPackageNames">
           <item>com.google.android.gms.location.history</item>
      </string-array>
+
+    <!-- External display peak refresh rate for the given device. Change this value if you want to
+         prevent the framework from using higher refresh rates, even if display modes with higher
+         refresh rates are available from hardware composer. Only has an effect if this value and
+         config_externalDisplayPeakWidth and config_externalDisplayPeakHeight are non-zero. -->
+    <integer name="config_externalDisplayPeakRefreshRate">61</integer>
+
+    <!-- External display peak width for the given device. Change this value if you want
+         to prevent the framework from using higher resolution, even if display modes with higher
+         resolutions are available from hardware composer. Only has an effect if this value and
+         config_externalDisplayPeakRefreshRate and config_externalDisplayPeakHeight are non-zero.-->
+    <integer name="config_externalDisplayPeakWidth">1920</integer>
+
+    <!-- External display peak height for the given device. Change this value if you want
+         to prevent the framework from using higher resolution, even if display modes with higher
+         resolutions are available from hardware composer. Only has an effect if this value and
+         config_externalDisplayPeakRefreshRate and config_externalDisplayPeakWidth are non-zero. -->
+    <integer name="config_externalDisplayPeakHeight">1080</integer>
+
+    <!-- User activity timeout: Screen timeout override in milliseconds.
+
+         This value must be greater than 0, otherwise the invalid value will not apply to
+         the screen timeout override policy.
+    -->
+    <integer name="config_screenTimeoutOverride">10000</integer>
+
+    <!-- The fixed keyboard vibration strength in [0,1], or -1 to indicate the strength not fixed
+         and should depend on the touch feedback intensity user setting -->
+    <item type="dimen" name="config_keyboardHapticFeedbackFixedAmplitude">0.62</item>
 </resources>

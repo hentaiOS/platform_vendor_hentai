@@ -40,7 +40,7 @@ soong_config_module_type {
 // Google com.google.android.adbd
 module_apex_prebuilt {
     name: "com.google.android.adbd",
-    apex_name: "com.android.adbd",
+    source_apex_name: "com.google.android.adbd",
     owner: "google",
     src: "com.google.android.adbd.apex",
     overrides: ["com.android.adbd"],
@@ -55,7 +55,7 @@ module_apex_prebuilt {
 // Google com.google.android.adservices
 module_apex_prebuilt {
     name: "com.google.android.adservices",
-    apex_name: "com.android.adservices",
+    source_apex_name: "com.google.android.adservices",
     owner: "google",
     src: "com.google.android.adservices.apex",
     overrides: ["com.android.adservices"],
@@ -72,7 +72,7 @@ module_apex_prebuilt {
 // Google com.google.android.appsearch.apex
 module_apex_prebuilt {
     name: "com.google.android.appsearch",
-    apex_name: "com.android.appsearch",
+    source_apex_name: "com.google.android.appsearch",
     owner: "google",
     src: "com.google.android.appsearch.apex",
     overrides: ["com.android.appsearch"],
@@ -89,7 +89,7 @@ module_apex_prebuilt {
 // Google com.google.android.art
 art_prebuilt_apex_set {
     name: "com.google.android.art",
-    apex_name: "com.android.art",
+    source_apex_name: "com.google.android.art",
     owner: "google",
     src: "com.google.android.art.apex",
     overrides: [
@@ -112,7 +112,7 @@ art_prebuilt_apex_set {
 // Google com.google.android.btservices
 module_apex_prebuilt {
     name: "com.google.android.btservices",
-    apex_name: "com.android.btservices",
+    source_apex_name: "com.google.android.btservices",
     owner: "google",
     src: "com.google.android.btservices.apex",
     overrides: ["com.android.btservices"],
@@ -129,7 +129,7 @@ module_apex_prebuilt {
 // Google com.google.android.cellbroadcast
 module_apex_prebuilt {
     name: "com.google.android.cellbroadcast",
-    apex_name: "com.android.cellbroadcast",
+    source_apex_name: "com.google.android.cellbroadcast",
     owner: "google",
     src: "com.google.android.cellbroadcast.apex",
     overrides: ["com.android.cellbroadcast"],
@@ -144,7 +144,7 @@ module_apex_prebuilt {
 // Google com.google.android.configinfrastructure
 module_apex_prebuilt {
     name: "com.google.android.configinfrastructure",
-    apex_name: "com.android.configinfrastructure",
+    source_apex_name: "com.google.android.configinfrastructure",
     owner: "google",
     src: "com.google.android.configinfrastructure.apex",
     overrides: ["com.android.configinfrastructure"],
@@ -161,7 +161,7 @@ module_apex_prebuilt {
 // Google com.google.android.conscrypt
 module_apex_prebuilt {
     name: "com.google.android.conscrypt",
-    apex_name: "com.android.conscrypt",
+    source_apex_name: "com.google.android.conscrypt",
     required: [
         "conscrypt.com.android.conscrypt",
     ],
@@ -180,7 +180,7 @@ module_apex_prebuilt {
 // Google com.google.android.devicelock
 module_apex_prebuilt {
     name: "com.google.android.devicelock",
-    apex_name: "com.android.devicelock",
+    source_apex_name: "com.google.android.devicelock",
     owner: "google",
     src: "com.google.android.devicelock.apex",
     overrides: ["com.android.devicelock"],
@@ -197,7 +197,7 @@ module_apex_prebuilt {
 // Google com.google.android.extservices
 module_apex_prebuilt {
     name: "com.google.android.extservices",
-    apex_name: "com.android.extservices",
+    source_apex_name: "com.google.android.extservices",
     owner: "google",
     src: "com.google.android.extservices.apex",
     overrides: ["com.android.extservices"],
@@ -212,7 +212,7 @@ module_apex_prebuilt {
 // Google com.google.android.healthfitness
 module_apex_prebuilt {
     name: "com.google.android.healthfitness",
-    apex_name: "com.android.healthfitness",
+    source_apex_name: "com.google.android.healthfitness",
     owner: "google",
     src: "com.google.android.healthfitness.apex",
     overrides: ["com.android.healthfitness"],
@@ -229,7 +229,7 @@ module_apex_prebuilt {
 // Google com.google.android.ipsec
 module_apex_prebuilt {
     name: "com.google.android.ipsec",
-    apex_name: "com.android.ipsec",
+    source_apex_name: "com.google.android.ipsec",
     required: [
         "android.net.ipsec.ike.com.android.ipsec",
     ],
@@ -248,7 +248,7 @@ module_apex_prebuilt {
 // Google com.google.android.media
 module_apex_prebuilt {
     name: "com.google.android.media",
-    apex_name: "com.android.media",
+    source_apex_name: "com.google.android.media",
     required: [
         "updatable-media.com.android.media",
     ],
@@ -268,7 +268,7 @@ module_apex_prebuilt {
 // Google com.google.android.media.swcodec
 module_apex_prebuilt {
     name: "com.google.android.media.swcodec",
-    apex_name: "com.android.swcodec",
+    source_apex_name: "com.google.android.swcodec",
     owner: "google",
     src: "com.google.android.media.swcodec.apex",
     overrides: ["com.android.media.swcodec"],
@@ -283,7 +283,7 @@ module_apex_prebuilt {
 // Google com.google.android.mediaprovider
 module_apex_prebuilt {
     name: "com.google.android.mediaprovider",
-    apex_name: "com.android.mediaprovider",
+    source_apex_name: "com.google.android.mediaprovider",
     required: [
         "framework-mediaprovider.com.android.mediaprovider",
     ],
@@ -302,7 +302,7 @@ module_apex_prebuilt {
 // Google com.google.android.neuralnetworks
 module_apex_prebuilt {
     name: "com.google.android.neuralnetworks",
-    apex_name: "com.android.neuralnetworks",
+    source_apex_name: "com.google.android.neuralnetworks",
     owner: "google",
     src: "com.google.android.neuralnetworks.apex",
     overrides: ["com.android.neuralnetworks"],
@@ -314,10 +314,25 @@ module_apex_prebuilt {
     },
 }
 
+// Google com.google.android.nfcservices
+module_apex_prebuilt {
+    name: "com.google.android.nfcservices",
+    source_apex_name: "com.google.android.nfcservices",
+    owner: "google",
+    src: "com.google.android.nfcservices.apex",
+    overrides: ["com.android.nfcservices"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+}
+
 // Google com.google.android.ondevicepersonalization
 module_apex_prebuilt {
     name: "com.google.android.ondevicepersonalization",
-    apex_name: "com.android.ondevicepersonalization",
+    source_apex_name: "com.google.android.ondevicepersonalization",
     owner: "google",
     src: "com.google.android.ondevicepersonalization.apex",
     overrides: ["com.android.ondevicepersonalization"],
@@ -334,7 +349,7 @@ module_apex_prebuilt {
 // Google com.google.android.os.statsd
 module_apex_prebuilt {
     name: "com.google.android.os.statsd",
-    apex_name: "com.android.os.statsd",
+    source_apex_name: "com.google.android.statsd",
     owner: "google",
     src: "com.google.android.os.statsd.apex",
     overrides: ["com.android.os.statsd"],
@@ -351,7 +366,7 @@ module_apex_prebuilt {
 // Google com.google.android.permission
 module_apex_prebuilt {
     name: "com.google.android.permission",
-    apex_name: "com.android.permission",
+    source_apex_name: "com.google.android.permission",
     required: [
         "framework-permission.com.android.permission",
         "service-permission.com.android.permission",
@@ -369,10 +384,25 @@ module_apex_prebuilt {
     exported_systemserverclasspath_fragments: ["com.android.permission-systemserverclasspath-fragment"],
 }
 
+// Google com.google.android.profiling
+module_apex_prebuilt {
+    name: "com.google.android.profiling",
+    source_apex_name: "com.google.android.profiling",
+    owner: "google",
+    src: "com.google.android.profiling.capex",
+    overrides: ["com.android.profiling"],
+    prefer: true,
+    soong_config_variables: {
+        module_build_from_source: {
+            prefer: false,
+        },
+    },
+}
+
 // Google com.google.android.resolv
 module_apex_prebuilt {
     name: "com.google.android.resolv",
-    apex_name: "com.android.resolv",
+    source_apex_name: "com.google.android.resolv",
     owner: "google",
     src: "com.google.android.resolv.apex",
     overrides: ["com.android.resolv"],
@@ -387,7 +417,7 @@ module_apex_prebuilt {
 // Google com.google.android.rkpd
 module_apex_prebuilt {
     name: "com.google.android.rkpd",
-    apex_name: "com.android.rkpd",
+    source_apex_name: "com.google.android.rkpd",
     owner: "google",
     src: "com.google.android.rkpd.apex",
     overrides: ["com.android.rkpd"],
@@ -403,7 +433,7 @@ module_apex_prebuilt {
 // Google com.google.android.scheduling
 module_apex_prebuilt {
     name: "com.google.android.scheduling",
-    apex_name: "com.android.scheduling",
+    source_apex_name: "com.google.android.scheduling",
     owner: "google",
     src: "com.google.android.scheduling.apex",
     overrides: ["com.android.scheduling"],
@@ -420,7 +450,7 @@ module_apex_prebuilt {
 // Google com.google.android.sdkext
 module_apex_prebuilt {
     name: "com.google.android.sdkext",
-    apex_name: "com.android.sdkext",
+    source_apex_name: "com.google.android.sdkext",
     required: [
         "framework-sdkextensions.com.android.sdkext",
     ],
@@ -439,7 +469,7 @@ module_apex_prebuilt {
 // Google com.google.android.tethering
 module_apex_prebuilt {
     name: "com.google.android.tethering",
-    apex_name: "com.android.tethering",
+    source_apex_name: "com.google.android.tethering",
     required: [
         "framework-tethering.com.android.tethering",
     ],
@@ -456,12 +486,12 @@ module_apex_prebuilt {
     exported_systemserverclasspath_fragments: ["com.android.tethering-systemserverclasspath-fragment"],
 }
 
-// Google com.google.android.tzdata5
+// Google com.google.android.tzdata6
 module_apex_prebuilt {
-    name: "com.google.android.tzdata5",
-    apex_name: "com.android.tzdata",
+    name: "com.google.android.tzdata6",
+    source_apex_name: "com.google.android.tzdata6",
     owner: "google",
-    src: "com.google.android.tzdata5.apex",
+    src: "com.google.android.tzdata6.apex",
     overrides: ["com.android.tzdata"],
     prefer: true,
     soong_config_variables: {
@@ -474,7 +504,7 @@ module_apex_prebuilt {
 // Google com.google.android.uwb
 module_apex_prebuilt {
     name: "com.google.android.uwb",
-    apex_name: "com.android.uwb",
+    source_apex_name: "com.google.android.uwb",
     owner: "google",
     src: "com.google.android.uwb.apex",
     overrides: ["com.android.uwb"],
@@ -491,7 +521,7 @@ module_apex_prebuilt {
 // Google com.google.android.wifi
 module_apex_prebuilt {
     name: "com.google.android.wifi",
-    apex_name: "com.android.wifi",
+    source_apex_name: "com.google.android.wifi",
     required: [
         "framework-wifi.com.android.wifi",
         "service-wifi.com.android.wifi",
@@ -512,7 +542,7 @@ module_apex_prebuilt {
 // Google com.google.mainline.primary.libs
 module_apex_prebuilt {
     name: "com.google.mainline.primary.libs",
-    apex_name: "com.mainline.primary.libs",
+    source_apex_name: "com.google.mainline.primary.libs",
     owner: "google",
     src: "com.google.mainline.primary.libs.apex",
     overrides: ["com.mainline.primary.libs"],

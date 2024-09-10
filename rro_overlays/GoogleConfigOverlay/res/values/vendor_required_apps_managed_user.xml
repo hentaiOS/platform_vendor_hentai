@@ -32,5 +32,7 @@
         <item>com.google.android.documentsui</item>
         <item>com.google.android.apps.nbu.files</item>
         <item>com.google.android.apps.accessibility.voiceaccess</item>
+        <item>com.google.android.webview</item>
+        <item>com.google.android.trichromelibrary</item>
     </string-array>
 </resources>

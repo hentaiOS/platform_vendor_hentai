@@ -17,7 +17,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.android.settings.overlay.hentai">
-    <overlay android:isStatic="true" android:priority="10" android:targetPackage="com.android.settings" android:resourcesMap="@xml/overlays"/>
+    <overlay android:isStatic="true" android:priority="10" android:targetPackage="com.android.settings"/>
 
     <application android:hasCode="false" android:usesNonSdkApi="true"/>
 </manifest>

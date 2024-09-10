@@ -20,5 +20,6 @@
     <!-- A list of apps to be removed from the managed profile by a particular vendor. -->
     <string-array translatable="false" name="vendor_disallowed_apps_managed_profile">
         <item>com.google.android.apps.healthdata</item>
+        <item>com.google.android.apps.stargate</item>
     </string-array>
 </resources>

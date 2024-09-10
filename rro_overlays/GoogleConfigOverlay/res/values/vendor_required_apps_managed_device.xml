@@ -44,5 +44,7 @@
         <item>com.google.android.apps.accessibility.voiceaccess</item>
         <item>com.google.android.apps.tycho</item>
         <item>com.google.android.apps.internal.betterbug</item>
+        <item>com.google.android.webview</item>
+        <item>com.google.android.trichromelibrary</item>
     </string-array>
 </resources>

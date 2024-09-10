@@ -19,14 +19,14 @@
 <resources>
     <!-- Build properties to spoof to certain google apps -->
     <string-array name="buildProperties" translatable="false">
-        <item>Pixel 9 Pro</item>                                                           <!-- Build.MODEL -->
-        <item>caiman</item>                                                                <!-- Build.DEVICE -->
-        <item>caiman</item>                                                                <!-- Build.PRODUCT -->
-        <item>google</item>                                                                <!-- Build.BRAND -->
-        <item>Google</item>                                                                <!-- Build.MANUFACTURER -->
-        <item>google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys</item> <!-- Build.FINGERPRINT -->
-        <item>user</item>                                                                  <!-- Build.TYPE -->
-        <item>release-keys</item>                                                          <!-- Build.TAGS -->
+        <item>Pixel 9 Pro XL</item>                                                          <!-- Build.MODEL -->
+        <item>komodo</item>                                                                  <!-- Build.DEVICE -->
+        <item>komodo_beta</item>                                                             <!-- Build.PRODUCT -->
+        <item>google</item>                                                                  <!-- Build.BRAND -->
+        <item>Google</item>                                                                  <!-- Build.MANUFACTURER -->
+        <item>google/komodo_beta/komodo:15/AP31.240617.015/12207491:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>user</item>                                                                    <!-- Build.TYPE -->
+        <item>release-keys</item>                                                            <!-- Build.TAGS -->
     </string-array>
 
     <!-- Device config to override -->

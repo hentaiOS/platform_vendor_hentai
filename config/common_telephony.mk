@@ -33,6 +33,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     1and1_de.pb \
     2degrees_nz.pb \
+    321communications_us.pb \
     4ka_sk.pb \
     a1_at.pb \
     a1_bg.pb \
@@ -40,6 +41,8 @@ PRODUCT_PACKAGES += \
     a1_mk.pb \
     a1_si.pb \
     ahamo_jp.pb \
+    airbus_de.pb \
+    airbus_fr.pb \
     airtel_in.pb \
     ais_th.pb \
     altice_us.pb \
@@ -51,10 +54,12 @@ PRODUCT_PACKAGES += \
     asda_gb.pb \
     assurance_us.pb \
     astca_as.pb \
+    astoundbroadband_us.pb \
     att5gsa_us.pb \
     att5g_us.pb \
     attbootstrap_us.pb \
     attmvnos_us.pb \
+    axis_id.pb \
     att_mx.pb \
     att_us.pb \
     base_be.pb \
@@ -81,6 +86,7 @@ PRODUCT_PACKAGES += \
     chinamobile_hk.pb \
     cht_tw.pb \
     cityfone_ca.pb \
+    claro_br.pb \
     claro_pr.pb \
     congstar_de.pb \
     consumercellularatt_us.pb \
@@ -103,6 +109,7 @@ PRODUCT_PACKAGES += \
     dna_fi.pb \
     docomo_jp.pb \
     docomomvno_jp.pb \
+    docomopacific_us.pb \
     dtac_th.pb \
     du_ae.pb \
     eastlink_ca.pb \
@@ -126,11 +133,13 @@ PRODUCT_PACKAGES += \
     firstnetpacific2_us.pb \
     firstnetpacific_us.pb \
     firstnet_us.pb \
-    fi_us.pb \
+    fi_tmo_us.pb \
     fizz_ca.pb \
     fl1_li.pb \
     freedommobile_ca.pb \
     free_fr.pb \
+    free_gp.pb \
+    free_mq.pb \
     free_re.pb \
     gamma_gb.pb \
     gci_us.pb \
@@ -145,6 +154,7 @@ PRODUCT_PACKAGES += \
     h3_ie.pb \
     h3_se.pb \
     halebop_se.pb \
+    helium_us.pb \
     help_at.pb \
     homobile_it.pb \
     hotmobile_il.pb \
@@ -153,6 +163,7 @@ PRODUCT_PACKAGES += \
     idmobile_gb.pb \
     iliad_it.pb \
     inland_us.pb \
+    iwireless_us.pb \
     jazztel_es.pb \
     kddi_jp.pb \
     kddimvno_jp.pb \
@@ -171,11 +182,13 @@ PRODUCT_PACKAGES += \
     luckymobile_ca.pb \
     lum_ca.pb \
     lyca_es.pb \
+    lyca_us.pb \
     m1_sg.pb \
     manxcontract_im.pb \
     manxprepaid_im.pb \
     masmovil_es.pb \
     maxis_my.pb \
+    melita_mt.pb \
     meo_pt.pb \
     metropcs_us.pb \
     mobifone_vn.pb \
@@ -183,6 +196,7 @@ PRODUCT_PACKAGES += \
     monacotelecom_mc.pb \
     movistar_es.pb \
     movistar_mx.pb \
+    mvnoconnect_us.pb \
     nextech_us.pb \
     nos_pt.pb \
     nova_gr.pb \
@@ -195,6 +209,7 @@ PRODUCT_PACKAGES += \
     o2_sk.pb \
     omantel_om.pb \
     onecall_no.pb \
+    one_me.pb \
     ooredoo_kw.pb \
     ooredoo_qa.pb \
     optus_au.pb \
@@ -213,16 +228,20 @@ PRODUCT_PACKAGES += \
     pelephone_il.pb \
     pepephone_es.pb \
     play_pl.pb \
+    plintron_us.pb \
     plus_pl.pb \
     post_lu.pb \
     povo_jp.pb \
     proximus_be.pb \
     publicmobile_ca.pb \
+    pwg_us.pb \
+    qlink_us.pb \
     racc_es.pb \
     rakuten_jp.pb \
     reachmobileatt_us.pb \
     redpocketatt_us.pb \
     redpockettmo_us.pb \
+    republicwireless_us.pb \
     r_es.pb \
     rjio_in.pb \
     rogers5g_ca.pb \
@@ -244,6 +263,7 @@ PRODUCT_PACKAGES += \
     skylo_zz.pb \
     smartone_hk.pb \
     smart_ph.pb \
+    smartfren_id.pb \
     smarty_gb.pb \
     softbank_jp.pb \
     solomobile_ca.pb \
@@ -267,8 +287,10 @@ PRODUCT_PACKAGES += \
     tango_lu.pb \
     tango_us.pb \
     tbaytel_ca.pb \
+    tchibo_at.pb \
     tchibo_de.pb \
     tdc_dk.pb \
+    telavox_se.pb \
     telcel_mx.pb \
     telco_re.pb \
     tele2_ee.pb \
@@ -280,6 +302,7 @@ PRODUCT_PACKAGES += \
     telekom_gr.pb \
     telekom_hr.pb \
     telekom_hu.pb \
+    telekom_me.pb \
     telekom_mk.pb \
     telekom_pl.pb \
     telekom_ro.pb \
@@ -296,6 +319,8 @@ PRODUCT_PACKAGES += \
     telia_lt.pb \
     telia_no.pb \
     telia_se.pb \
+    telkomsel_id.pb \
+    tello_us.pb \
     telstra_au.pb \
     telus_ca.pb \
     tesco_gb.pb \
@@ -333,6 +358,7 @@ PRODUCT_PACKAGES += \
     verymobile_it.pb \
     viaero_us.pb \
     videotron_ca.pb \
+    viettel_vn.pb \
     vimla_se.pb \
     vinaphone_vn.pb \
     virgin_ca.pb \

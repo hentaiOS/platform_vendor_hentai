@@ -16,17 +16,14 @@
 #
 
 BUILD_ID_LC ?= $(shell echo $(BUILD_ID) | tr '[:upper:]' '[:lower:]')
+BUILD_ID_DATE ?= $(shell date +%m%d%H%M)
 
-PLATFORM_HENTAI_RELEASE := Ursamoon
+PLATFORM_HENTAI_RELEASE := Vallhound
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-Furry.$(shell date +%m%d%H%M)
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-REL.$(BUILD_ID_DATE)
 else
-    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-ota-$(BUILD_ID_LC)-INT.$(shell date +%m%d%H%M)
+    PROD_VERSION += $(TARGET_PRODUCT)-$(PLATFORM_HENTAI_RELEASE)-target_files-$(BUILD_ID_LC)-INT.$(BUILD_ID_DATE)
 endif
 
 $(call inherit-product-if-exists, vendor/hentai/build/target/product/security/hentai_security.mk)
-
-PRODUCT_HOST_PACKAGES += \
-    sign_target_files_apks \
-    ota_from_target_files

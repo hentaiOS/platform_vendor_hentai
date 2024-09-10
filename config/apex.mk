@@ -14,6 +14,14 @@
 # limitations under the License.
 #
 
+# FIXME -- Profiling prebuilts is only planned to be released for AP41
+DISABLE_DEXPREOPT_CHECK := true
+
+# If true, this builds the mainline modules from source. This overrides any
+# prebuilts selected via RELEASE_APEX_CONTRIBUTIONS_* build flags for the
+# current release config.
+PRODUCT_MODULE_BUILD_FROM_SOURCE ?= false
+
 # Setup build characteristics
 PRODUCT_INCLUDE_TAGS := com.android.mainline mainline_module_prebuilt_monthly_release
 
@@ -39,7 +47,7 @@ SOONG_CONFIG_bluetooth_module += source_build
 SOONG_CONFIG_bluetooth_module_source_build := true
 
 ifneq ($(MAINLINE_INCLUDE_ART_MODULE),true)
-ART_MODULE_BUILD_FROM_SOURCE := true
+ART_MODULE_BUILD_FROM_SOURCE := false
 endif
 
 ifeq ($(MAINLINE_INCLUDE_BT_MODULE),true)
@@ -78,13 +86,15 @@ PRODUCT_PACKAGES += \
 	com.google.android.media.swcodec \
 	com.google.android.mediaprovider \
 	com.google.android.neuralnetworks \
+	com.google.android.nfcservices \
 	com.google.android.ondevicepersonalization \
 	com.google.android.os.statsd \
 	com.google.android.permission \
+	com.google.android.profiling \
 	com.google.android.resolv \
 	com.google.android.rkpd \
 	com.google.android.scheduling \
 	com.google.android.sdkext \
 	com.google.android.tethering \
-	com.google.android.tzdata5 \
+	com.google.android.tzdata6 \
 	com.google.mainline.primary.libs

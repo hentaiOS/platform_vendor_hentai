@@ -40,5 +40,7 @@
         <item>com.google.mds</item>
         <item>com.google.android.apps.overlay</item>
         <item>com.google.inputmethod.ink.strokes.showcase</item>
+        <item>com.google.android.webview</item>
+        <item>com.google.android.trichromelibrary</item>
     </string-array>
 </resources>
