@@ -390,6 +390,7 @@ module_apex_prebuilt {
     source_apex_name: "com.google.android.profiling",
     owner: "google",
     src: "com.google.android.profiling.capex",
+    filename: "com.google.android.profiling.capex",
     overrides: ["com.android.profiling"],
     prefer: true,
     soong_config_variables: {
