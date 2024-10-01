@@ -31,11 +31,5 @@
 
     <!-- Device config to override -->
     <string-array name="deviceConfig" translatable="false">
-        <item>launcher/ENABLE_LONG_PRESS_NAV_HANDLE=true</item>
-        <item>launcher/ENABLE_SEARCH_HAPTIC_HINT=true</item>
-        <item>launcher/ENABLE_SMARTSPACE_ENHANCED=true</item>
-        <item>launcher/INVOKE_OMNI_LPH=true</item>
-        <item>launcher/long_press_home_button_to_search=true</item>
-        <item>launcher/press_hold_nav_handle_to_search=true</item>
     </string-array>
 </resources>
