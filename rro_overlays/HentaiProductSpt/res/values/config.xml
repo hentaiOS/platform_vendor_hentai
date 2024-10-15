@@ -21,10 +21,10 @@
     <string-array name="buildProperties" translatable="false">
         <item>Pixel 9 Pro XL</item>                                                          <!-- Build.MODEL -->
         <item>komodo</item>                                                                  <!-- Build.DEVICE -->
-        <item>komodo_beta</item>                                                             <!-- Build.PRODUCT -->
+        <item>komodo</item>                                                                  <!-- Build.PRODUCT -->
         <item>google</item>                                                                  <!-- Build.BRAND -->
         <item>Google</item>                                                                  <!-- Build.MANUFACTURER -->
-        <item>google/komodo_beta/komodo:15/AP31.240617.015/12207491:user/release-keys</item> <!-- Build.FINGERPRINT -->
+        <item>google/komodo/komodo:15/AP3A.241005.015/12366759:user/release-keys</item>      <!-- Build.FINGERPRINT -->
         <item>user</item>                                                                    <!-- Build.TYPE -->
         <item>release-keys</item>                                                            <!-- Build.TAGS -->
     </string-array>
