@@ -1,20 +1,16 @@
 soong_config_module_type {
-    name: "surfaceflinger_fod_lib",
+    name: "spoof_first_api_level_32",
     module_type: "cc_defaults",
     config_namespace: "hentaiGlobalVars",
-    value_variables: ["target_surfaceflinger_fod_lib"],
-    properties: [
-        "cppflags",
-        "whole_static_libs",
-    ],
+    bool_variables: ["spoof_first_api_level_32"],
+    properties: ["cppflags"]
 }
 
-surfaceflinger_fod_lib {
-    name: "surfaceflinger_fod_lib_defaults",
+spoof_first_api_level_32 {
+    name: "spoof_first_api_level_32_defaults",
     soong_config_variables: {
-        target_surfaceflinger_fod_lib: {
-            cppflags: ["-DTARGET_PROVIDES_FOD_LIB"],
-            whole_static_libs: ["%s"],
+        spoof_first_api_level_32: {   
+            cppflags: ["-DSPOOF_FIRST_API_LEVEL_32"],
         },
     },
 }
