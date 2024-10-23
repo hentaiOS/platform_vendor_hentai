@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-# Hentai Overlays
+# Helluva Overlays
 PRODUCT_PACKAGES += \
-    HentaiConfigOverlay \
-    HentaiProductSpt \
-    PixelSetupWizardOverlayHentai \
-    SettingsGoogleOverlayHentai
+    HelluvaConfigOverlay \
+    HelluvaProductSpt \
+    PixelSetupWizardOverlayHelluva \
+    SettingsGoogleOverlayHelluva
 
 # Google Overlays
 PRODUCT_PACKAGES += \

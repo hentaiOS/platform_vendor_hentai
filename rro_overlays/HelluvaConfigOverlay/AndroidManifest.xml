@@ -1,7 +1,6 @@
 <!--
 /**
  * Copyright (c) 2019, The Android Open Source Project
- * Copyright (C) 2024 The hentaiOS Project and its Proprietors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -17,9 +16,8 @@
  */
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.hentai.product.spt"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="com.helluva.android.overlay.hentaiconfig">
+    <overlay android:isStatic="true" android:priority="10" android:targetPackage="android"/>
 
     <application android:hasCode="false"/>
 </manifest>
