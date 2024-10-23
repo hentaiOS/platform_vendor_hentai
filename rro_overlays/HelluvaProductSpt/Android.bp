@@ -14,9 +14,10 @@
 // limitations under the License.
 //
 
-runtime_resource_overlay {
-    name: "SettingsGoogleOverlayHentai",
+android_app {
+    name: "HelluvaProductSpt",
+    platform_apis: true,
+    resource_dirs: ["res"],
     certificate: "platform",
-    sdk_version: "current",
-    product_specific: true
+    system_ext_specific: true,
 }
